@@ -25,7 +25,7 @@ const coasterSchema = new Schema({
   img2: {type: String, trim: true},
   img3: {type: String, trim: true},
   img4: {type: String, trim: true},
-  date: new Date(Date.now())
+  date: Date
 });
 
 const Coaster = mongoose.model("Coaster", coasterSchema);
