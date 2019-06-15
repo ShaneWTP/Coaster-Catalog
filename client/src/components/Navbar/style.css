@@ -1,0 +1,18 @@
+.nav {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 20px #252525;
+  padding-top: 10px;
+  background: #2A77AE;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.nav-item {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
