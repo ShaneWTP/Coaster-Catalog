@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  background: rgb(118, 176, 218);
+  padding-top: 65px;
+}
+
+.bottom {
+  width: 100%;
+  background: #2A77AE;
+  text-align: left;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer-text {
+  color: #fff;
+  text-decoration: underline; 
+}

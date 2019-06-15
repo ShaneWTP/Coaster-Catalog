@@ -1,0 +1,18 @@
+.jumbotron {
+  width: 100%;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/footer_lodyas.png");
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.display-4 {
+  font-weight: 900;
+}
+
+.lead {
+  font-weight: 900;
+}
