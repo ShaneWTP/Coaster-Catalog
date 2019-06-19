@@ -79,7 +79,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>CONNEAUT LAKE PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="public/map-assets/images/conneaut-lake-park.png" width="230px"><br><br><a href="#" class="coaster-link-1">Blue Streak</a><br><a href="#" class="coaster-link">Devil&#39;s Den</a><br><a href="#" class="coaster-link">Little Dipper</a><br>',
+    'hover':'<u><b>CONNEAUT LAKE PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/conneaut-lake-park.png" width="230px"><br><br><a href="#" class="coaster-link-1">Blue Streak</a><br><a href="#" class="coaster-link">Devil&#39;s Den</a><br><a href="#" class="coaster-link">Little Dipper</a><br>',
     'pos_X':40,
 		'pos_Y':100,
 		'diameter':8,
@@ -94,7 +94,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>DELGROSSO AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/public/map-assets/images/delgrossos.png" width="302px"><br><br><a href="#" class="coaster-link-del-1">Wacky Worm</a><br>',
+    'hover':'<u><b>DELGROSSO AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/delgrossos.png" width="302px"><br><br><a href="#" class="coaster-link-del-1">Wacky Worm</a><br>',
     'pos_X':265,
 		'pos_Y':200,
 		'diameter':8,
@@ -109,7 +109,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>DORNEY PARK &nbsp;<span class="remove">X</span><br>& WILDWATER KINGDOM </b></u><br><br><img src="../public/map-assets/images/dorney-park.png" width="235px"><br><br><a href="#" class="coaster-link-1">Hydra the Revenge</a><br><a href="#" class="coaster-link">Possessed</a><br><a href="#" class="coaster-link">Steel Force</a><br><a href="#" class="coaster-link">Talon: The Grip of Fear</a><br><a href="#" class="coaster-link">Thunderhawk</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
+    'hover':'<u><b>DORNEY PARK &nbsp;<span class="remove">X</span><br>& WILDWATER KINGDOM </b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/dorney-park.png" width="235px"><br><br><a href="#" class="coaster-link-1">Hydra the Revenge</a><br><a href="#" class="coaster-link">Possessed</a><br><a href="#" class="coaster-link">Steel Force</a><br><a href="#" class="coaster-link">Talon: The Grip of Fear</a><br><a href="#" class="coaster-link">Thunderhawk</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
     'pos_X':563,
 		'pos_Y':223,
 		'diameter':8,
@@ -124,7 +124,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>DUTCH WONDERLAND &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/dutch-wonderland.png" width="225px"><br><br><a href="#" class="coaster-link-1">Joust</a><br><a href="#" class="coaster-link">Kingdom Coaster</a><br><a href="#" class="coaster-link">Merlin&#39;s Mayhem</a><br>',
+    'hover':'<u><b>DUTCH WONDERLAND &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/dutch-wonderland.png" width="225px"><br><br><a href="#" class="coaster-link-1">Joust</a><br><a href="#" class="coaster-link">Kingdom Coaster</a><br><a href="#" class="coaster-link">Merlin&#39;s Mayhem</a><br>',
 		'pos_X':473,
 		'pos_Y':290,
 		'diameter':8,
@@ -139,7 +139,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>FUN FORE ALL &nbsp;<span class="remove ffa">X</span></b></u><br><br><img src="/map-assets/images/fun-fore-all.png" width="200px"><br><a href="#" class="coaster-link-1">Fiesta Express</a><br>',
+    'hover':'<u><b>FUN FORE ALL &nbsp;<span class="remove ffa">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/fun-fore-all.png" width="200px"><br><a href="#" class="coaster-link-1">Fiesta Express</a><br>',
 		'pos_X':79,
 		'pos_Y':200,
 		'diameter':8,
@@ -154,7 +154,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>HERSHEYPARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/hershey-park.png" width="210px"><br><br><a href="#" class="coaster-link-1">Cocoa Cruiser</a><br><a href="#" class="coaster-link">Comet</a><br><a href="#" class="coaster-link">Great Bear</a><br><a href="#" class="coaster-link">Laff Trakk</a><br><a href="#" class="coaster-link">Lightning Racer</a><br><a href="#" class="coaster-link">Sidewinder</a><br><a href="#" class="coaster-link">Skyrush</a><br><a href="#" class="coaster-link">SooperDooperLooper</a><br><a href="#" class="coaster-link">Storm Runner</a><br><a href="#" class="coaster-link">Trailblazer</a><br><a href="#" class="coaster-link">Wildcat</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
+    'hover':'<u><b>HERSHEYPARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/hershey-park.png" width="210px"><br><br><a href="#" class="coaster-link-1">Cocoa Cruiser</a><br><a href="#" class="coaster-link">Comet</a><br><a href="#" class="coaster-link">Great Bear</a><br><a href="#" class="coaster-link">Laff Trakk</a><br><a href="#" class="coaster-link">Lightning Racer</a><br><a href="#" class="coaster-link">Sidewinder</a><br><a href="#" class="coaster-link">Skyrush</a><br><a href="#" class="coaster-link">SooperDooperLooper</a><br><a href="#" class="coaster-link">Storm Runner</a><br><a href="#" class="coaster-link">Trailblazer</a><br><a href="#" class="coaster-link">Wildcat</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
 		'pos_X':431,
 		'pos_Y':264,
 		'diameter':8,
@@ -169,7 +169,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>IDLEWILD & SOAK ZONE &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/idlewild-park.png" width="239px"><br><br><a href="#" class="coaster-link-1">Rollo Coaster</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
+    'hover':'<u><b>IDLEWILD & SOAK ZONE &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/idlewild-park.png" width="239px"><br><br><a href="#" class="coaster-link-1">Rollo Coaster</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
 		'pos_X':149,
 		'pos_Y':260,
 		'diameter':8,
@@ -184,7 +184,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>KENNYWOOD &nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/kennywood.png" width="220px"><br><br><a href="#" class="coaster-link-1">Exterminator</a><br><a href="#" class="coaster-link">Jack Rabbit</a><br><a href="#" class="coaster-link">Lil&#39; Phantom</a><br><a href="#" class="coaster-link">Phantom&#39;s Revenge</a><br><a href="#" class="coaster-link">Racer</a><br><a href="#" class="coaster-link">Sky Rocket</a><br><a href="#" class="coaster-link">Steel Curtain</a><br>',
+    'hover':'<u><b>KENNYWOOD &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/kennywood.png" width="220px"><br><br><a href="#" class="coaster-link-1">Exterminator</a><br><a href="#" class="coaster-link">Jack Rabbit</a><br><a href="#" class="coaster-link">Lil&#39; Phantom</a><br><a href="#" class="coaster-link">Phantom&#39;s Revenge</a><br><a href="#" class="coaster-link">Racer</a><br><a href="#" class="coaster-link">Sky Rocket</a><br><a href="#" class="coaster-link">Steel Curtain</a><br>',
 		'pos_X':99,
 		'pos_Y':250,
 		'diameter':8,
@@ -199,7 +199,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>KNOEBELS AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/knoebels.png" width="290px"><br><br><a href="#" class="coaster-link-del-1">Black Diamond</a><br><a href="#" class="coaster-link">Flying Turns</a><br><a href="#" class="coaster-link">Impulse</a><br><a href="#" class="coaster-link">Kozmo&#39;s Kurves</a><br><a href="#" class="coaster-link">Phoenix</a><br><a href="#" class="coaster-link">Twister</a><br>',
+    'hover':'<u><b>KNOEBELS AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/knoebels.png" width="290px"><br><br><a href="#" class="coaster-link-del-1">Black Diamond</a><br><a href="#" class="coaster-link">Flying Turns</a><br><a href="#" class="coaster-link">Impulse</a><br><a href="#" class="coaster-link">Kozmo&#39;s Kurves</a><br><a href="#" class="coaster-link">Phoenix</a><br><a href="#" class="coaster-link">Twister</a><br>',
 		'pos_X':445,
 		'pos_Y':195,
 		'diameter':8,
@@ -214,7 +214,7 @@
   },
   {
 		'shape':'circle',
-    'hover': '<u><b>LAKEMONT PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/lakemont-park.png" width="210px"><br><br><a href="#" class="coaster-link-1">Leap-The-Dips</a><br><a href="#" class="coaster-link">Little Leaper</a><br>',
+    'hover': '<u><b>LAKEMONT PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/lakemont-park.png" width="210px"><br><br><a href="#" class="coaster-link-1">Leap-The-Dips</a><br><a href="#" class="coaster-link">Little Leaper</a><br>',
 		'pos_X':248,
 		'pos_Y':245,
 		'diameter':8,
@@ -244,7 +244,7 @@
   // },
   {
 		'shape':'circle',
-    'hover': '<u><b id="title">SESAME PLACE &nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/sesame-place.png"width="210px"><br><br><a href="#" class="coaster-link-1">Oscar&#39;s Wacky Taxi</a><br><a href="#" class="coaster-link">Vapor Trail</a><br>',
+    'hover': '<u><b id="title">SESAME PLACE &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/sesame-place.png"width="210px"><br><br><a href="#" class="coaster-link-1">Oscar&#39;s Wacky Taxi</a><br><a href="#" class="coaster-link">Vapor Trail</a><br>',
 		'pos_X':625,
 		'pos_Y':275,
 		'diameter':8,
@@ -259,7 +259,7 @@
   },
   {
 		'shape':'circle',
-    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/waldameer.png" width="200px"><br><a href="#" class="coaster-link-1" >Comet</a><br><a href="#" class="coaster-link">Ravine Flyer II</a><br><a href="#" class="coaster-link">Ravine Flyer III</a><br><a href="#" class="coaster-link">Steel Dragon</a><br>',
+    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/waldameer.png" width="200px"><br><a href="#" class="coaster-link-1" >Comet</a><br><a href="#" class="coaster-link">Ravine Flyer II</a><br><a href="#" class="coaster-link">Ravine Flyer III</a><br><a href="#" class="coaster-link">Steel Dragon</a><br>',
 		'pos_X':55,
 		'pos_Y':40,
 		'diameter':8,
