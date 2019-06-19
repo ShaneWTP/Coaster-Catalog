@@ -7,7 +7,12 @@
   overflow: hidden;
   border-radius: 0 !important;
 }
-
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+  font-family: 'Raleway', sans-serif;
+}
 iframe{
   width: 100vw;
   height: calc(100vw/1.77);
@@ -40,4 +45,10 @@ iframe{
   background-color: black;
   opacity: 0.5;
   z-index: 1;
+}
+.btn-success {
+  background-color: #478147;
+  border: #478147;
+  color: #232858;
+  font-size: 24px;
 }

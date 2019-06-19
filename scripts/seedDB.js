@@ -121,8 +121,8 @@ const coasterSeed = [
     inversions: 0,
     vertangle: "90°",
     gforce: "3.7",
+    duration: "1:00",
     scale: "Extreme",
-    awards: "",
     img1: "https://live.staticflickr.com/7267/7491587004_f490767251_b.jpg",
     img2: "http://www.negative-g.com/dorney-park/2015/dorney-park-2015-posessed-large-2.jpg",
     img3: "http://www.negative-g.com/dorney-park/2015/dorney-park-2015-posessed-large-1.jpg",
@@ -237,7 +237,6 @@ const coasterSeed = [
     inversions: 9,
     duration: "2:00",
     vertangle: "90°",
-    gforce: "N/A",
     scale: "Extreme",
     img1: "https://cdn.vox-cdn.com/thumbor/KNL6gQfXKwJdyNnl94tEwmQ4N4w=/0x0:6830x3530/1200x800/filters:focal(2390x1254:3482x2346)/cdn.vox-cdn.com/uploads/chorus_image/image/60446805/Steel_Curtain_full_coaster_2.0.png",
     img2: "https://i.ytimg.com/vi/CbsNYPm3pMU/maxresdefault.jpg",
@@ -247,7 +246,7 @@ const coasterSeed = [
   },
   {
     name: "Black Diamond",
-    park: "Knoebels Amusement Park & Resort",
+    park: "Knoebels Amusement Resort",
     location: "Elysburg, PA",
     operating: "October 8, 2011",
     type: "Steel",
@@ -256,10 +255,10 @@ const coasterSeed = [
     model: "Enclosed",
     height: 35,
     speed: 12,
+    duration: "3:50",
     inversions: 0,
     scale: "Family",
     date: new Date(Date.now())
-
   },
   {
     name: "Blue Streak",
@@ -267,12 +266,14 @@ const coasterSeed = [
     location: "Conneaut Lake, PA",
     operating: "May 23, 1938",
     type: "Wood",
+    manufacturer: "National Amusement Device Company",
     designer: "Ed Vettel",
     model: "Out and Back",
     height: 78,
     length: 2900,
     speed: 50,
     inversions: 0,
+    scale: "Thrill",
     duration: "2:20",
     date: new Date(Date.now())
 
@@ -295,13 +296,12 @@ const coasterSeed = [
     duration: "1:45",
     scale: "Extreme",
     date: new Date(Date.now())
-
-
   },
   {
     name: "Cocoa Cruiser",
     park: "Hersheypark",
     location: "Hershey, PA",
+    operating: "May 10, 2014",
     type: "Steel",
     manufacturer: "Zamperla",
     model: "Family Gravity Coaster",
@@ -312,11 +312,10 @@ const coasterSeed = [
     inversions: 0,
     scale: "Family",
     date: new Date(Date.now())
-
   },
   {
     name: "Comet",
-    park: "Waldameer Park",
+    park: "Waldameer",
     location: "Erie, PA",
     operating: "1951",
     type: "Wood",
@@ -339,6 +338,7 @@ const coasterSeed = [
     park: "DelGrosso's Amusement Park",
     location: "Tipton, PA",
     operating: "2004",
+    type: "Steel",
     manufacturer: "Reverchon",
     model: "Spinning Coaster",
     length: 1378,
@@ -349,8 +349,6 @@ const coasterSeed = [
     gforce: 2.5,
     scale: "Thrill",
     date: new Date(Date.now())
-
-
   },
   {
     name: "Devil's Den",
@@ -366,7 +364,6 @@ const coasterSeed = [
     duration: "1:40",
     scale: "Family",
     date: new Date(Date.now())
-
   },
   {
     name: "Exterminator",
@@ -385,7 +382,6 @@ const coasterSeed = [
     gforce: 2.5,
     scale: "Thrill",
     date: new Date(Date.now())
-
   },
   {
     name: "Fahrenheit",
@@ -419,6 +415,8 @@ const coasterSeed = [
     model: "Wild Mouse / Mini Mouse",
     length: 262,
     height: 8,
+    speed: 15,
+    duration: "2:30",
     inversions: "0",
     scale: "Family",
     date: new Date(Date.now())
@@ -436,13 +434,13 @@ const coasterSeed = [
     length: 1300,
     speed: 24,
     inversions: "0",
+    duration: "2:00",
     scale: "Thrill",
     img1: "https://www.themeparkreview.com/forum/files/ppp06034_880.jpg",
     img2: "https://www.latimes.com/resizer/yIWfldFYE5d88cs2TGBy7FIwPNc=/800x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/PWPWFOTH7JAX7A2YPF6OY6UYCY.jpg",
     img3: "http://rollercoastermuseum.org/wp-content/uploads/2017/11/Knoebels-Opens-Flying-Turns_Feature-1080x675.jpg",
     img4: "http://www.themeparkguide.org/wp-content/uploads/2013/11/flyingturns.jpg",
     date: new Date(Date.now())
-
   },
   {
     name: "Great Bear",
@@ -464,7 +462,6 @@ const coasterSeed = [
     img2: "https://coasterbuzz.com/CoasterPhoto/CoasterPhotoImage/1921",
     img3: "http://thedod3.com/wp-content/uploads/2013/06/greatbear3a.jpg",
     img4: "https://www.themeparkreview.com/pa2004/hp/hershey10.jpg",
-
     date: new Date(Date.now())
 
   },
@@ -493,12 +490,14 @@ const coasterSeed = [
     name: "Joust",
     park: "Dutch Wonderland",
     location: "Lancaster, PA",
-    operating: "5/23/1998",
+    operating: "May 23, 1998",
+    type: "Steel",
     manufacturer: "Chance Rides",
     model: "Big Dipper",
     height: 16.1,
     inversions: 0,
     speed: 15,
+    duration: "1:10",
     scale: "Family",
     date: new Date(Date.now())
   },
@@ -515,7 +514,6 @@ const coasterSeed = [
     duration: "1:30",
     scale: "Thrill",
     date: new Date(Date.now())
-
   },
   {
     name: "Kozmo's Kurves",
@@ -531,7 +529,6 @@ const coasterSeed = [
     duration: "1:17",
     scale: "Family",
     date: new Date(Date.now())
-
   },
   {
     name: "Leap-The-Dips",
@@ -550,7 +547,7 @@ const coasterSeed = [
     vertangle: "25°",
     scale: "Thrill",
     awards: ["Oldest Roller Coaster in the World", "ACE Roller Coaster Landmark Award", "ACE Roller Coaster Classic Award"],
-    img1:"https://upload.wikimedia.org/wikipedia/commons/d/d2/Leap_The_Dips_%28Lakemont_Park%29.jpg",
+    img1: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Leap_The_Dips_%28Lakemont_Park%29.jpg",
     img2: "https://ghosty-production.s3.amazonaws.com/fotospot_spots/Oldest-Roller-Coaster-in-America-Fotospot_27137c7a8787093129ebf6c9563258eb/large.jpg",
     img3: "https://timenewsfeed.files.wordpress.com/2013/06/leap-the-dips1.jpg?w=720&h=480&crop=1",
     img4: "https://i.pinimg.com/originals/5a/b4/31/5ab431f4db43213ec25f0f2bc44305ef.jpg",
@@ -603,6 +600,7 @@ const coasterSeed = [
     park: "Kennywood",
     location: "West Mifflin, PA",
     operating: "1996",
+    type: "Steel",
     manufacturer: "Molina & Son's",
     model: "Moli-Coaster (Low Park Model)",
     drop: 6,
@@ -652,7 +650,7 @@ const coasterSeed = [
     name: "Merlin's Mayhem",
     park: "Dutch Wonderland",
     location: "Lancaster, PA",
-    operating: "4/28/2018",
+    operating: "April 28, 2018",
     type: "Steel",
     model: "Inverted",
     manufacturer: "S&S Sansei Technologies",
@@ -663,6 +661,10 @@ const coasterSeed = [
     inversions: 0,
     duration: "0:45",
     scale: "Family",
+    img1: "https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/f/12/f1241e1e-4731-11e8-aad5-4f83211a3b64/5ade3d1a156cb.image.jpg",
+    img2: "https://i.ytimg.com/vi/MRT0u80CY2c/maxresdefault.jpg",
+    img3: "https://www.coaster101.com/wp-content/uploads/2016/11/merlins-mayhem.jpg",
+    img4: "https://media.wfmz.com/mara-wfmz-media-us-east-1/photo/2018/05/25/5-25-18%20Merlin%27s%20Mayhem%20roller%20coaster%20at%20Dutch%20Wonderland_1527286506627.jpg_11653891_ver1.0_640_360.jpg",
     date: new Date(Date.now())
 
   },
@@ -677,6 +679,7 @@ const coasterSeed = [
     length: 4500,
     speed: 27,
     height: 300,
+    scale: "Thrill",
     duration: "2:40",
     date: new Date(Date.now())
 
@@ -685,7 +688,7 @@ const coasterSeed = [
     name: "Oscar's Wacky Taxi",
     park: "Sesame Place",
     location: "Langhorne, PA",
-    operating: "5/26/2018",
+    operating: "May 26, 2018",
     type: "Wood",
     manufacturer: "Gravitykraft Corporation",
     length: 1205,
@@ -693,6 +696,7 @@ const coasterSeed = [
     drop: 39,
     speed: 34,
     inversions: 0,
+    duration: "2:10",
     vertangle: "50°",
     scale: "Family",
     img1: "https://www.themeparkreview.com/parks/pimages/Sesame_Place/Oscars_Wacky_Taxi/20180602_174613.jpg",
@@ -729,9 +733,9 @@ const coasterSeed = [
   },
   {
     name: "Phoenix",
-    park: "Knoebels Amusement Park & Resort",
+    park: "Knoebels Amusement Resort",
     location: "Elysburg, PA",
-    operating: "6/15/1985",
+    operating: "June 15, 1985",
     type: "Wood",
     manufacturer: "Philadelphia Toboggan Coasters",
     designer: "Herbert Paul Schmeck, 1947",
@@ -850,7 +854,7 @@ const coasterSeed = [
   },
   {
     name: "Talon: The Grip of Fear",
-    park: "Dorney Park & Wildwater Kingdom",
+    park: "Dorney Park",
     location: "Allentown, PA",
     operating: "May 5, 2001",
     type: "Steel",
@@ -878,7 +882,7 @@ const coasterSeed = [
     name: "Thunderbolt",
     park: "Kennywood",
     location: "West Mifflin, PA",
-    operating: 1924,
+    operating: "1924",
     type: "Wood",
     manufacturer: "Andy Vettel",
     designer: "Andy Vettel & John A. Miller",
@@ -900,7 +904,7 @@ const coasterSeed = [
   },
   {
     name: "Thunderhawk",
-    park: "Dorney Park & Wildwater Kingdom",
+    park: "Dorney Park",
     location: "Allentown, PA",
     operating: "May 18, 1923",
     type: "Wood",
@@ -1058,9 +1062,9 @@ const coasterSeed = [
   },
   {
     name: "Wild Mouse",
-    park: "Dorney Park & Wildwater Kingdom",
+    park: "Dorney Park",
     location: "Allentown, PA",
-    operating: " 2000",
+    operating: "2000",
     type: "Steel",
     manufacturer: "Maurer Rides GmbH",
     model: "Wild Maus Classic / Right",
@@ -1069,7 +1073,7 @@ const coasterSeed = [
     height: 49.3,
     speed: 28,
     inversions: 0,
-    vertangle: "	46°",
+    vertangle: "46°",
     duration: "1:10",
     scale: "Thrill",
     date: new Date(Date.now())
@@ -1077,7 +1081,7 @@ const coasterSeed = [
   },
   {
     name: "Woodstock Express",
-    park: "Dorney Park & Wildwater Kingdom",
+    park: "Dorney Park",
     location: "Allentown, PA",
     operating: "2000",
     type: "Steel",
