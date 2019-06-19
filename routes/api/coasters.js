@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const coastersController = require("../../controllers/coastersController");
 
-// Matches with "/api/books"
+// Matches with "/api/coasters"
 router.route("/")
   .get(coastersController.findAll)
   .post(coastersController.create);
