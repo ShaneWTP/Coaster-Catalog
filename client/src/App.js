@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import API from "./utils/API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
@@ -9,13 +10,15 @@ import UserProfile from "./pages/Profile.js";
 import "./App.css";
 import MapPA from "./components/MapPA";
 import Jumbotron from "./components/Jumbotron";
+import CoasterCard from "./components/CoasterCard";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       loggedIn: false,
-      username: null
+      username: null,
+      coasters: []
     }
 
     this.getUser = this.getUser.bind(this)
@@ -26,6 +29,9 @@ class App extends Component {
   // On mount, check that there is a user in the session
   componentDidMount() {
     this.getUser()
+    API.getCoasters()
+      .then(res => this.setState({ coasters: res.data }))
+      .catch(err => console.log(err))
   }
 
   // set the user to state
@@ -60,36 +66,36 @@ class App extends Component {
     return (
       <div>
         {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
-        <h1> Welcome Nobody </h1>}
-      <Router>
-        <div className="App">
-        <Jumbotron />
-        <MapPA/>
+          <h1> Welcome Nobody </h1>}
+        <Router>
+          <div className="App">
+            <Jumbotron />
+            <MapPA />
+            <CoasterCard coasters={this.state.coasters} />
+            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/" render={() =>
+              <Home
+                updateUser={this.updateUser}
+              />}
+            />
+            <Route exact path="/signin" render={() =>
+              <LoginForm
+                updateUser={this.updateUser}
+              />}
+            />
+            {/* <Route exact path="/signup" component={Signup} updateUser={this.updateUser}/> */}
+            <Route exact path="/signup" render={() =>
+              <SignupForm
+                updateUser={this.updateUser}
+              />}
+            />
 
-          {/* <Route exact path="/" component={Home} /> */}
-          <Route exact path="/"  render={() =>
-            <Home
-              updateUser={this.updateUser}
-            />}
-          />
-          <Route exact path="/signin"  render={() =>
-            <LoginForm
-              updateUser={this.updateUser}
-            />}
-          />
-          {/* <Route exact path="/signup" component={Signup} updateUser={this.updateUser}/> */}
-          <Route exact path="/signup"  render={() =>
-            <SignupForm
-              updateUser={this.updateUser}
-            />}
-          />
+            <Route exact path="/userprofile" render={() =>
+              <UserProfile />}
+            />
 
-          <Route exact path="/userprofile"  render={() =>
-            <UserProfile/>}
-          />
-
-        </div>
-      </Router>
+          </div>
+        </Router>
       </div>
 
     );

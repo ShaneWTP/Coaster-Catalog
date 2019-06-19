@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
 // const MongoStore = require('connect-mongo')(session)
+const routes = require("./routes");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -54,6 +55,8 @@ require("./routes/authRoutes")(app, passport);
 // end authentication
 
 // Define API routes here
+// Add routes, both API and view
+app.use(routes);
 
 // Send every other request to the React app
 // Define any API routes before this runs
