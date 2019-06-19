@@ -3,6 +3,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
+// const MongoStore = require('connect-mongo')(session)
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -24,7 +25,13 @@ var flash = require('connect-flash');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // For Passport
-app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(session({ secret: 'keyboard cat',// a random string to make the hash
+                  // do you want to persist session in database? This is how.
+                  // store: new MongoStore({ mongooseConnection: dbConnection }),
+                  // store: new MongoStore({ mongooseConnection: mongoose.connection }),
+                  resave: false, // if false, will not resave to the session store unless the session is modified. Modified means adding a property to req.session or changing a variable value.
+                  saveUninitialized:false //An uninitialized session is an unmodified one. When set to false, the session won’t be saved unless we modify it. It also won’t send the id back to the browser.
+                })); // session secret
 // For using secure cookies in production, but allowing for testing in development
 // var sess = {
 //   secret: 'keyboard cat',

@@ -9,19 +9,22 @@ class SignupForm extends Component {
 			username: '',
 			password: '',
 			confirmPassword: '',
-			redirectTo: null
+			redirectTo: null,
+
+			error: null, 
+			errorInfo: null
+			
 		}
-		this.handleSubmit = this.handleSubmit.bind(this)
-		this.handleChange = this.handleChange.bind(this)
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleChange = this.handleChange.bind(this);
 	}
 	handleChange(event) {
 		this.setState({
 			[event.target.name]: event.target.value
-		})
+		});
 	}
 	handleSubmit(event) {
 		event.preventDefault()
-		// TODO - validate!
 		axios
 			.post('/signup', {
 				username: this.state.username,
@@ -30,14 +33,31 @@ class SignupForm extends Component {
 			.then(response => {
 				console.log(response)
 				if (!response.data.errmsg) {
-					console.log('youre good')
+					console.log('youre good');
+
+					// update App.js state to show user as loggedin
+					this.props.updateUser({
+						loggedIn: true,
+						username: response.data.username
+					});
+
 					this.setState({
 						redirectTo: '/'
-					})
+					});
 				} else {
-					console.log('duplicate')
+					console.log('duplicate');
 				}
-			})
+			}).catch(error=> {
+				// HLS this is where the real meat of the error is
+				console.log('login error: ')
+				console.log(error.response.data.error);
+				// throw the error so it catches componentDidCatch
+				// throw new Error(error.response.data.error);
+				this.setState({
+					error: true,
+					errorInfo: error.response.data.error
+				});
+			 })
 	}
 	render() {
 		if (this.state.redirectTo) {
@@ -60,14 +80,8 @@ class SignupForm extends Component {
 					value={this.state.password}
 					onChange={this.handleChange}
 				/>
-				<label htmlFor="confirmPassword">Confirm Password: </label>
-				<input
-					type="password"
-					name="confirmPassword"
-					value={this.state.confirmPassword}
-					onChange={this.handleChange}
-				/>
-				<button onClick={this.handleSubmit}>Sign up</button>
+				<button onClick={this.handleSubmit} disabled={!(this.state.username && this.state.password)}>Sign up</button>
+				{this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>}
 			</div>
 		)
 	}
