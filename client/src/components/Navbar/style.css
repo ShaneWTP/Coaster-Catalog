@@ -5,15 +5,19 @@ nav {
 }
 
 .nav-link {
-  display: inline;
+  display: inline-block;
   color: #232858;
+  font-size: 24px;
 }
 
-.btn {
+.btn-success {
+  background-color: #478147;
+  border: #478147;
   color: #232858;
+  font-size: 24px;
 }
 
 img {
   height: 100px;
-  width: 450px;
+  width: 500px;
 }

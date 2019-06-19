@@ -46,3 +46,10 @@ iframe{
   opacity: 0.5;
   z-index: 1;
 }
+
+.btn-success {
+  background-color: #478147;
+  border: #478147;
+  color: #232858;
+  font-size: 24px;
+}
