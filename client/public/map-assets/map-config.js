@@ -259,7 +259,7 @@
   },
   {
 		'shape':'circle',
-    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://github.com/ShaneWTP/Coaster-Catalog/blob/master/client/public/map-assets/Images/waldameer.png" width="200px"><br><a href="#" class="coaster-link-1" >Comet</a><br><a href="#" class="coaster-link">Ravine Flyer II</a><br><a href="#" class="coaster-link">Ravine Flyer III</a><br><a href="#" class="coaster-link">Steel Dragon</a><br>',
+    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/waldameer.png" width="200px"><br><a href="#" class="coaster-link-1" >Comet</a><br><a href="#" class="coaster-link">Ravine Flyer II</a><br><a href="#" class="coaster-link">Ravine Flyer III</a><br><a href="#" class="coaster-link">Steel Dragon</a><br>',
 		'pos_X':55,
 		'pos_Y':40,
 		'diameter':8,
