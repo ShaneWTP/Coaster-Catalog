@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import "./App.css";
+import MapPA from "./components/MapPA";
 
 function App() {
 
   return (
     <Router>
     <div className="App">
+      <MapPA/>
 
       <Route exact path="/" component={Signin} />
       <Route exact path="/signin" component={Signin} />

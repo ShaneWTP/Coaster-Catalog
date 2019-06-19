@@ -136,3 +136,10 @@ function dynamicAddEvent(id){
 		})
 	}	
 }
+
+// This is what enables the hover card to remain active
+$(function(){ 	
+  $("circle").on("mouseover", function(){ 		
+    $("body").addClass("circle-hover"); 	
+  }) 
+})
