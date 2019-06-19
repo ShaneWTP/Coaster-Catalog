@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
+import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import SignupForm from "./pages/Signup";
 import Signup from "./pages/Signup";
 import Home from "./pages/FakeHome.js";
@@ -59,35 +62,37 @@ class App extends Component {
     return (
       <div>
         {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
-        <h1> Welcome Nobody </h1>}
-      <Router>
-        <div className="App">
-        <MapPA/>
+          <h1> Welcome Nobody </h1>}
+        <Router>
+          <div className="App">
+            <Navbar />
+            <MapPA />
 
-          {/* <Route exact path="/" component={Home} /> */}
-          <Route exact path="/"  render={() =>
-            <Home
-              updateUser={this.updateUser}
-            />}
-          />
-          <Route exact path="/signin"  render={() =>
-            <LoginForm
-              updateUser={this.updateUser}
-            />}
-          />
-          {/* <Route exact path="/signup" component={Signup} updateUser={this.updateUser}/> */}
-          <Route exact path="/signup"  render={() =>
-            <SignupForm
-              updateUser={this.updateUser}
-            />}
-          />
+            {/* <Route exact path="/" component={Home} /> */}
+            <Route exact path="/" render={() =>
+              <Home
+                updateUser={this.updateUser}
+              />}
+            />
+            <Route exact path="/signin" render={() =>
+              <LoginForm
+                updateUser={this.updateUser}
+              />}
+            />
+            {/* <Route exact path="/signup" component={Signup} updateUser={this.updateUser}/> */}
+            <Route exact path="/signup" render={() =>
+              <SignupForm
+                updateUser={this.updateUser}
+              />}
+            />
 
-          <Route exact path="/userprofile"  render={() =>
-            <UserProfile/>}
-          />
+            <Route exact path="/userprofile" render={() =>
+              <UserProfile />}
+            />
 
-        </div>
-      </Router>
+          </div>
+          <Footer />
+        </Router>
       </div>
 
     );
