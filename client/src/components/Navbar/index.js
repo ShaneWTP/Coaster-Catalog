@@ -21,7 +21,7 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-            <button className="btn my-2 my-sm-0" type="submit">Sign Out</button>
+            <button className="btn btn-success my-2 my-sm-0" type="submit">Sign Out</button>
         </nav>
     )
 }
