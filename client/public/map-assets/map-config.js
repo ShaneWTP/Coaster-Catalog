@@ -79,7 +79,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>CONNEAUT LAKE PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="../map-assets/images/conneaut-lake-park.png" width="230px"><br><br><a href="#" class="coaster-link-1">Blue Streak</a><br><a href="#" class="coaster-link">Devil&#39;s Den</a><br><a href="#" class="coaster-link">Little Dipper</a><br>',
+    'hover':'<u><b>CONNEAUT LAKE PARK &nbsp;<span class="remove">X</span></b></u><br><br><img src="public/map-assets/images/conneaut-lake-park.png" width="230px"><br><br><a href="#" class="coaster-link-1">Blue Streak</a><br><a href="#" class="coaster-link">Devil&#39;s Den</a><br><a href="#" class="coaster-link">Little Dipper</a><br>',
     'pos_X':40,
 		'pos_Y':100,
 		'diameter':8,
@@ -94,7 +94,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>DELGROSSO AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/map-assets/images/delgrossos.png" width="302px"><br><br><a href="#" class="coaster-link-del-1">Wacky Worm</a><br>',
+    'hover':'<u><b>DELGROSSO AMUSEMENT PARK &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br><br><img src="/public/map-assets/images/delgrossos.png" width="302px"><br><br><a href="#" class="coaster-link-del-1">Wacky Worm</a><br>',
     'pos_X':265,
 		'pos_Y':200,
 		'diameter':8,
@@ -109,7 +109,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>DORNEY PARK &nbsp;<span class="remove">X</span><br>& WILDWATER KINGDOM </b></u><br><br><img src="/map-assets/images/dorney-park.png" width="235px"><br><br><a href="#" class="coaster-link-1">Hydra the Revenge</a><br><a href="#" class="coaster-link">Possessed</a><br><a href="#" class="coaster-link">Steel Force</a><br><a href="#" class="coaster-link">Talon: The Grip of Fear</a><br><a href="#" class="coaster-link">Thunderhawk</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
+    'hover':'<u><b>DORNEY PARK &nbsp;<span class="remove">X</span><br>& WILDWATER KINGDOM </b></u><br><br><img src="../public/map-assets/images/dorney-park.png" width="235px"><br><br><a href="#" class="coaster-link-1">Hydra the Revenge</a><br><a href="#" class="coaster-link">Possessed</a><br><a href="#" class="coaster-link">Steel Force</a><br><a href="#" class="coaster-link">Talon: The Grip of Fear</a><br><a href="#" class="coaster-link">Thunderhawk</a><br><a href="#" class="coaster-link">Wild Mouse</a><br>',
     'pos_X':563,
 		'pos_Y':223,
 		'diameter':8,
