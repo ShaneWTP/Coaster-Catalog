@@ -61,7 +61,9 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/coasterdb"
+// const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/coasterdb"
+const mongoURL = process.env.MONGODB_URI || "mongodb://localhost:27017/coasterdb"
+
 mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
     console.log("🗄 ==> Successfully connected to mongoDB.");
