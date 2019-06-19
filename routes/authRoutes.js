@@ -1,36 +1,88 @@
-// This is the file that handles api calls from the signin and signup webpages.
+// This is the file that handles api calls to handle authentication.
 // the methods in this file know how to call the authentication strategy
-
-var authController = require("../controllers/authcontroller");
 
 module.exports = function (app, passport) {
 
-    app.get("/signup", authController.signup);
-    app.get("/signin", authController.signin);
-    // only want this page to be available if user is logged in
-    app.get("/dashboard", isLoggedIn, authController.dashboard);
-    app.get("/logout", authController.logout);
-
     // Apply the passport strategy to the signup
-    app.post("/signup", passport.authenticate("local-signup", {
-            successRedirect: "/dashboard",
-            failureRedirect: "/signup",
-            failureFlash: true
-        }
-    ));
+    app.post('/signup', function (req, res, next) {
+        passport.authenticate('local-signup', function (err, user, info) {
+            console.log("GOT THROUGH AUTHENTICATE ");
+            if (err) { return next(err); }
+            if (!user) {
+                // info.message is coming from the passport.authenticate
+                console.log("authRout error message " + info.message);
+                res.status(401);
+                res.json({ error: info.message });
+                res.send();
+                return;
+            }
 
-    app.post('/signin', passport.authenticate("local-signin", {
-            successRedirect: "/dashboard",
-            failureRedirect: "/signin",
-            failureFlash: true
-        }
-    ));
+            req.logIn(user, function (err) {
+                if (err) { return next(err); }
+                return res;
+            });
 
-    // If user tries to see the dashboard while not logged in, they
-    // will be redirected to the signup page
-    function isLoggedIn(req, res, next) {
-        if (req.isAuthenticated())
-            return next();
-        res.redirect("/signin");
-    }
+            console.log('logged in', user);
+            var userInfo = {
+                username: user.username
+            }
+            res.send(userInfo);
+
+        })(req, res, next);
+
+    });
+
+    // Apply the passport strategy to the signin
+    app.post('/signin', function (req, res, next) {
+        passport.authenticate('local-signin', function (err, user, info) {
+            console.log("GOT THROUGH AUTHENTICATE ");
+
+            if (err) { return next(err); }
+            if (!user) {
+                // info.message is coming from the passport.authenticate
+                console.log("authRout error message " + info.message);
+                res.status(401);
+                res.json({ error: info.message });
+                res.send();
+                return;
+            }
+            //   createSendToken(req.user, res);
+
+            req.logIn(user, function (err) {
+                if (err) { return next(err); }
+                return res;
+            });
+
+            console.log('logged in', user);
+            var userInfo = {
+                username: user.username
+            }
+            res.send(userInfo);
+
+        })(req, res, next);
+    });
+
+    // this gets a user from the session
+    app.get('/user', (req, res, next) => {
+        console.log('===== user!!======');
+        console.log(req.user);
+        if (req.user) {
+            res.json({ user: req.user });
+        } else {
+            res.json({ user: null });
+        }
+    })
+
+    // logout the user
+    app.get('/logout', (req, res) => {
+        if (req.user) {
+            // clears the session and clears the req.user
+            req.logout();
+            res.send({ msg: 'logging out' });
+        } else {
+            res.send({ msg: 'no user to log out' });
+        }
+    })
+
+
 };
