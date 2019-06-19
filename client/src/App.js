@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import API from "./utils/API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
 import Wrapper from "./components/Wrapper";
@@ -11,13 +12,16 @@ import Home from "./pages/FakeHome.js";
 import UserProfile from "./pages/Profile.js";
 import "./App.css";
 import MapPA from "./components/MapPA";
+import Jumbotron from "./components/Jumbotron";
+import CoasterCard from "./components/CoasterCard";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       loggedIn: false,
-      username: null
+      username: null,
+      coasters: []
     }
 
     this.getUser = this.getUser.bind(this)
@@ -28,6 +32,9 @@ class App extends Component {
   // On mount, check that there is a user in the session
   componentDidMount() {
     this.getUser()
+    API.getCoasters()
+      .then(res => this.setState({ coasters: res.data }))
+      .catch(err => console.log(err))
   }
 
   // set the user to state
@@ -65,9 +72,11 @@ class App extends Component {
           <h1> Welcome Nobody </h1>}
         <Router>
           <div className="App">
-            <Navbar />
-            <MapPA />
 
+              <Navbar />
+            <Jumbotron />
+            <MapPA />
+            <CoasterCard coasters={this.state.coasters} />
             {/* <Route exact path="/" component={Home} /> */}
             <Route exact path="/" render={() =>
               <Home
@@ -91,7 +100,7 @@ class App extends Component {
             />
 
           </div>
-          <Footer />
+    <Footer />
         </Router>
       </div>
 
