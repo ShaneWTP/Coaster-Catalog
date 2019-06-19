@@ -10,7 +10,7 @@ b {
 }
 
 .coaster-link-1 {
-  width: 100%;
+  width: 95%;
   display: block !important;
   margin-top: 100px !important;
   margin-left: 5px !important;
@@ -19,7 +19,6 @@ b {
   color: #777 !important;
   background: #FFF;
   padding: 10px;
-  width: 95%;
 }
 
 .coaster-link-1:hover {
@@ -28,7 +27,7 @@ b {
 }
 
 .coaster-link-del-1 {
-  width: 100%;
+  width: 95%;
   display: block !important;
   margin-top: 140px !important;
   margin-left: 5px !important;
@@ -37,7 +36,6 @@ b {
   color: #777 !important;
   background: #FFF;
   padding: 10px;
-  width: 95%;
 }
 .coaster-link-del-1:hover {
   color: #fff !important;
@@ -45,7 +43,7 @@ b {
 }
 
 .coaster-link {
-  width: 100%;
+  width: 95%;
   display: block !important;
   margin-left: 5px !important;
   margin-bottom: -10px;
@@ -53,7 +51,6 @@ b {
   color: #777 !important;
   background: #FFF;
   padding: 10px;
-  width: 95%;
 }
 
 .coaster-link:hover {
