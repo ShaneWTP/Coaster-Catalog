@@ -147,10 +147,10 @@ const coasterSeed = [
     gforce: "3.4",
     scale: "Extreme",
     awards: "Top 50 Steel Roller Coasters",
-    img1: "https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/dp-en-us/blogs/2017/may/sf-blog-post-banner.jpg",
+    img1: "https://pbs.twimg.com/media/Au9icH9CAAIeghE.jpg",
     img2: "https://live.staticflickr.com/91/206588886_b3213bf20c_b.jpg",
-    img3: "https://pbs.twimg.com/media/Au9icH9CAAIeghE.jpg",
-    img4: "https://i1.wp.com/coastercritic.com/wp-content/uploads/2012/06/T-Rex-and-Steel-Force-Dorney-Park.jpg",
+    img3: "https://i1.wp.com/coastercritic.com/wp-content/uploads/2012/06/T-Rex-and-Steel-Force-Dorney-Park.jpg",
+    img4: "https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/dp-en-us/blogs/2017/may/sf-blog-post-banner.jpg",
     date: new Date(Date.now())
   },
   {
@@ -258,6 +258,7 @@ const coasterSeed = [
     duration: "3:50",
     inversions: 0,
     scale: "Family",
+    img1: "https://screammachine.net/usa2015/Reports/Knoebels/Foto11.jpg",
     date: new Date(Date.now())
   },
   {
@@ -275,6 +276,7 @@ const coasterSeed = [
     inversions: 0,
     scale: "Thrill",
     duration: "2:20",
+    img1: "https://www.themeparkreview.com/parks/pimages/Conneaut_Lake_Park/Blue_Streak/DSC01506.JPG",
     date: new Date(Date.now())
 
   },
@@ -295,6 +297,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:45",
     scale: "Extreme",
+    img1: "https://i.ytimg.com/vi/NyT3VRYLD8U/hqdefault.jpg",
     date: new Date(Date.now())
   },
   {
@@ -311,6 +314,7 @@ const coasterSeed = [
     duration: "0:45",
     inversions: 0,
     scale: "Family",
+    img1: "https://media-cdn.tripadvisor.com/media/photo-s/07/63/b7/68/hersheypark.jpg",
     date: new Date(Date.now())
   },
   {
@@ -330,6 +334,7 @@ const coasterSeed = [
     duration: "1:24",
     scale: "Family",
     awards: "ACE Roller Coaster Classic",
+    img1: "http://carouselhistory.com/wp-content/uploads/2015/02/Waldameer-classic-1951-PTC-comet-roller-coaster.jpg",
     date: new Date(Date.now())
 
   },
@@ -348,6 +353,7 @@ const coasterSeed = [
     duration: "1:30",
     gforce: 2.5,
     scale: "Thrill",
+    img1: "https://www.mydelgrossopark.com/site/assets/files/1061/crazy_mouse_sign_delgrosso_s_amusement_park_tipton.900x0.jpg",
     date: new Date(Date.now())
   },
   {
@@ -363,6 +369,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:40",
     scale: "Family",
+    img1: "https://i.pinimg.com/originals/ba/7b/36/ba7b36ee1af631c598c55f3ed2532b0b.jpg",
     date: new Date(Date.now())
   },
   {
@@ -381,6 +388,7 @@ const coasterSeed = [
     duration: "1:48",
     gforce: 2.5,
     scale: "Thrill",
+    img1: "https://www.coaster101.com/wp-content/uploads/2017/06/DSC06585.jpg",
     date: new Date(Date.now())
   },
   {
@@ -398,7 +406,7 @@ const coasterSeed = [
     vertangle: "97°",
     gforce: 5,
     scale: "Extreme",
-    img1: "https://www.themeparkinsider.com/photos/images/fahrenheit1.jpg",
+    img1: "https://media-cdn.tripadvisor.com/media/photo-s/01/48/cd/fe/fahrenheit.jpg",
     img2: "https://media-cdn.tripadvisor.com/media/photo-s/04/70/93/9a/fahrenheit-hershey-park.jpg",
     img3: "https://i2.wp.com/www.coastercritic.com/wp-content/uploads/2011/01/fahrenheit19-track.jpg_920.jpg",
     img4: "https://i.redd.it/w2cro1tgpjn21.jpg",
@@ -419,6 +427,7 @@ const coasterSeed = [
     duration: "2:30",
     inversions: "0",
     scale: "Family",
+    img1: "https://i.ytimg.com/vi/kjrcCmkbOUA/maxresdefault.jpg",
     date: new Date(Date.now())
 
   },
@@ -499,6 +508,7 @@ const coasterSeed = [
     speed: 15,
     duration: "1:10",
     scale: "Family",
+    img1: "http://www.coastergallery.com/2003/Joust2.jpg",
     date: new Date(Date.now())
   },
   {
@@ -513,6 +523,7 @@ const coasterSeed = [
     speed: 40,
     duration: "1:30",
     scale: "Thrill",
+    img1: "https://coasterforce.com/dev/wp-content/uploads/2016/10/KingdomCoasterDutchWonderland.jpg",
     date: new Date(Date.now())
   },
   {
@@ -528,6 +539,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:17",
     scale: "Family",
+    img1: "https://screammachine.net/usa2015/Reports/Knoebels/Foto10.jpg",
     date: new Date(Date.now())
   },
   {
@@ -568,6 +580,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:10",
     scale: "Thrill",
+    img1: "https://i.ytimg.com/vi/ddfY6pjQvhE/maxresdefault.jpg",
     date: new Date(Date.now())
 
   },
@@ -609,6 +622,7 @@ const coasterSeed = [
     duration: "0:30",
     speed: 15,
     scale: "Kiddie",
+    img1: "https://screammachine.net/usa2006/Reports/Kennywood/Foto15.jpg",
     date: new Date(Date.now())
 
   },
@@ -625,6 +639,7 @@ const coasterSeed = [
     duration: "0:40",
     inversions: 0,
     scale: "Kiddie",
+    img1: "http://www.coastergallery.com/2009/ConneautLakeLittleDipper-1.jpg",
     date: new Date(Date.now())
 
   },
@@ -642,6 +657,7 @@ const coasterSeed = [
     speed: 15,
     duration: "0:40",
     scale: "Kiddie",
+    img1: "http://www.negative-g.com/lakemont/2015/lakemont-amusement-park-2015-little-leaper-large-6.jpg",
     date: new Date(Date.now())
 
 
@@ -681,6 +697,7 @@ const coasterSeed = [
     height: 300,
     scale: "Thrill",
     duration: "2:40",
+    img1:"https://assets.simpleviewinc.com/simpleview/image/fetch/q_60/https://assets.simpleviewinc.com/simpleview/image/upload/crm/poconos/_DSC37411_6c24eeec-d1eb-0f6e-1d71babae4e5ee780-a07cd3cbd2e32b1_a07cdaa7-0d18-63a4-a0c835fac9d4a4db.jpg",
     date: new Date(Date.now())
 
   },
@@ -747,6 +764,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "2:00",
     scale: "Thrill",
+    img1: "https://i.pinimg.com/originals/2b/5d/2a/2b5d2a84a7c34133a0b93eb8920d473c.jpg",
     date: new Date(Date.now())
 
   },
@@ -764,6 +782,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "0:50",
     scale: "Family",
+    img1: "https://www.themeparkreview.com/forum/files/dsc_0322_169.jpg",
     date: new Date(Date.now())
 
   },
@@ -808,6 +827,7 @@ const coasterSeed = [
     inversions: 0,
     scale: "Family",
     awards: "ACE Coaster Classic",
+    img1: "http://www.negative-g.com/idlewild-park/2015/idlewild-park-2015-rollo-coaster-large-18.jpg",
     date: new Date(Date.now())
 
   },
@@ -849,6 +869,7 @@ const coasterSeed = [
     duration: "1:24",
     vertangle: "50°",
     scale: "Thrill",
+    img1: "https://mapio.net/images-p/58292923.jpg",
     date: new Date(Date.now())
 
   },
@@ -919,6 +940,7 @@ const coasterSeed = [
     duration: "1:18",
     vertangle: "45°",
     scale: "Thrill",
+    img1: "https://4.bp.blogspot.com/-81kIlW9f6rs/V7T6ASLoswI/AAAAAAAEjBU/WYqjdisRDkImREtLDEaaBBEnDmyISt8-QCKgB/s1600/IMG_20160720_135902610_HDR.jpg",
     date: new Date(Date.now())
   },
   {
@@ -935,6 +957,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:15",
     scale: "Thrill",
+    img1: "http://www.coastergallery.com/2000/Trailblazer1.jpg",
     date: new Date(Date.now())
 
   },
@@ -977,6 +1000,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:15",
     scale: "Family",
+    img1: "https://media-cdn.tripadvisor.com/media/photo-s/14/90/86/75/a-ride-in-vapor-trail.jpg",
     date: new Date(Date.now())
 
 
@@ -997,9 +1021,8 @@ const coasterSeed = [
     inversions: 0,
     duration: "0:45",
     scale: "Family",
+    img1: "http://www.negative-g.com/delgrossos-amusement-park/2015/delgrossos-amusement-park-2015-wacky-worm-large-4.jpg",
     date: new Date(Date.now())
-
-
   },
   {
     name: "Wildcat",
@@ -1022,7 +1045,6 @@ const coasterSeed = [
     img4: "https://sgmstimberwolftimes.com/wp-content/uploads/2014/09/hersheypark.jpg",
     awards: "Golden Ticket Top 25 Wood Roller Coasters",
     date: new Date(Date.now())
-
   },
   {
     name: "Wild Mouse",
@@ -1039,8 +1061,8 @@ const coasterSeed = [
     duration: "2:00",
     inversions: 0,
     scale: "Thrill",
+    img1: "https://live.staticflickr.com/2028/3534333838_debeb39163_b.jpg",
     date: new Date(Date.now())
-
   },
   {
     name: "Wild Mouse",
@@ -1057,6 +1079,7 @@ const coasterSeed = [
     duration: "1:58",
     inversions: 0,
     scale: "Thrill",
+    img1: "https://www.coaster101.com/wp-content/uploads/2017/07/IMG_1021.jpg",
     date: new Date(Date.now())
 
   },
@@ -1076,6 +1099,7 @@ const coasterSeed = [
     vertangle: "46°",
     duration: "1:10",
     scale: "Thrill",
+    img1: "https://i.pinimg.com/originals/fa/b9/13/fab9131274d7c23d50560f1c55864e6c.jpg",
     date: new Date(Date.now())
 
   },
@@ -1094,6 +1118,7 @@ const coasterSeed = [
     inversions: 0,
     duration: "1:00",
     scale: "Family",
+    img1: "https://live.staticflickr.com/1596/24227043471_376d1088c9_b.jpg",
     date: new Date(Date.now())
 
   }
