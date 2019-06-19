@@ -8,6 +8,7 @@ import Home from "./pages/FakeHome.js";
 import UserProfile from "./pages/Profile.js";
 import "./App.css";
 import MapPA from "./components/MapPA";
+import Jumbotron from "./components/Jumbotron";
 
 class App extends Component {
   constructor() {
@@ -62,6 +63,7 @@ class App extends Component {
         <h1> Welcome Nobody </h1>}
       <Router>
         <div className="App">
+        <Jumbotron />
         <MapPA/>
 
           {/* <Route exact path="/" component={Home} /> */}
