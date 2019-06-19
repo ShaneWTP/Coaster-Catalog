@@ -72,8 +72,7 @@ class App extends Component {
           <h1> Welcome Nobody </h1>}
         <Router>
           <div className="App">
-
-              <Navbar />
+            <Navbar />
             <Jumbotron />
             <MapPA />
             <CoasterCard coasters={this.state.coasters} />
@@ -100,7 +99,7 @@ class App extends Component {
             />
 
           </div>
-    <Footer />
+          <Footer />
         </Router>
       </div>
 
