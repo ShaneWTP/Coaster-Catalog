@@ -62,6 +62,7 @@ class App extends Component {
         <h1> Welcome Nobody </h1>}
       <Router>
         <div className="App">
+          
         <MapPA/>
 
           {/* <Route exact path="/" component={Home} /> */}
