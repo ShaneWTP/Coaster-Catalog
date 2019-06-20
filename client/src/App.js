@@ -3,7 +3,6 @@ import axios from 'axios'
 import API from "./utils/API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
-import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import SignupForm from "./pages/Signup";
