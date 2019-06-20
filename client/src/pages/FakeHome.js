@@ -49,7 +49,47 @@ class Home extends Component {
 			 })
 	}
 
+	handleNewCoasterSubmit(event) {
+		event.preventDefault();
+    console.log('handleNewCoasterSubmit');
+        
+		axios.post('/api/user/addcoaster', {
+			coaster: "5d0525601ae7f125e81adefc",
+		}).then(response => {
+				console.log(response);
+				if (!response.data.error) {
 
+					console.log('youre good');
+			
+				} else {
+					console.log('Error: ' + response.data.error);
+				}
+			
+			}).catch(error => {
+				console.log('addcoaster error: ' + error)
+			 })
+	}
+
+	handleAddRideSubmit(event) {
+		event.preventDefault();
+    console.log('handleNewCoasterSubmit');
+        
+		axios.post('/api/user/addride', {
+			coaster: "5d0525601ae7f125e81adefc",
+		}).then(response => {
+				console.log(response);
+				if (!response.data.error) {
+
+					console.log('youre good');
+			
+				} else {
+					console.log('Error: ' + response.data.error);
+				}
+			
+			}).catch(error => {
+				console.log('addcoaster error: ' + error)
+			 })
+	}
 
     render() {
         const imageStyle = {
@@ -61,6 +101,10 @@ class Home extends Component {
                 <img style={imageStyle} src="https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg" />
 								<br/>
                 <button onClick={this.handleSubmit} >Logout</button>
+
+                <button onClick={this.handleNewCoasterSubmit} >Add Coaster</button>
+
+                <button onClick={this.handleAddRideSubmit} >Add Ride</button>
             </div>
         )
 
