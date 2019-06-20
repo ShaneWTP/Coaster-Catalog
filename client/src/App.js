@@ -3,6 +3,9 @@ import axios from 'axios'
 import API from "./utils/API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
+import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import SignupForm from "./pages/Signup";
 import Coaster from "./pages/Coaster";
 import Home from "./pages/FakeHome.js";
@@ -65,10 +68,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
-          <h1> Welcome Nobody </h1>} */}
+
+
+        {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
+
+          <h1> Welcome Nobody </h1>}
+
         <Router>
           <div className="App">
+            <Navbar />
             <Jumbotron />
             <MapPA />
             <CoasterCard coasters={this.state.coasters} />
@@ -97,6 +105,7 @@ class App extends Component {
           
 
           </div>
+          <Footer />
         </Router>
       </div>
 

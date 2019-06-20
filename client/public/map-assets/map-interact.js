@@ -143,3 +143,11 @@ $(function(){
     $("body").addClass("circle-hover"); 	
   }) 
 })
+
+// This is what enables the hover card to remain active
+$(function(){ 	
+  $("body").on("click", ".remove", function(){ 		
+    $("body").removeClass("circle-hover"); 	
+  }) 
+})
+
