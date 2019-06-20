@@ -18,10 +18,10 @@ function Footer() {
           <div className="col l4 offset-l2 s12">
             <h5>Created with ♥ by The Four Loops</h5>
             <ul>
-              <li><a className="footer-text" href="https://github.com/savycodr"><i class="fab fa-github"></i> Heather Samsel</a></li>
-              <li><a className="footer-text" href="https://github.com/jenerationx"><i class="fab fa-github"></i> Jenny Sterlein</a></li>
-              <li><a className="footer-text" href="https://github.com/ShaneWTP"><i class="fab fa-github"></i> Shane Maziekien</a></li>
-              <li><a className="footer-text" href="https://github.com/swissfink"><i class="fab fa-github"></i> Richard Fink</a></li>
+              <li><a className="footer-text" href="https://github.com/savycodr"><i className="fab fa-github"></i> Heather Samsel</a></li>
+              <li><a className="footer-text" href="https://github.com/jenerationx"><i className="fab fa-github"></i> Jenny Sterlein</a></li>
+              <li><a className="footer-text" href="https://github.com/ShaneWTP"><i className="fab fa-github"></i> Shane Maziekien</a></li>
+              <li><a className="footer-text" href="https://github.com/swissfink"><i className="fab fa-github"></i> Richard Fink</a></li>
             </ul>
           </div>
         </div>
