@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 
 // const MongoStore = require('connect-mongo')(session)
+const routes = require("./routes");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -53,9 +54,6 @@ require("./config/passport/passport.js")(passport);
 // Route for authentication
 require("./routes/authRoutes")(app, passport);
 // end authentication
-
-// Define API routes here
-// require("./routes/api/user");
 
 // Define API routes here
 // Add routes, both API and view

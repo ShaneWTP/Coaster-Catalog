@@ -7,7 +7,7 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className="jumbotron">
-        <div class="overlay"></div>
+        <div className="overlay"></div>
         <iframe
           src="https://www.youtube.com/embed/hR5MTRQL2vg?autoplay=1&amp;start=59&amp;controls=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;loop=1&amp;list=PLjVLWBejGa2bTRh0LfR_TFx0NL9khGg4P&amp;mute=1"
           allow="accelerometer; autoplay; gyroscope;"
