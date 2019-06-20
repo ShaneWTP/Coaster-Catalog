@@ -8,11 +8,11 @@ function Footer() {
       <div className="container">
         <div className="row footer-row">
           <div className="col l4 s12">
-            <h5 className>About COASTER CATALOG™</h5>
-            <p>Our Team creates interative roller coaster catalogs that provide roller coaster enthusiasts with the best on-the-ground, real-world information so they can choose what their next great thrill-ride is going to be and what to expect when they get there</p>
+            <h5 className>About Us</h5>
+            <p>Our Team creates interactive roller coaster catalogs that provide roller coaster enthusiasts with on-the-ground, real-world coaster information so they can confidently choose their next great thrill-ride and knwo what to expect when they get there.</p>
           </div>
           <div className="col l4 s12">
-            <h5 className>Coaster Catalog™</h5>
+            <h5 className>COASTER CATALOG™</h5>
             <img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif" width="290px"></img>
           </div>
           <div className="col l4 offset-l2 s12">
@@ -27,7 +27,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="container">© 2019 Copyright The Four Loops</div>
+        <div className="container">© 2019 Copyright The Four Loops. All rights revserved.</div>
       </div>
     </footer>
   );
