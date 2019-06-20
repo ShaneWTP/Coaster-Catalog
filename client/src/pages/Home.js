@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Jumbotron from "./components/Jumbotron";
 import Container from "./components/Container";
 import MapPA from "./components/MapPA";
+import CoasterCard from "../components/CoasterCard";
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
         <Wrapper>
           <MapPA/>
         </Wrapper>
+        <CoasterCard />
         <Footer />
       </Container>
     );

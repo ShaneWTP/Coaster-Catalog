@@ -4,7 +4,7 @@ import API from "./utils/API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
-import Signup from "./pages/Signup";
+import Coaster from "./pages/Coaster";
 import Home from "./pages/FakeHome.js";
 import UserProfile from "./pages/Profile.js";
 import "./App.css";
@@ -65,8 +65,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
-          <h1> Welcome Nobody </h1>}
+        {/* {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
+          <h1> Welcome Nobody </h1>} */}
         <Router>
           <div className="App">
             <Jumbotron />
@@ -93,6 +93,8 @@ class App extends Component {
             <Route exact path="/userprofile" render={() =>
               <UserProfile />}
             />
+          <Route exact path="/coasters/:id" component={Coaster} />
+          
 
           </div>
         </Router>
