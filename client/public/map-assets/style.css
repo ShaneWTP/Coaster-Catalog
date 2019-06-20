@@ -6,7 +6,7 @@ b {
   text-align: center !important;
   color: #FFF !important;
   font-size: 20px;
-  text-decoration: underline solid #4c4c4c;
+  /* text-decoration: underline solid #4c4c4c; */
 }
 
 .coaster-link-1 {
