@@ -1,8 +1,10 @@
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
+const routes = require("./routes");
+
 // const MongoStore = require('connect-mongo')(session)
 
 // Define middleware here
@@ -46,20 +48,24 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions(calls the deserializer)
 app.use(flash()); // for session messaging
 
-// Passport Strategy for authentication. Pass in passport and User object
-// require("./config/passport/passport.js")(passport, db.User);
+// Passport Strategy for authentication. Pass in passport 
 require("./config/passport/passport.js")(passport);
 // Route for authentication
 require("./routes/authRoutes")(app, passport);
 // end authentication
 
 // Define API routes here
+// require("./routes/api/user");
+
+// Define API routes here
+// Add routes, both API and view
+app.use(routes);
 
 // Send every other request to the React app
 // Define any API routes before this runs
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 // const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/coasterdb"
 const mongoURL = process.env.MONGODB_URI || "mongodb://localhost:27017/coasterdb"

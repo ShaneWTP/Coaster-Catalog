@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+
+const UserSchema = new Schema({
   username: { type: String,
               trim: true, 
               required: [true, "Please enter a username."],
@@ -29,6 +30,6 @@ const userSchema = new Schema({
 
 // HLS add more password validation
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", UserSchema);
 
 module.exports = User;

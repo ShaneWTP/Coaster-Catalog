@@ -5,6 +5,8 @@
 // bcrypt which we need to secure passwords.
 var bCrypt = require('bcrypt-nodejs');
 var User = require("../../models/user");
+var Coaster = require("../../models/coaster");
+
 
 // This is called from the server.js We are using local strategy
 // module.exports = function (passport, user) {
@@ -142,15 +144,36 @@ module.exports = function (passport) {
   passport.deserializeUser(function (id, done) {
     console.log('DeserializeUser called');
     User.findOne(
-      { _id: id },
-      'username',
-      (err, user) => {
-        console.log('*** Deserialize user, user:')
-        console.log(user)
-        console.log('--------------')
-        done(null, user)
+      { _id: id }, ["username", "coasters"])
+      .populate("coasters.coaster",
+      ["name", 
+      "park",
+      "location"])
+      .then(function(user) {
+        console.log('*** Deserialize user, user:');
+        console.log(JSON.stringify(user, null, 2));
+        console.log('--------------');
+        done(null, user);
+      })
+      .catch(function(err) {
+        // If an error occurs, send it back to the client
+        console.log(err);
+        done(null, false)
       }
     )
+
+    // User.findOne(
+    //   { _id: id },
+    //   'username',
+    //   (err, user) => {
+    //     console.log('*** Deserialize user, user:')
+    //     console.log(user)
+    //     console.log('--------------')
+    //     done(null, user)
+    //   }
+    // )
+
+
   })
   
 }
