@@ -6,7 +6,7 @@ router.route("/")
   .get(coastersController.findAll)
   .post(coastersController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/coasters/:id"
 router
   .route("/:id")
   .get(coastersController.findById)
