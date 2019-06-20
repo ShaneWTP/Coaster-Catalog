@@ -3,7 +3,6 @@ const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
-const routes = require("./routes");
 
 // const MongoStore = require('connect-mongo')(session)
 const routes = require("./routes");
