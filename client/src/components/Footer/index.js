@@ -9,7 +9,7 @@ function Footer() {
         <div className="row footer-row">
           <div className="col l4 s12">
             <h5 className>About Us</h5>
-            <p>Our Team creates interactive roller coaster catalogs that provide roller coaster enthusiasts with on-the-ground, real-world coaster information so they can confidently choose their next great thrill-ride and knwo what to expect when they get there.</p>
+            <p>Our Team creates fun, interactive roller coaster catalogs. Our goal is to provide roller coaster enthusiasts with on-the-ground, real-world coaster information so they can confidently choose their next great thrill-ride and know what to expect when they get there.</p>
           </div>
           <div className="col l4 s12">
             <h5 className>COASTER CATALOG™</h5>
