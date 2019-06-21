@@ -9,27 +9,34 @@ const CoasterCard = props => {
                 <div className="card-body">
                     {props.coasters.map(coaster => {
                         return (
-                            <li className="card py-0 my-1" key={coaster._id}>
+                            <li className="card my-1" key={coaster._id}>
                                 <Row className="row" id={coaster._id} >
-                                    <Col size="sm-1">
+                                    <Col size="1">
                                         <div className="color-div"></div>
                                     </Col>
-                                    <Col size="sm-3">
-                                        <a href={"/coasters/" + coaster._id} className="stretchedLink">
+                                    <Col size="3">
+                                        <a href={"/coasters/" + coaster._id}>
                                             <div className="coasterImage my-3">
-                                                <img src={coaster.img1 || "https://via.placeholder.com/150C/O"} alt={coaster.name} />
+                                                <img src={coaster.img1 || "https://via.placeholder.com/150C/O"} class="img-circle" alt={coaster.name} />
                                             </div></a>
                                     </Col>
-                                    <Col size="sm-8" className="coasterInfo p-2">
-                                        <Row>
-                                            <h4 className="coasterName text-left px-2 my-2">{coaster.name}</h4>
-                                        </Row>
-                                        <Row>
-                                            <p className="coasterPark text-left px-2">{coaster.park} | {coaster.location}</p>
-                                        </Row>
-                                        <Row>
-                                            <p className="coasterRating text-left px-2">{coaster.rating}</p>
-                                        </Row>
+                                    <Col size="md-8" className="coasterInfo px-3">
+                                        <div className="card-block px-3">
+                                            <Row>
+                                                <a href={"/coasters/" + coaster._id} className="nameLink">
+                                                    <h4 className="coasterName card-title text-left my-2">{coaster.name}</h4>
+                                                </a>
+                                            </Row>
+                                            <Row>
+                                                <p className="coasterPark text-left">{coaster.park} | {coaster.location}</p>
+                                            </Row>
+                                            <Row>
+                                                <p className="coasterRating">{coaster.rating}</p>
+                                            </Row>
+                                            <Row>
+                                                <button className="btn btn-success btn-md" id={coaster._id} onClick={(event) => props.handleNewCoasterSubmit(event)}>I Rode this</button>
+                                            </Row>
+                                        </div>
                                     </Col>
                                 </Row>
                             </li>
