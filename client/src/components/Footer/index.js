@@ -13,7 +13,7 @@ function Footer() {
           </div>
           <div className="col l4 s12">
             <h5 className>COASTER CATALOG™</h5>
-            <img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif" width="290px"></img>
+            <img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif" width="290px" alt="logo animate"></img>
           </div>
           <div className="col l4 offset-l2 s12">
             <h5>Created with ♥ by The Four Loops</h5>

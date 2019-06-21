@@ -20,12 +20,14 @@
 
 .footer-link,
 .footer-copyright {
-  color: #0A1E5F !important;
+  color: #232858 !important;
   background: #468609;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-
+.container {
+  text-align: center;
+}
 
 

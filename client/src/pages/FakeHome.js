@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Redirect } from 'react-router-dom'
+// import { Redirect } from 'react-router-dom'
 
 class Home extends Component {
     constructor() {
@@ -98,7 +98,7 @@ class Home extends Component {
         return (
             <div>
                 <p>It's good to be home</p>
-                <img style={imageStyle} src="https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg" />
+                <img style={imageStyle} src="https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg" alt="home" />
 								<br/>
                 <button onClick={this.handleSubmit} >Logout</button>
 
