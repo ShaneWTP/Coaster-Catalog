@@ -4,6 +4,7 @@ import Jumbotron from "../components/Jumbotron";
 import Wrapper from "../components/Wrapper";
 import MapPA from "../components/MapPA";
 import CoasterCard from "../components/CoasterCard";
+import axios from 'axios';
 
 class Home extends Component {
   constructor() {
@@ -21,7 +22,25 @@ class Home extends Component {
       .then(res => this.setState({ coasters: res.data }))
       .catch(err => console.log(err))
   }
+	handleNewCoasterSubmit(event) {
+		event.preventDefault();
+    console.log('New Coaster Submitted!');
+    console.log(event.target.id);
+    let added = event.target.id;    
+		axios.post('/api/user/addcoaster', {coaster: added}).then(response => {
+				console.log(response);
+				if (!response.data.error) {
 
+					console.log('youre good');
+			
+				} else {
+					console.log('Error: ' + response.data.error);
+				}
+			
+			}).catch(error => {
+				console.log('addcoaster error: ' + error)
+			 })
+	}
 
   render() {
     return (
@@ -30,7 +49,7 @@ class Home extends Component {
         <Wrapper>
           <MapPA />
         </Wrapper>
-        <CoasterCard coasters={this.state.coasters} />
+        <CoasterCard handleNewCoasterSubmit={this.handleNewCoasterSubmit} coasters={this.state.coasters} />
       </div>
     );
   }
