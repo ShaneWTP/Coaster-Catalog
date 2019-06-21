@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
+import { Col, Row } from "../components/Grid";
 import API from "../utils/API";
 
 class Coaster extends Component {
@@ -17,7 +17,7 @@ class Coaster extends Component {
 
     render() {
         return (
-            <Container >
+            <div className="coaster">
                 <Row>
                     <Col size="12">
                         <h1 className="display-4 text-center">
@@ -82,7 +82,7 @@ class Coaster extends Component {
                         <Link to="/">← Back to Home</Link>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         );
     }
 }

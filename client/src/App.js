@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import API from "./utils/API";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import LoginForm from "./pages/Signin";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
+import UserProfile from "./pages/Profile";
 import Coaster from "./pages/Coaster";
-import Home from "./pages/FakeHome.js";
-import UserProfile from "./pages/Profile.js";
+
 import "./App.css";
-import MapPA from "./components/MapPA";
-import Jumbotron from "./components/Jumbotron";
-import CoasterCard from "./components/CoasterCard";
 
 class App extends Component {
   constructor() {
@@ -66,50 +65,37 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-
+      <div className="App">
 
         {this.state.loggedIn ? <h1> Welcome {this.state.username} </h1> :
 
           <h1> Welcome Nobody </h1>}
 
         <Router>
-          <div className="App">
-            <Navbar />
-            <Jumbotron />
-            <MapPA />
-            <CoasterCard coasters={this.state.coasters} />
-            {/* <Route exact path="/" component={Home} /> */}
-            <Route exact path="/" render={() =>
-              <Home
-                updateUser={this.updateUser}
-              />}
-            />
-            <Route exact path="/signin" render={() =>
-              <LoginForm
-                updateUser={this.updateUser}
-              />}
-            />
-            {/* <Route exact path="/signup" component={Signup} updateUser={this.updateUser}/> */}
-            <Route exact path="/signup" render={() =>
-              <SignupForm
-                updateUser={this.updateUser}
-              />}
-            />
-
-            <Route exact path="/userprofile" render={() =>
-              <UserProfile />}
-            />
-          <Route exact path="/coasters/:id" component={Coaster} />
-          
-
-          </div>
-          <Footer />
+            <Container>
+              <Navbar />
+              <Switch>
+                <Route exact path="/" render={() =>
+                  <Home updateUser={this.updateUser} />
+                } />
+                <Route path="/signin" render={() =>
+                  <LoginForm updateUser={this.updateUser} />
+                } />
+                <Route path="/signup" render={() =>
+                  <SignupForm updateUser={this.updateUser} />
+                } />
+                <Route path="/userprofile" render={() =>
+                  <UserProfile />
+                } />
+                <Route path="/coasters/:id" component={Coaster} />
+              </Switch>
+              <Footer />
+            </Container>
         </Router>
-      </div>
+      </div >
 
-    );
-  }
-}
-
-export default App;
+        );
+      }
+    }
+    
+    export default App;
