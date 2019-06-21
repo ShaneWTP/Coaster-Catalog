@@ -8,7 +8,7 @@ export default {
   },
   // Gets the coaster with the given id
   getCoaster: function(id) {
-    return axios.get("/api/coaster/" + id);
+    return axios.get("/api/coasters/" + id);
   },
   // Deletes the coaster with the given id
   deleteCoaster: function(id) {

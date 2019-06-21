@@ -1,0 +1,15 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coasterImage img {  
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.color-div{
+    background-color: red;
+    height: 100%;
+    padding: 0 !important;
+}

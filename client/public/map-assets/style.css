@@ -2,19 +2,61 @@
   display: block !important;
 }
 
+b {
+  text-align: center !important;
+  color: #FFF !important;
+  font-size: 20px;
+  /* text-decoration: underline solid #4c4c4c; */
+}
+
 .coaster-link-1 {
-  width: 100%;
+  width: 95%;
   display: block !important;
   margin-top: 100px !important;
   margin-left: 5px !important;
-  color: #FFF !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
 }
 
-.coaster-link-2 {
-  width: 100%;
+.coaster-link-1:hover {
+  color: #fff !important;
+  background: #777;
+}
+
+.coaster-link-del-1 {
+  width: 95%;
+  display: block !important;
+  margin-top: 140px !important;
+  margin-left: 5px !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
+}
+.coaster-link-del-1:hover {
+  color: #fff !important;
+  background: #777;
+}
+
+.coaster-link {
+  width: 95%;
   display: block !important;
   margin-left: 5px !important;
-  color: #FFF !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
+}
+
+.coaster-link:hover {
+  color: #fff !important;
+  background: #777;
+
 }
 
 #mapwrapper {
@@ -63,6 +105,17 @@
 	padding: 3px;
 }
 
+.remove {
+  color: #ff1744;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.remove:hover {
+  color: #d50000;
+}
 
 /* For Responsiveness */
 
