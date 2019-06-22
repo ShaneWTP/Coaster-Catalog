@@ -5,6 +5,7 @@ import Wrapper from "../components/Wrapper";
 import MapPA from "../components/MapPA";
 import CoasterCard from "../components/CoasterCard";
 import axios from 'axios';
+import {Container} from "../components/Grid"
 
 class Home extends Component {
   constructor() {
@@ -51,8 +52,8 @@ class Home extends Component {
         <Wrapper>
           <MapPA />
         </Wrapper>
-        <CoasterCard handleNewCoasterSubmit={this.handleNewCoasterSubmit} coasters={this.state.coasters} />
-      </div>
+        <Container><CoasterCard handleNewCoasterSubmit={this.handleNewCoasterSubmit} coasters={this.state.coasters} />
+      </Container></div>
     );
   }
 }
