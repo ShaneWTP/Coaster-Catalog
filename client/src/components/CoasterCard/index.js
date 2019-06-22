@@ -5,7 +5,7 @@ import "./style.css";
 const CoasterCard = props => {
     return (
         <div className="card">
-            <div className="col-6">
+            <div className="w-50">
                 <div className="card-body">
                     {props.coasters.map(coaster => {
                         return (
