@@ -98,13 +98,13 @@ class App extends Component {
     return (
       <div className="App">
 
-        {this.state.loggedIn ? <h1> Welcome {this.state.user.username} </h1> :
-          <h1> Welcome </h1>}
+        {/* {this.state.loggedIn ? <h1> Welcome {this.state.user.username} </h1> :
+          <h1> Welcome </h1>} */}
 
         <Router>
 
             <Container>
-              <Navbar />
+              <Navbar username={this.state.user ? this.state.user.username : ""}/>
               <Switch>
                 <Route exact path="/" render={() =>
                   <Home updateUser={this.updateUser} />
