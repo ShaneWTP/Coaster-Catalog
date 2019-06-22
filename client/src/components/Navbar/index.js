@@ -8,7 +8,7 @@ import {
 
 class Navbar extends Component {
     state = {
-        isOpen: false
+        isOpen: false,
     };
 
     toggleCollapse = () => {
@@ -51,6 +51,9 @@ class Navbar extends Component {
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBNavLink to="/cause">Coasters for a Cause</MDBNavLink>
+                        </MDBNavItem>
+                        <MDBNavItem>
+                          <p> Welcome {this.props.username} </p>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
