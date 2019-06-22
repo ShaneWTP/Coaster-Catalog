@@ -98,7 +98,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        {this.state.loggedIn ? <h1> Welcome {this.state.user.username} </h1> :
+        {this.state.loggedIn && this.state.user ? <h1> Welcome {this.state.user.username} </h1> :
           <h1> Welcome </h1>}
 
         <Router>

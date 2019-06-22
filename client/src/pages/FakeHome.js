@@ -54,7 +54,7 @@ class Home extends Component {
     console.log('handleNewCoasterSubmit');
         
 		axios.post('/api/user/addcoaster', {
-			coaster: "5d0525601ae7f125e81adefc",
+			coaster: "5d0e3f3d57a21c28d87472ce",
 		}).then(response => {
 				console.log(response);
 				if (!response.data.error) {
@@ -75,7 +75,7 @@ class Home extends Component {
     console.log('handleNewCoasterSubmit');
         
 		axios.post('/api/user/addride', {
-			coaster: "5d0525601ae7f125e81adefc",
+			coaster: "5d0e3f3d57a21c28d87472ce",
 		}).then(response => {
 				console.log(response);
 				if (!response.data.error) {

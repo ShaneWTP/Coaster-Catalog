@@ -152,6 +152,7 @@ module.exports = function (passport) {
       "img1"])
       .then(function(user) {
 
+        console.log("HEATHER here is your user " + JSON.stringify(user, null, 2));
         // now set the totalNumberOfRides
         let numRides = 0;
         let coasters = user.coasters;
