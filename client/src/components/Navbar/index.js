@@ -19,7 +19,7 @@ class Navbar extends Component {
         return (
             <MDBNavbar color="green darken-3" dark expand="md">
                 <MDBNavbarBrand>
-                    <MDBNavLink to="/"><img src={logo} width="550" height="125" class="d-inline-block align-top" alt="logo" /></MDBNavLink>
+                    <MDBNavLink to="/"><img src={logo} width="550" height="125" className="d-inline-block align-top" alt="logo" /></MDBNavLink>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.toggleCollapse} />
                 <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -47,10 +47,10 @@ class Navbar extends Component {
                             </MDBDropdown>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/profile">Profile</MDBNavLink>
+                            <MDBNavLink to="/userprofile">Profile</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="cause">Coasters for a Cause</MDBNavLink>
+                            <MDBNavLink to="/cause">Coasters for a Cause</MDBNavLink>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
