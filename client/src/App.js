@@ -26,6 +26,8 @@ class App extends Component {
     this.componentDidMount = this.componentDidMount.bind(this)
     this.updateUser = this.updateUser.bind(this)
     this.handleAddRideSubmit = this.handleAddRideSubmit.bind(this)
+    this.handleNewCoasterSubmit = this.handleNewCoasterSubmit.bind(this)
+
   }
 
   // On mount, check that there is a user in the session
@@ -65,7 +67,27 @@ class App extends Component {
       }
     })
   }
+  handleNewCoasterSubmit(event) {
+		event.preventDefault();
+    console.log('New Coaster Submitted!');
+    console.log(event.target.id);
+    let added = event.target.id;    
+		axios.post('/api/user/addcoaster', {coaster: added}).then(response => {
+				console.log(response);
+				if (!response.data.error) {
 
+          console.log("you're good");
+           // getUser will update display
+           this.getUser();
+			
+				} else {
+					console.log('Error: ' + response.data.error);
+				}
+			
+			}).catch(error => {
+				console.log('addcoaster error: ' + error)
+			 })
+	}
   handleAddRideSubmit(event) {
 		event.preventDefault();
     console.log('handleAddRideSubmit ' + event.target.id);
@@ -76,7 +98,7 @@ class App extends Component {
 				console.log(response);
 				if (!response.data.error) {
 
-          console.log('youre good ');
+          console.log("you're good");
           // getUser will update display
           this.getUser();
 
@@ -98,17 +120,13 @@ class App extends Component {
     return (
       <div className="App">
 
-
-        {this.state.loggedIn && this.state.user ? <h1> Welcome {this.state.user.username} </h1> :
-          <h1> Welcome </h1>}
-
         <Router>
 
             <Container>
               <Navbar username={this.state.user ? this.state.user.username : ""}/>
               <Switch>
                 <Route exact path="/" render={() =>
-                  <Home updateUser={this.updateUser} />
+                  <Home updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
                 } />
                 <Route path="/signin" render={() =>
                   <LoginForm updateUser={this.updateUser} />
