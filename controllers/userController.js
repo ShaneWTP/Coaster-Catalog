@@ -11,14 +11,15 @@ module.exports = {
     // get a rollercoaster you want to add
     console.log("INSIDE Controller " + JSON.stringify(req.body));
     let coasterId = req.body.coaster;
-
+    console.log("INSIDE Controller coasterid " + coasterId);
+    console.log("INSIDE Controller userid " + req.user._id);
     // let's find the user and push the rollercoaster
     // db.User
     // only do the push if coasters.coaster doesn't already have
     // the coasterId inside... no duplicates
     db.User
       .update({
-        _id: req.user.id,
+        _id: req.user._id,
         'coasters.coaster': { $ne: coasterId }
       },
         { $push: { coasters: { coaster: coasterId, numRides: 1 } } }, { new: true })

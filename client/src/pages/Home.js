@@ -32,7 +32,9 @@ class Home extends Component {
 				console.log(response);
 				if (!response.data.error) {
 
-					console.log('youre good');
+          console.log('youre good');
+           // getUser will update display
+           this.getUser();
 			
 				} else {
 					console.log('Error: ' + response.data.error);
