@@ -148,8 +148,22 @@ module.exports = function (passport) {
       .populate("coasters.coaster",
       ["name", 
       "park",
-      "location"])
+      "location",
+      "img1"])
       .then(function(user) {
+
+        // now set the totalNumberOfRides
+        let numRides = 0;
+        let coasters = user.coasters;
+        console.log('Get User: There are coasters saved for this user: ' + coasters.length);
+        for (let i=0; i<coasters.length; i++){
+          numRides = numRides + coasters[i].numRides;
+        }
+        // store to the user
+        // Because user is immutable will need to do this first
+        user = user.toObject();
+        user.numTotalRides = numRides;
+
         console.log('*** Deserialize user, user:');
         console.log(JSON.stringify(user, null, 2));
         console.log('--------------');
