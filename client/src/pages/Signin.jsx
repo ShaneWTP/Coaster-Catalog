@@ -57,11 +57,15 @@ class LoginForm extends Component {
 			}).catch(error => {
 				//this is where we set the error for display
 				console.log('login error: ')
-				console.log(error.response.data.error);
-				this.setState({
-					error: true,
-					errorInfo: error.response.data.error
-				});
+				console.log(error);
+				if (error.response)
+				{
+					console.log(error.response.data.error);
+					this.setState({
+						error: true,
+						errorInfo: error.response.data.error
+					});
+				}
 			 })
 	}
 
