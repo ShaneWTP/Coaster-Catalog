@@ -75,7 +75,6 @@ class App extends Component {
     console.log(event.target.id);
     let newCoaster = event.target.id;
     
-		// axios.post('/api/user/addcoaster', {coaster: newCoaster}).then(response => {
     API.addCoasterToUser(newCoaster).then(response => {
       console.log(response);
       if (!response.data.error) {
@@ -95,8 +94,6 @@ class App extends Component {
 		event.preventDefault();
     console.log('handleAddRideSubmit ' + event.target.id);
 
-		// axios.post('/api/user/addride', {
-		// 	coaster: event.target.id,
     API.addRide(event.target.id)
 		.then(response => {
       console.log(response);

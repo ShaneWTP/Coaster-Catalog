@@ -12,7 +12,7 @@ const CoasterCard = props => {
                             <li className="card my-1" key={coaster._id}>
                                 <Row className="row" id={coaster._id} >
                                     <Col size="1">
-                                        <div className="color-div"></div>
+                                        <div className="color-div" id={coaster.park.split(" ")[0]}></div>
                                     </Col>
                                     <Col size="3">
                                         <a href={"/coasters/" + coaster._id}>
