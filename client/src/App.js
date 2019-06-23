@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import API from "./utils/API";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Container from "./components/Container";
@@ -32,7 +31,6 @@ class App extends Component {
 
   // On mount, check that there is a user in the session
   componentDidMount() {
-    // HLS Note, these calls are asynchronous
     this.getUser()
     API.getCoasters()
       .then(res => this.setState({ coasters: res.data }))
@@ -45,8 +43,10 @@ class App extends Component {
   }
 
   // Call a get user to see if there is a user in the session 
+  // This will update the props for the user and should be called
+  // when changes are made.
   getUser() {
-    axios.get('/api/user/').then(response => {
+    API.getUser().then(response => {
       console.log('Get user response: ');
       console.log(response.data);
       if (response.data.user) {
@@ -67,54 +67,50 @@ class App extends Component {
       }
     })
   }
+
+  // Adds a new roller coaster to the user profile
   handleNewCoasterSubmit(event) {
 		event.preventDefault();
     console.log('New Coaster Submitted!');
     console.log(event.target.id);
-    let added = event.target.id;    
-		axios.post('/api/user/addcoaster', {coaster: added}).then(response => {
-				console.log(response);
-				if (!response.data.error) {
-
-          console.log("you're good");
-           // getUser will update display
-           this.getUser();
-			
-				} else {
-					console.log('Error: ' + response.data.error);
-				}
-			
-			}).catch(error => {
-				console.log('addcoaster error: ' + error)
-			 })
-	}
+    let newCoaster = event.target.id;
+    
+		// axios.post('/api/user/addcoaster', {coaster: newCoaster}).then(response => {
+    API.addCoasterToUser(newCoaster).then(response => {
+      console.log(response);
+      if (!response.data.error) {
+        console.log("you're good");
+        // getUser will update display
+        this.getUser();
+      } else {
+        console.log('Error: ' + response.data.error);
+      }
+    }).catch(error => {
+      console.log('addcoaster error: ' + error)
+      })
+  }
+  
+  // adds a ride to the user's rollercoaster
   handleAddRideSubmit(event) {
 		event.preventDefault();
     console.log('handleAddRideSubmit ' + event.target.id);
-        
-		axios.post('/api/user/addride', {
-			coaster: event.target.id,
-		}).then(response => {
-				console.log(response);
-				if (!response.data.error) {
 
-          console.log("you're good");
-          // getUser will update display
-          this.getUser();
-
-          // this returns old data before ride was increased
-          // console.log("the user is " + JSON.stringify(response.data));
-          // this.setState({user: response.data});
-			
-				} else {
-					console.log('Error: ' + response.data.error);
-				}
-			
-			}).catch(error => {
-				console.log('addcoaster error: ' + error)
-			 })
+		// axios.post('/api/user/addride', {
+		// 	coaster: event.target.id,
+    API.addRide(event.target.id)
+		.then(response => {
+      console.log(response);
+      if (!response.data.error) {
+        console.log("you're good");
+        // getUser will update display
+        this.getUser();
+      } else {
+        console.log('Error: ' + response.data.error);
+      }
+    }).catch(error => {
+      console.log('addcoaster error: ' + error)
+      })
   }
-
 
   render() {
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.png"
-import axios from 'axios'
+import API from "../../utils/API";
 import "./style.css";
 import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
@@ -24,7 +24,7 @@ class Navbar extends Component {
 		event.preventDefault();
         console.log('handleSignoutSubmit');
         
-		axios.get('/logout').then(response => {
+		API.signout().then(response => {
             console.log(response);
             if (!response.data.error) {
 
@@ -43,14 +43,7 @@ class Navbar extends Component {
 				}
 			
 			}).catch(error => {
-				// HLS this is where the real meat of the error is
-				console.log('logout error: ')
-				// throw the error so it catches componentDidCatch
-				// throw new Error(error.response.data.error);
-				// this.setState({
-				// 	error: true,
-				// 	errorInfo: error.response.data.error
-				// });
+				console.log('logout error: ' + error);
 			 })
 	}
 
