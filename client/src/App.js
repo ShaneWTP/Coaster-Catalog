@@ -123,16 +123,16 @@ class App extends Component {
         <Router>
 
             <Container>
-              <Navbar username={this.state.user ? this.state.user.username : ""}/>
+              <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
               <Switch>
                 <Route exact path="/" render={() =>
                   <Home updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
                 } />
                 <Route path="/signin" render={() =>
-                  <LoginForm updateUser={this.updateUser} />
+                  <LoginForm updateUser={this.updateUser} getUser={this.getUser}/>
                 } />
                 <Route path="/signup" render={() =>
-                  <SignupForm updateUser={this.updateUser} />
+                  <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
                 } />
                 <Route exact path="/userprofile" render={() =>
                   <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>

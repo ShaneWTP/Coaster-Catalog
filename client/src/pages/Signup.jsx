@@ -8,7 +8,6 @@ class SignupForm extends Component {
 		this.state = {
 			username: '',
 			password: '',
-			confirmPassword: '',
 			redirectTo: null,
 
 			error: null, 
@@ -23,6 +22,7 @@ class SignupForm extends Component {
 			[event.target.name]: event.target.value
 		});
 	}
+
 	handleSubmit(event) {
 		event.preventDefault()
 		axios
@@ -40,6 +40,10 @@ class SignupForm extends Component {
 						loggedIn: true,
 						username: response.data.username
 					});
+
+					console.log('now populate the props with a getUser');
+					// populate the props for the app
+					this.props.getUser();
 
 					this.setState({
 						redirectTo: '/'
@@ -59,6 +63,7 @@ class SignupForm extends Component {
 				});
 			 })
 	}
+
 	render() {
 		if (this.state.redirectTo) {
 			return <Redirect to={{ pathname: this.state.redirectTo }} />

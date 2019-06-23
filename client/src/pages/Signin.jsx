@@ -46,9 +46,15 @@ class LoginForm extends Component {
 						username: response.data.username
 					});
 					console.log('updated user');
-				this.setState({
-						redirectTo: '/'
-					});
+
+					console.log('now populate the props with a getUser');
+					// populate the props for the app
+					this.props.getUser();
+
+					// redirect page
+					this.setState({
+							redirectTo: '/'
+						});
 			
 				} else {
 					console.log('Error: ' + response.data.error);
@@ -85,10 +91,8 @@ class LoginForm extends Component {
 			'background-color':'#0A1E5F',
 		}
 
-
-
 		if (this.state.redirectTo) {
-			return <Redirect to={{ pathname: this.state.redirectTo }} />
+				return <Redirect to={{ pathname: this.state.redirectTo }} />
 		} else {
 			return (
 				
