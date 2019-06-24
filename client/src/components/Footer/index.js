@@ -11,7 +11,7 @@ function Footer() {
             <h5 className>About Us</h5>
             <p>Our Team creates fun, interactive roller coaster catalogs. Our goal is to provide roller coaster enthusiasts with on-the-ground, real-world coaster information so they can confidently choose their next great thrill-ride and know what to expect when they get there.</p>
           </div>
-          <div className="col l4 s12">
+          <div className="col l4 s12 middle">
             <h5 className>COASTER CATALOG™</h5>
             <img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif" width="290px" alt="logo animate"></img>
           </div>

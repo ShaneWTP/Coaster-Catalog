@@ -1,6 +1,11 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+.cc-section {
+  background: #fff;
+  overflow: scroll;
+}
 .coastercard {
     border-radius: 0 !important;
 }
