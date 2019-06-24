@@ -100,86 +100,59 @@ class LoginForm extends Component {
 				
 				<div className="LoginForm" >
 					<h1>Welcome Back</h1>
-					{/* <form>
-						<label htmlFor="username">Username: </label>
-						<input
-							type="text"
-							name="username"
-							value={this.state.username}
-							onChange={this.handleChange}
-							style={inputStyle}
-						/>
-						<label htmlFor="password">Password: </label>
-						<input
-							type="password"
-							name="password"
-							value={this.state.password}
-							onChange={this.handleChange}
-							style={inputStyle}
-						/>
-						<br/>
-						<button onClick={this.handleSubmit} disabled={!(this.state.username && this.state.password)} style={buttonStyle}>Login</button>
-					</form>
-					{this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>} */}
-        {/* </div> */}
 
+          <div className="row no-gutters">
+            <div className="col-sm-3 align-self-center">
+            {/* <img style={coasterImg} src="images/roller-coaster-2538846_1280_1.jpg" /> */}
+              <img className="img-fluid"  src="images/roller-coaster-2538846_1280_1.jpg" />
+            </div>
 
-<div className="row no-gutters">
-  <div className="col-sm-3 align-self-center">
-  {/* <img style={coasterImg} src="images/roller-coaster-2538846_1280_1.jpg" /> */}
-    <img className="img-fluid"  src="images/roller-coaster-2538846_1280_1.jpg" />
-  </div>
+            <div className="col-sm-6">
+              <div className="card">
+              {/* <img className="card-img-top" src="images/roller-coaster-2538846_1280.jpg" alt="Card image cap"/>   */}
+                <article className="card-body">
+                  <a href="/signup" className="float-right btn btn-outline-primary">Sign up</a>
+                  <h4 className="card-title mb-4 mt-1"> Sign In </h4>
+                  <form>
+                    <div className="form-group">
+                      <label className="float-left">Username</label>
+                        <input  className="form-control" 
+                              type="text"
+                              name="username" 
+                              value={this.state.username}
+                              onChange={this.handleChange}
+                              style={inputStyle}
+                        />
+                    </div>
+                    <div className="form-group">
+                      <a className="float-right" href="#">Forgot?</a>
+                      <label  className="float-left">Password</label>
+                      <input className="form-control"  
+                      type="password"
+                      name="password"
+                      value={this.state.password}
+                      onChange={this.handleChange}
+                      style={inputStyle}
+                      />
 
-  <div className="col-sm-6">
-
-  <div className="card">
-  {/* <img className="card-img-top" src="images/roller-coaster-2538846_1280.jpg" alt="Card image cap"/>   */}
-  <article className="card-body">
-  <a href="/signup" className="float-right btn btn-outline-primary">Sign up</a>
-  <h4 className="card-title mb-4 mt-1"> Sign In </h4>
-	 <form>
-    <div className="form-group">
-    	<label className="float-left">Username</label>
-        <input  className="form-control" 
-							type="text"
-              name="username" 
-							value={this.state.username}
-							onChange={this.handleChange}
-							style={inputStyle}
-        />
-    </div>
-    <div className="form-group">
-    	<a className="float-right" href="#">Forgot?</a>
-    	<label  className="float-left">Password</label>
-        <input className="form-control"  
-        type="password"
-        name="password"
-        value={this.state.password}
-        onChange={this.handleChange}
-        style={inputStyle}
-  />
-
-    </div> 
-    {this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>}
-    <div className="form-group">
-        <button onClick={this.handleSubmit} 
-        disabled={!(this.state.username && this.state.password)}
-        type="submit"
-         className="btn  "
-          style={buttonStyle}> Sign In  </button>
-    </div>                                                          
-</form>
-</article>
-</div> 
-</div>
-
-<div className="col-sm-3">
-</div>
-
-</div>
-
-
-</div>
+                    </div> 
+                    {this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>}
+                    <div className="form-group">
+                        <button onClick={this.handleSubmit} 
+                        disabled={!(this.state.username && this.state.password)}
+                        type="submit"
+                        className="btn  "
+                          style={buttonStyle}> Sign In  </button>
+                    </div>                                                          
+                  </form>
+                </article>
+              </div> 
+            </div>
+            
+            <div className="col-sm-3">
+            </div>
+          </div>
+        </div>
 			)
 		}
 	}
