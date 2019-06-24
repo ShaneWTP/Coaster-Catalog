@@ -28,7 +28,7 @@ import {Row, Col} from "../components/Grid"
     const h1Style = {
       'color': 'white',
       'text-shadow': '2px 2px 4px #000000',
-      'color' : '#0A1E5F'
+      // 'color' : '#0A1E5F'
     }
 
     return (
