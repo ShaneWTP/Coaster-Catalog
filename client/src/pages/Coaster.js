@@ -4,11 +4,6 @@ import { Col, Row, Container } from "../components/Grid";
 import API from "../utils/API";
 var Carousel = require('react-responsive-carousel').Carousel;
 
-const divStyle = {
-    width: "auto",/* You can set the dimensions to whatever you want */
-    height: "225px",
-    objectFit: "cover"
-};
 const imgStyle = {
     width: "500px",
     height: "auto",
@@ -49,16 +44,16 @@ class Coaster extends Component {
                 <Carousel showThumbs={false}>
 
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img1} />
+                        <img src={this.state.coaster.img1} alt={this.state.coaster.name}/>
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img2} />
+                        <img src={this.state.coaster.img2} alt={this.state.coaster.name}/>
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img3} />
+                        <img src={this.state.coaster.img3} alt={this.state.coaster.name}/>
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img4} />
+                        <img src={this.state.coaster.img4} alt={this.state.coaster.name}/>
                     </div>
                 </Carousel>
 
