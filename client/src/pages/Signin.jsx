@@ -76,11 +76,11 @@ class LoginForm extends Component {
 
 	render() {
 
-    const coasterImg = {
-      'width' : 'auto',
-      'height' : '371px',
-      'object-fit': 'cover',
-    }
+    // const coasterImg = {
+    //   'width' : 'auto',
+    //   'height' : '371px',
+    //   'object-fit': 'cover',
+    // }
 
 		const inputStyle = {
 			// 'background-color':'#468609'
@@ -104,7 +104,7 @@ class LoginForm extends Component {
           <div className="row no-gutters">
             <div className="col-sm-3 align-self-center">
             {/* <img style={coasterImg} src="images/roller-coaster-2538846_1280_1.jpg" /> */}
-              <img className="img-fluid"  src="images/roller-coaster-2538846_1280_1.jpg" />
+              <img className="img-fluid"  src="images/roller-coaster-2538846_1280_1.jpg" alt="Roller Coaster at Hershey Park"/>
             </div>
 
             <div className="col-sm-6">
@@ -125,7 +125,7 @@ class LoginForm extends Component {
                         />
                     </div>
                     <div className="form-group">
-                      <a className="float-right" href="#">Forgot?</a>
+                      <a className="float-right" href="/signup">Forgot?</a>
                       <label  className="float-left">Password</label>
                       <input className="form-control"  
                       type="password"
