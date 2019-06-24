@@ -131,10 +131,13 @@ class App extends Component {
                 <Route exact path="/userprofile" render={() =>
                   <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
                 } />
-                <Route path="/coasters/:id" component={Coaster} />
+
+                <Route path="/coasters/:id" component={Coaster} user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+
                 <Route path="/cause" render={() =>
                   <Cause/>
                 } />
+
               </Switch>
               <Footer />
             </Container>

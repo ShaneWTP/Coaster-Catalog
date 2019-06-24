@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import API from "../utils/API";
+import RodeIt from "../components/RodeItButton"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const imgStyle = {
@@ -37,6 +38,7 @@ class Coaster extends Component {
                             <p className="text-center">
                                 {this.state.coaster.location}
                             </p>
+                            <RodeIt id={this.state.coaster._id} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit}/>
                             <br></br>
                         </Col>
                     </Row>
@@ -99,7 +101,7 @@ class Coaster extends Component {
                                 Scale: {this.state.coaster.scale || "Scale not listed"}
                             </p>
                             <p className="text-left">
-                                Awards: {this.state.coaster.awards || "No awards listed"}
+                                Awards: {[this.state.coaster.awards] || "No awards listed"}
                             </p>
 
                         </Col>
