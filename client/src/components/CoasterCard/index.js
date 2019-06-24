@@ -5,7 +5,7 @@ import "./style.css";
 const CoasterCard = props => {
   return (
 
-    <div className ="container">
+    <div className ="container" id="cc-section">
       {props.coasters.map(coaster => {
         return (
           <li className="card my-1 coastercard" key={coaster._id}>
