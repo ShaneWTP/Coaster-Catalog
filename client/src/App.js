@@ -115,26 +115,29 @@ class App extends Component {
       <div className="App">
 
         <Router>
-          <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
-          <Switch>
-            <Route exact path="/" render={() =>
-              <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
-            } />
-            <Route path="/signin" render={() =>
-              <LoginForm updateUser={this.updateUser} getUser={this.getUser}/>
-            } />
-            <Route path="/signup" render={() =>
-              <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
-            } />
-            <Route exact path="/userprofile" render={() =>
-              <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
-            } />
-            <Route path="/coasters/:id" component={Coaster} />
-            <Route path="/cause" render={() =>
-              <Cause/>
-            } />
-          </Switch>
-          <Footer />
+              <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
+              <Switch>
+                <Route exact path="/" render={() =>
+                  <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+                } />
+                <Route path="/signin" render={() =>
+                  <LoginForm updateUser={this.updateUser} getUser={this.getUser}/>
+                } />
+                <Route path="/signup" render={() =>
+                  <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
+                } />
+                <Route exact path="/userprofile" render={() =>
+                  <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
+                } />
+
+                <Route path="/coasters/:id" component={Coaster} user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+
+                <Route path="/cause" render={() =>
+                  <Cause/>
+                } />
+
+              </Switch>
+              <Footer />
         </Router>
       </div >
 
