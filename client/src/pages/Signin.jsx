@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import axios from 'axios';
+import API from "../utils/API";
 
 class LoginForm extends Component {
 	constructor() {
@@ -29,44 +29,45 @@ class LoginForm extends Component {
 		event.preventDefault();
 		console.log('handleSubmit');
 
+		API.signin(this.state.username,this.state.password)
+		.then(response => {
+			console.log(response);
+			if (!response.data.error) {
 
-		axios
-			.post('/signin', {
-				username: this.state.username,
-				password: this.state.password
-			})
-			.then(response => {
-				console.log(response);
-				if (!response.data.error) {
+				console.log('youre good');
+				// update App.js state to show user as loggedin
+				this.props.updateUser({
+					loggedIn: true,
+					username: response.data.username
+				});
+				console.log('updated user');
 
-					console.log('youre good');
-					// update App.js state to show user as loggedin
-					this.props.updateUser({
-						loggedIn: true,
-						username: response.data.username
-					});
-					console.log('updated user');
+				console.log('now populate the props with a getUser');
+				// populate the props for the app
+				this.props.getUser();
+
+				// redirect page
 				this.setState({
 						redirectTo: '/'
 					});
 			
-				} else {
-					console.log('Error: ' + response.data.error);
-				}
+			} else {
+				console.log('Error: ' + response.data.error);
+			}
 			
-			}).catch(error => {
-				//this is where we set the error for display
-				console.log('login error: ')
-				console.log(error);
-				if (error.response)
-				{
-					console.log(error.response.data.error);
-					this.setState({
-						error: true,
-						errorInfo: error.response.data.error
-					});
-				}
-			 })
+		}).catch(error => {
+			//this is where we set the error for display
+			console.log('login error: ')
+			console.log(error);
+			if (error.response)
+			{
+				console.log(error.response.data.error);
+				this.setState({
+					error: true,
+					errorInfo: error.response.data.error
+				});
+			}
+		})
 	}
 
 	render() {
@@ -85,10 +86,8 @@ class LoginForm extends Component {
 			'background-color':'#0A1E5F',
 		}
 
-
-
 		if (this.state.redirectTo) {
-			return <Redirect to={{ pathname: this.state.redirectTo }} />
+				return <Redirect to={{ pathname: this.state.redirectTo }} />
 		} else {
 			return (
 				

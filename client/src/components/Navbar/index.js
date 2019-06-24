@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.png"
+import API from "../../utils/API";
 import "./style.css";
 import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
@@ -7,13 +8,44 @@ import {
 } from "mdbreact";
 
 class Navbar extends Component {
-    state = {
-        isOpen: false,
-    };
+    constructor() {
+        super()
+        this.state = {
+            isOpen: false,
+        };
+        this.handleSignoutSubmit = this.handleSignoutSubmit.bind(this);
+    }
 
     toggleCollapse = () => {
         this.setState({ isOpen: !this.state.isOpen });
     }
+
+	handleSignoutSubmit(event) {
+		event.preventDefault();
+        console.log('handleSignoutSubmit');
+        
+		API.signout().then(response => {
+            console.log(response);
+            if (!response.data.error) {
+
+                console.log('youre good');
+                // update App.js state to show user as signedout
+                this.props.updateUser({
+                    loggedIn: false,
+                    username: null
+                });
+                console.log('updated user for signout');
+                // Maybe we can reset user to null?
+                this.props.updateUser({user: null});
+			
+				} else {
+					console.log('Error: ' + response.data.error);
+				}
+			
+			}).catch(error => {
+				console.log('logout error: ' + error);
+			 })
+	}
 
     render() {
         return (
@@ -64,7 +96,7 @@ class Navbar extends Component {
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu className="dropdown-default">
                                     <MDBDropdownItem href="/signin">Sign In</MDBDropdownItem>
-                                    <MDBDropdownItem href="#!">Sign Out</MDBDropdownItem>
+                                    <MDBDropdownItem href="#!" onClick={this.handleSignoutSubmit}>Sign Out</MDBDropdownItem>
                                     <MDBDropdownItem href="/signup">Create a Profile</MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>

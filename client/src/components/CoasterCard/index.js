@@ -4,6 +4,7 @@ import "./style.css";
 
 const CoasterCard = props => {
     return (
+
         <div>
             {props.coasters.map(coaster => {
                 return (
@@ -40,6 +41,7 @@ const CoasterCard = props => {
                     </li>
                 );
             })}
+
 
         </div>
     )
