@@ -6,10 +6,6 @@ module.exports = {
   // add a rollercoaster to the database User
   // this depends on user stored inside a session
   addNewCoaster: function (req, res) {
-    // get a user from the server session
-    console.log("INSIDE Controller " + JSON.stringify(req.user));
-    // get a rollercoaster you want to add
-    console.log("INSIDE Controller " + JSON.stringify(req.body));
     let coasterId = req.body.coaster;
     console.log("INSIDE Controller coasterid " + coasterId);
     console.log("INSIDE Controller userid " + req.user._id);
@@ -23,19 +19,17 @@ module.exports = {
         'coasters.coaster': { $ne: coasterId }
       },
         { $push: { coasters: { coaster: coasterId, numRides: 1 } } }, { new: true })
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => res.status(200).json(dbModel))
       .catch(err => res.status(422).json(err));
 
   },
 
   // increase the number of rides on a rollercoaster
-  // this relies on coaster information stored inside session
+  // get the coaster id from the req.body
+  // get a user from the server session req.user._id
   addCoasterRide: function (req, res) {
-    // get a user from the server session
-    console.log("INSIDE Controller User" + JSON.stringify(req.user));
+    
     // get a rollercoaster you want to increase the ride on
-    console.log("INSIDE Controller Req.Body" + JSON.stringify(req.body));
-
     // get the coaster id from the req.body
     let coasterId = req.body.coaster;
 
@@ -73,9 +67,7 @@ module.exports = {
         { "$inc": { "coasters.$.numRides": 1 } })
       .then(result => {
         console.log("controller after update user is " + JSON.stringify(req.user, null, 2));
-        // HLS I hoped this would call deserialize but it didn't
-        res.json(req.user);
-
+        res.status(200).json(req.user);
       })
       .catch(err => res.status(422).json(err));
       
@@ -86,9 +78,9 @@ module.exports = {
     console.log('===== user!!======');
     console.log(req.user);
     if (req.user) {
-      res.json({ user: req.user });
+      res.status(200).json({ user: req.user });
     } else {
-      res.json({ user: null });
+      res.status(200).json({ user: null });
     }
   }
 };
