@@ -16,14 +16,16 @@ const UserProfile = props => {
 
           <div className="card">
             <div className="card-body" >
-              <h1> Welcome {props.user ? props.user.username : ""} </h1>
+              <h1> Welcome {props.user ? props.user.username 
+                
+                : " -  Please Sign In"} </h1>
 
               <Row>
                 <Col size="sm-6">
                   <h4>Total Number of Coasters Ridden</h4>
                   <div className="card">
                     <div className="card-body" >
-                      <h4> {props.user ? props.user.coasters.length : ""}</h4>
+                      <h4> {props.user ? props.user.coasters.length : 0}</h4>
                     </div>
                   </div>
                 </Col>
@@ -31,7 +33,7 @@ const UserProfile = props => {
                   <h4>Total Number of Rides</h4>
                   <div className="card">
                     <div className="card-body" >
-                      <h4> {props.user ? props.user.numTotalRides : ""} </h4>
+                      <h4> {props.user ? props.user.numTotalRides : 0} </h4>
                     </div>
                   </div>
                 </Col>
