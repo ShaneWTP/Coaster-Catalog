@@ -31,9 +31,10 @@ class Home extends Component {
         <Wrapper>
           <MapPA />
         </Wrapper>
-        <Container>
+        <Container >
+          <Wrapper>
           <CoasterCard handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} coasters={this.state.coasters} />
-      </Container></div>
+      </Wrapper></Container></div>
     );
   }
 }

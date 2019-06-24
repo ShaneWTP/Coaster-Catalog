@@ -14,7 +14,7 @@ class Jumbotron extends Component {
           frameBorder="0"
           title="wheeee"
         />
-        <div className="container h-100">
+        <div className="container h-100 jumbocontainer">
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 col-sm-12 text-white">
               <h1 className="display-3 my-auto">Welcome to the Thing</h1>

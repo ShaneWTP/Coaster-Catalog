@@ -2,11 +2,18 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import API from "../utils/API";
+var Carousel = require('react-responsive-carousel').Carousel;
+
 const divStyle = {
     width: "auto",/* You can set the dimensions to whatever you want */
     height: "225px",
     objectFit: "cover"
 };
+const imgStyle = {
+    width: "500px",
+    height: "auto",
+    objectFit: "cover"
+}
 class Coaster extends Component {
     state = {
         coaster: {}
@@ -22,42 +29,44 @@ class Coaster extends Component {
     render() {
         return (
             <div className="coaster">
-                <Container><Row>
-                    <Col size="12">
-                        <h1 className="display-4 text-center">
-                            {this.state.coaster.name}
-                        </h1>
-                        <h2 classname="text-center">
-                            {this.state.coaster.park}
-                        </h2>
-                        <p className="text-center">
-                            {this.state.coaster.location}
-                        </p>
-                        <br></br>
-                    </Col>
-                </Row></Container>
+                <br></br>
                 <Container>
                     <Row>
                         <Col size="12">
-                            <div className="row text-center">
-                                <div className="col-lg-3 col-6" >
-                                    <img class="img-fluid img-thumbnail" style={divStyle} src={this.state.coaster.img1 || `https://via.placeholder.com/300x225?text=No+Image+Available`} alt={this.state.coaster.name} />
-                                </div>
-                                <div className="col-lg-3 col-6">
-                                    <img class="img-fluid img-thumbnail" style={divStyle} src={this.state.coaster.img2 || `https://via.placeholder.com/300x225?text=No+Image+Available`} alt={this.state.coaster.name} />
-                                </div>
-                                <div className="col-lg-3 col-6">
-                                    <img class="img-fluid img-thumbnail" style={divStyle} src={this.state.coaster.img3 || `https://via.placeholder.com/300x225?text=No+Image+Available`} alt={this.state.coaster.name} />
-                                </div>
-                                <div className="col-lg-3 col-6">
-                                    <img className="img-fluid img-thumbnail" style={divStyle} src={this.state.coaster.img4 || `https://via.placeholder.com/300x225?text=No+Image+Available`} alt={this.state.coaster.name} />
-                                </div>
-                            </div>
+                            <h1 className="display-4 text-center">
+                                {this.state.coaster.name}
+                            </h1>
+                            <h2 className="text-center">
+                                {this.state.coaster.park}
+                            </h2>
+                            <p className="text-center">
+                                {this.state.coaster.location}
+                            </p>
                             <br></br>
                         </Col>
                     </Row>
+                </Container>
+                <Carousel showThumbs={false}>
 
-                    <Row ><h1 className="text-center">Statistics</h1></Row>
+                    <div style={imgStyle} className="carousel-img m-auto">
+                        <img src={this.state.coaster.img1} />
+                    </div>
+                    <div style={imgStyle} className="carousel-img m-auto">
+                        <img src={this.state.coaster.img2} />
+                    </div>
+                    <div style={imgStyle} className="carousel-img m-auto">
+                        <img src={this.state.coaster.img3} />
+                    </div>
+                    <div style={imgStyle} className="carousel-img m-auto">
+                        <img src={this.state.coaster.img4} />
+                    </div>
+                </Carousel>
+
+
+                <Container>
+                    <br></br>
+                    <Row >
+                        <h1 className="text-center">Statistics</h1></Row>
                     <Row>
                         <Col size="4">
                             <br></br>

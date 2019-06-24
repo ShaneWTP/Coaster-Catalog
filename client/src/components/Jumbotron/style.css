@@ -31,7 +31,7 @@ iframe{
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.container {
+.jumbocontainer {
   position: relative;
   z-index: 2;
   margin-top: auto;
@@ -50,7 +50,6 @@ iframe{
 .btn-success {
   background-color: #478147;
   border: #478147;
-  color: #232858;
   font-size: 24px;
 }
 /* add media query to make this the background on phones:  https://cdn.pixabay.com/photo/2016/07/29/14/25/roller-coaster-1553336_1280.jpg */
