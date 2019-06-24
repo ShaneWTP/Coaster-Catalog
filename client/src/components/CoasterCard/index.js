@@ -5,10 +5,9 @@ import "./style.css";
 
 const CoasterCard = props => {
   return (
-    <div className="container">
+    <div className="container cc-section">
       {props.coasters.map(coaster => {
         return (
-          <div className="cc-section"> 
             <li className="card my-1 coastercard" key={coaster._id}>
               <Row className="row" id={coaster._id} >
                 <Col size="1">
@@ -40,7 +39,6 @@ const CoasterCard = props => {
                 </Col>
               </Row>
             </li>
-          </div>  
         );
       })}
     </div>
