@@ -20,18 +20,18 @@ export default {
   },
   // handle logout, gets rid of session on server
   signout: function() {
-    return axios.get('/logout');
+    return axios.get('/api/logout');
   },
   // handle signin, authenticates user and creates session on server
   signin: function(username, password) {
-    return axios.post('/signin', {
+    return axios.post('/api/signin', {
       username: username,
       password: password
     });
   },
   // creates account on server and starts a user session on server
   signup: function(username, password) {
-    return axios.post('/signup', {
+    return axios.post('/api/signup', {
       username: username,
       password: password
     });
@@ -46,6 +46,6 @@ export default {
   },
   // add a ride to the coaster in a user document
   addRide: function(newCoaster) {
-    return axios.post('/api/user/addride', {coaster: newCoaster});
+    return axios.put('/api/user/addride', {coaster: newCoaster});
   }
 };

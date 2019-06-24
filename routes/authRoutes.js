@@ -4,7 +4,7 @@
 module.exports = function (app, passport) {
 
     // Apply the passport strategy to the signup
-    app.post('/signup', function (req, res, next) {
+    app.post('/api/signup', function (req, res, next) {
         passport.authenticate('local-signup', function (err, user, info) {
             console.log("GOT THROUGH AUTHENTICATE ");
             if (err) { return next(err); }
@@ -33,7 +33,7 @@ module.exports = function (app, passport) {
     });
 
     // Apply the passport strategy to the signin
-    app.post('/signin', function (req, res, next) {
+    app.post('/api/signin', function (req, res, next) {
         passport.authenticate('local-signin', function (err, user, info) {
             console.log("GOT THROUGH AUTHENTICATE ");
 
@@ -62,9 +62,8 @@ module.exports = function (app, passport) {
         })(req, res, next);
     });
 
-
     // logout the user
-    app.get('/logout', (req, res) => {
+    app.get('/api/logout', (req, res) => {
         if (req.user) {
             // clears the session and clears the req.user
             req.logout();
@@ -73,16 +72,5 @@ module.exports = function (app, passport) {
             res.send({ msg: 'no user to log out' });
         }
     })
-
-    // this gets a user from the session
-    // app.get('/user', (req, res, next) => {
-    //     console.log('===== user!!======');
-    //     console.log(req.user);
-    //     if (req.user) {
-    //         res.json({ user: req.user });
-    //     } else {
-    //         res.json({ user: null });
-    //     }
-    // })
       
 };

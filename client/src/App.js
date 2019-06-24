@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
 import UserProfile from "./pages/Profile";
+import Cause from "./pages/Cause";
 import Coaster from "./pages/Coaster";
 
 import "./App.css";
@@ -130,7 +131,13 @@ class App extends Component {
                 <Route exact path="/userprofile" render={() =>
                   <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
                 } />
+
                 <Route path="/coasters/:id" component={Coaster} user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+
+                <Route path="/cause" render={() =>
+                  <Cause/>
+                } />
+
               </Switch>
               <Footer />
             </Container>
