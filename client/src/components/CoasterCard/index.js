@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col } from "../Grid";
+import RodeIt from "../RodeItButton"
 import "./style.css";
 
 const CoasterCard = props => {
   return (
-
     <div className="container">
       {props.coasters.map(coaster => {
         return (

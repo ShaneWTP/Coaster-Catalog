@@ -38,7 +38,7 @@ class Coaster extends Component {
                             <p className="text-center">
                                 {this.state.coaster.location}
                             </p>
-                            <RodeIt id={this.state.coaster._id} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit}/>
+                            <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id}/>
                             <br></br>
                         </Col>
                     </Row>
