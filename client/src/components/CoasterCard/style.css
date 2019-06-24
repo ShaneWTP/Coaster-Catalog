@@ -2,7 +2,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#cc-section {
+.cc-section {
+  background: #fff;
   overflow: scroll;
 }
 .coastercard {
