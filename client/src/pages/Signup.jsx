@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import API from "../utils/API";
 import { Redirect } from 'react-router-dom'
 
 class SignupForm extends Component {
@@ -8,12 +8,10 @@ class SignupForm extends Component {
 		this.state = {
 			username: '',
 			password: '',
-			confirmPassword: '',
 			redirectTo: null,
 
 			error: null, 
 			errorInfo: null
-			
 		}
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -23,42 +21,41 @@ class SignupForm extends Component {
 			[event.target.name]: event.target.value
 		});
 	}
+
 	handleSubmit(event) {
 		event.preventDefault()
-		axios
-			.post('/signup', {
-				username: this.state.username,
-				password: this.state.password
-			})
-			.then(response => {
-				console.log(response)
-				if (!response.data.errmsg) {
-					console.log('youre good');
+		API.signup(this.state.username, this.state.password) 
+		.then(response => {
+			console.log(response)
+			if (!response.data.errmsg) {
+				console.log('youre good');
 
-					// update App.js state to show user as loggedin
-					this.props.updateUser({
-						loggedIn: true,
-						username: response.data.username
-					});
-
-					this.setState({
-						redirectTo: '/'
-					});
-				} else {
-					console.log('duplicate');
-				}
-			}).catch(error=> {
-				// HLS this is where the real meat of the error is
-				console.log('login error: ')
-				console.log(error.response.data.error);
-				// throw the error so it catches componentDidCatch
-				// throw new Error(error.response.data.error);
-				this.setState({
-					error: true,
-					errorInfo: error.response.data.error
+				// update App.js state to show user as loggedin
+				this.props.updateUser({
+					loggedIn: true,
+					username: response.data.username
 				});
-			 })
+
+				console.log('now populate the props with a getUser');
+				// populate the props for the app
+				this.props.getUser();
+
+				this.setState({
+					redirectTo: '/'
+				});
+			} else {
+				console.log('duplicate');
+			}
+		}).catch(error=> {
+			console.log('login error: ')
+			console.log(error.response.data.error);
+			this.setState({
+				error: true,
+				errorInfo: error.response.data.error
+			});
+		})
 	}
+
 	render() {
 		if (this.state.redirectTo) {
 			return <Redirect to={{ pathname: this.state.redirectTo }} />
