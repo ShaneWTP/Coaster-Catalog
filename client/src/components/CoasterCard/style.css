@@ -1,7 +1,9 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-
+.coastercard {
+    border-radius: 0 !important;
+}
 .coasterImage img {  
     height: 120px;
     width: 120px;
