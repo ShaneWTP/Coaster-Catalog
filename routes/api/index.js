@@ -6,4 +6,5 @@ const userRoutes = require("./user");
 router.use("/coasters", coasterRoutes);
 router.use("/user", userRoutes);
 
+
 module.exports = router;
