@@ -46,6 +46,6 @@ export default {
   },
   // add a ride to the coaster in a user document
   addRide: function(newCoaster) {
-    return axios.post('/api/user/addride', {coaster: newCoaster});
+    return axios.put('/api/user/addride', {coaster: newCoaster});
   }
 };

@@ -9,7 +9,7 @@ router.route("/addcoaster")
 // map to /api/user/addride
 // the roller coaster id that you want to add a ride to should be in request
 router.route("/addride")
-  .post(userController.addCoasterRide);
+  .put(userController.addCoasterRide);
 
 // this gets a user from the session
 // why not get user from the database? 
