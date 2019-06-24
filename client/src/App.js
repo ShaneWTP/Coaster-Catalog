@@ -115,8 +115,6 @@ class App extends Component {
       <div className="App">
 
         <Router>
-
-            <Container>
               <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
               <Switch>
                 <Route exact path="/" render={() =>
@@ -140,8 +138,6 @@ class App extends Component {
 
               </Switch>
               <Footer />
-            </Container>
-
         </Router>
       </div >
 
