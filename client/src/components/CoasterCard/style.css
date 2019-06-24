@@ -5,6 +5,7 @@
 .cc-section {
   background: #fff;
   overflow: scroll;
+  padding: 15px;
 }
 .coastercard {
     border-radius: 0 !important;
