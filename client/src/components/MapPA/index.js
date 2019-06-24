@@ -2,7 +2,7 @@ import React from "react";
 
 function MapPA() {
   return (
-    <div className="map-div">
+    <div className="map-div container">
       <span id="map-tip"></span>
       <div id="mapwrapper">
         <div id="map_base">

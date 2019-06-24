@@ -28,13 +28,9 @@ class Home extends Component {
     return (
       <div className="home">
         <Jumbotron user={this.props.user}/>
-        <Wrapper>
-          <MapPA />
-        </Wrapper>
-        <Container >
-          <Wrapper>
-          <CoasterCard handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} coasters={this.state.coasters} />
-      </Wrapper></Container></div>
+        <MapPA />
+        <CoasterCard handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} coasters={this.state.coasters} />
+      </div>
     );
   }
 }
