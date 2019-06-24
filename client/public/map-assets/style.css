@@ -1,4 +1,8 @@
-﻿.circle-hover #map-tip {
+﻿#map-title {
+  text-align: center;
+}
+
+.circle-hover #map-tip {
   display: block !important;
 }
 
@@ -29,7 +33,7 @@ b {
 .coaster-link-del-1 {
   width: 95%;
   display: block !important;
-  margin-top: 140px !important;
+  margin-top: 150px !important;
   margin-left: 5px !important;
   margin-bottom: -10px;
   font-size: 20px;
