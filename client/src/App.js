@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import NavbarTop from "./components/NavbarTop";
 import Home from "./pages/Home";
 import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
@@ -114,7 +115,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-
+          <NavbarTop />
           <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
           <Switch>
             <Route exact path="/" render={() =>

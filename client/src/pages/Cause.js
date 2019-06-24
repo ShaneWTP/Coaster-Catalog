@@ -4,8 +4,12 @@ import {Row, Col} from "../components/Grid"
   const Cause = props => {
   
     const containerStyle = {
-      'background-color' : '#ffff',
-      'box-shadow':' 5px 5px 5px grey'
+      'background-color' : '#ffffff',
+      'box-shadow':' 5px 5px 5px grey',
+      // 'margin-left' : '50px',
+      'margin-right' : '50px',
+      'margin-top' : '20px',
+      'text-align': 'center'
     }
 
     const imageStyle = {
