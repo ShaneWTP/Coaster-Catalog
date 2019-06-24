@@ -71,11 +71,11 @@ class App extends Component {
 
   // Adds a new roller coaster to the user profile
   handleNewCoasterSubmit(event) {
-		event.preventDefault();
+    event.preventDefault();
     console.log('New Coaster Submitted!');
     console.log(event.target.id);
     let newCoaster = event.target.id;
-    
+
     API.addCoasterToUser(newCoaster).then(response => {
       console.log(response);
       if (!response.data.error) {
@@ -87,26 +87,26 @@ class App extends Component {
       }
     }).catch(error => {
       console.log('addcoaster error: ' + error)
-      })
+    })
   }
-  
+
   // adds a ride to the user's rollercoaster
   handleAddRideSubmit(event) {
-		event.preventDefault();
+    event.preventDefault();
     console.log('handleAddRideSubmit ' + event.target.id);
 
     API.addRide(event.target.id)
-		.then(response => {
-      console.log(response);
-      if (!response.data.error) {
-        console.log("you're good");
-        // getUser will update display
-        this.getUser();
-      } else {
-        console.log('Error: ' + response.data.error);
-      }
-    }).catch(error => {
-      console.log('addcoaster error: ' + error)
+      .then(response => {
+        console.log(response);
+        if (!response.data.error) {
+          console.log("you're good");
+          // getUser will update display
+          this.getUser();
+        } else {
+          console.log('Error: ' + response.data.error);
+        }
+      }).catch(error => {
+        console.log('addcoaster error: ' + error)
       })
   }
 
@@ -116,37 +116,38 @@ class App extends Component {
 
         <Router>
 
-            <Container>
-              <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
-              <Switch>
-                <Route exact path="/" render={() =>
-                  <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
-                } />
-                <Route path="/signin" render={() =>
-                  <LoginForm updateUser={this.updateUser} getUser={this.getUser}/>
-                } />
-                <Route path="/signup" render={() =>
-                  <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
-                } />
-                <Route exact path="/userprofile" render={() =>
-                  <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
-                } />
+          <Container>
+            <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser} />
+            <Switch>
+              <Route exact path="/" render={() =>
+                <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+              } />
+              <Route path="/signin" render={() =>
+                <LoginForm updateUser={this.updateUser} getUser={this.getUser} />
+              } />
+              <Route path="/signup" render={() =>
+                <SignupForm updateUser={this.updateUser} getUser={this.getUser} />
+              } />
+              <Route exact path="/userprofile" render={() =>
+                <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit} />
+              } />
 
-                <Route path="/coasters/:id" component={Coaster} user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+              <Route path="/coasters/:id" render={(routerProps) =>
+                <Coaster user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} {...routerProps} />
+              } />
+              <Route path="/cause" render={() =>
+                <Cause />
+              } />
 
-                <Route path="/cause" render={() =>
-                  <Cause/>
-                } />
-
-              </Switch>
-              <Footer />
-            </Container>
+            </Switch>
+            <Footer />
+          </Container>
 
         </Router>
       </div >
 
-        );
-      }
-    }
-    
-    export default App;
+    );
+  }
+}
+
+export default App;

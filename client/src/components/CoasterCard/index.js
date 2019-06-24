@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "../Grid";
+import RodeIt from "../RodeItButton"
 import "./style.css";
 
 const CoasterCard = props => {
@@ -33,8 +34,7 @@ const CoasterCard = props => {
                                         <p className="coasterRating">{coaster.rating}</p>
                                     </Row>
                                     <Row>
-                                        <button className="btn btn-success btn-md" id={coaster._id} onClick={(event) => props.handleNewCoasterSubmit(event)}>I Rode this</button>
-                                    </Row>
+                                    <RodeIt handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>                                    </Row>
                                 </div>
                             </Col>
                         </Row>
