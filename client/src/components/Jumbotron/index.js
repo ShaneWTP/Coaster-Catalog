@@ -17,15 +17,15 @@ class Jumbotron extends Component {
         <div className="container h-100 jumbocontainer">
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 col-sm-12 text-white">
-              <h1 className="display-3 my-auto">Welcome to the Thing</h1>
+              <h1 className="display-3 font-weight-bold my-auto">Welcome to the Thing</h1>
               <h2>Stuff About the Thing</h2>
-              <a href="/signup">
+              {this.props.user ?  "" : <div><a href="/signup">
                 <button className="signup btn btn-success m-2">
                   Create a Profile</button></a>
               <a href="/signin">
                 <button className="signin btn btn-success m-2">
                   Sign In</button>
-              </a>
+              </a> </div>}
             </div>
           </div>
         </div>

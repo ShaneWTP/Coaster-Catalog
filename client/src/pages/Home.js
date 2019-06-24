@@ -27,7 +27,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Jumbotron />
+        <Jumbotron user={this.props.user}/>
         <Wrapper>
           <MapPA />
         </Wrapper>

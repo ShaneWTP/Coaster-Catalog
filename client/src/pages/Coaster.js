@@ -28,7 +28,7 @@ class Coaster extends Component {
                 <Container>
                     <Row>
                         <Col size="12">
-                            <h1 className="display-4 text-center">
+                            <h1 className="display-4 font-weight-bold text-center">
                                 {this.state.coaster.name}
                             </h1>
                             <h2 className="text-center">

@@ -16,7 +16,7 @@ const CoasterCard = props => {
                             <Col size="3">
                                 <a href={"/coasters/" + coaster._id}>
                                     <div className="coasterImage my-3">
-                                        <img src={coaster.img1 || "https://via.placeholder.com/150C/O"} class="img-circle" alt={coaster.name} />
+                                        <img src={coaster.img1 || "https://via.placeholder.com/150C/O"} className="img-circle" alt={coaster.name} />
                                     </div></a>
                             </Col>
                             <Col size="md-8" className="coasterInfo px-3">
