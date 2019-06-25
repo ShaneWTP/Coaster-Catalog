@@ -53,10 +53,6 @@ class Navbar extends Component {
       <MDBNavbar color="green darken-3" dark expand="md">
         <MDBNavbarBrand>
           <MDBNavLink to="/">
-              {/* <div className="logo">
-                <img src={logo} width="550" height="85" className="d-inline-block align-top" alt="logo" />
-              </div> */}
-
               <div className="logo-container">
                 <img src={logo} width="550" height="85" className="d-inline-block align-top" alt="logo" />
                 <div className="overlay">
@@ -65,7 +61,6 @@ class Navbar extends Component {
                   </a>
                 </div>
               </div>
-
           </MDBNavLink>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />

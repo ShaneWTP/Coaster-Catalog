@@ -4,7 +4,7 @@ input::-moz-focus-inner { border: 0; }
 :focus { outline: 0; }
 body { background: #333; }	
 .brand { padding: 10px 40px !important; }
-.navbar { border-bottom: 4px solid #888; }
+/* .navbar { border-bottom: 4px solid #888; } */
 
 
 /*  Nav Items STYLE
@@ -13,7 +13,7 @@ body { background: #333; }
 .logo-container {
   position: relative;
   width: 100%;
-  background: #22e72c;
+  background: #14da1e;
 }
 
 .image {
@@ -133,7 +133,7 @@ body { background: #333; }
 
 	.mega-menu li {
 		display: inline-block;
-		float: left;
+		/* float: left; */
 		font-size: 0.94rem;
 		padding: 3px 0px;
 		}
@@ -182,10 +182,10 @@ body { background: #333; }
             
             
     /* Toggle caret*/
-    .navbar .nav li.dropdown > .dropdown-toggle .caret {
-        border-bottom-color:;
-        border-top-color:;
-        }
+    /* .navbar .nav li.dropdown > .dropdown-toggle .caret { */
+        /* border-bottom-color:; */
+        /* border-top-color:; */
+        /* } */
         /* Toggle caret hover */
         .navbar .nav li.dropdown > a:hover .caret, 
         .navbar .nav li.dropdown > a:focus .caret {
@@ -193,12 +193,12 @@ body { background: #333; }
         border-top-color: #333;
         }
         /* Toggle caret active */
-        .navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
-        .navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
-        .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-        border-bottom-color:#333;
-        border-top-color: #333;
-        }
+        /* .navbar .nav li.dropdown.open > .dropdown-toggle .caret,  */
+        /* .navbar .nav li.dropdown.active > .dropdown-toggle .caret,  */
+        /* .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret { */
+        /* border-bottom-color:#333; */
+        /* border-top-color: #333; */
+        /* } */
         .navbar-toggler {
           margin: 0 auto;
         }
