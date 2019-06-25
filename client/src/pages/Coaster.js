@@ -22,6 +22,21 @@ class Coaster extends Component {
             .catch(err => console.log(err));
     }
 
+    animateValue(id, start, end, duration) {
+      var range = end - start;
+      var current = start;
+      var increment = end > start? 1 : -1;
+      var stepTime = Math.abs(Math.floor(duration / range));
+      var obj = document.getElementById(id);
+      var timer = setInterval(function() {
+          current += increment;
+          obj.innerHTML = current;
+          if (current == end) {
+              clearInterval(timer);
+          }
+      }, stepTime);
+    }
+
     render() {
         return (
             <div className="coaster">
@@ -125,6 +140,18 @@ class Coaster extends Component {
                                 Inversions: {this.state.coaster.inversions || "Inversions not listed"}
                             </p>
                         </Col>
+                    </Row>
+                    <Row >
+                      <h1 className="text-center">Fast Facts</h1>
+                      <Col size="4">
+                        <h3 className="text-center">Height</h3>
+                       </Col> 
+                       <Col size="4">
+                        <h3 className="text-center">Speed</h3>
+                       </Col> 
+                       <Col size="4">
+                        <h3 className="text-center">Duration</h3>
+                       </Col> 
                     </Row>
                 </Container>
                 <Row>
