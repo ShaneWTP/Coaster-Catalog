@@ -3,6 +3,12 @@ import React from "react";
 function MapPA() {
   return (
     <div className="map-div">
+      <div className="row">
+        <div className="col l12 s12" id="map-title">
+          <h3>All the Amusement Parks &amp; Roller Coasters in Pennsylvania</h3>
+          <p>explanation about stuff on the map</p>
+        </div>  
+      </div>
       <span id="map-tip"></span>
       <div id="mapwrapper">
         <div id="map_base">

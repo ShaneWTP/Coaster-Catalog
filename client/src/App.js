@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import API from "./utils/API";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Container from "./components/Container";
+// import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import NavbarTop from "./components/NavbarTop";
 import Home from "./pages/Home";
 import LoginForm from "./pages/Signin";
 import SignupForm from "./pages/Signup";
@@ -113,37 +114,33 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <Router>
+          <NavbarTop />
+          <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
+          <Switch>
+            <Route exact path="/" render={() =>
+              <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
+            } />
+            <Route path="/signin" render={() =>
+              <LoginForm updateUser={this.updateUser} getUser={this.getUser}/>
+            } />
+            <Route path="/signup" render={() =>
+              <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
+            } />
+            <Route exact path="/userprofile" render={() =>
+              <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
+            } />
 
-          <Container>
-            <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser} />
-            <Switch>
-              <Route exact path="/" render={() =>
-                <Home user={this.state.user} updateUser={this.updateUser} handleNewCoasterSubmit={this.handleNewCoasterSubmit} />
-              } />
-              <Route path="/signin" render={() =>
-                <LoginForm updateUser={this.updateUser} getUser={this.getUser} />
-              } />
-              <Route path="/signup" render={() =>
-                <SignupForm updateUser={this.updateUser} getUser={this.getUser} />
-              } />
-              <Route exact path="/userprofile" render={() =>
-                <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit} />
-              } />
-
-              <Route path="/coasters/:id" render={(routerProps) =>
+          <Route path="/coasters/:id" render={(routerProps) =>
                 <Coaster user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} {...routerProps} />
               } />
-              <Route path="/cause" render={() =>
-                <Cause />
-              } />
+            <Route path="/cause" render={() =>
+              <Cause/>
+            } />
+          </Switch>
+          <Footer />
+          </Router>
 
-            </Switch>
-            <Footer />
-          </Container>
-
-        </Router>
       </div >
 
     );
