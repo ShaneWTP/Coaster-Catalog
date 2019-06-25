@@ -38,7 +38,7 @@ class Coaster extends Component {
                             <p className="text-center">
                                 {this.state.coaster.location}
                             </p>
-                            <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id}/>
+                            <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
                             <br></br>
                         </Col>
                     </Row>
@@ -46,16 +46,16 @@ class Coaster extends Component {
                 <Carousel showThumbs={false}>
 
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img1} alt={this.state.coaster.name}/>
+                        <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img2} alt={this.state.coaster.name}/>
+                        <img src={this.state.coaster.img2} alt={this.state.coaster.name} />
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img3} alt={this.state.coaster.name}/>
+                        <img src={this.state.coaster.img3} alt={this.state.coaster.name} />
                     </div>
                     <div style={imgStyle} className="carousel-img m-auto">
-                        <img src={this.state.coaster.img4} alt={this.state.coaster.name}/>
+                        <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
                     </div>
                 </Carousel>
 
@@ -101,7 +101,7 @@ class Coaster extends Component {
                                 Scale: {this.state.coaster.scale || "Scale not listed"}
                             </p>
                             <p className="text-left">
-                                Awards: {[this.state.coaster.awards] || "No awards listed"}
+                                Awards: {[this.state.coaster.awards].join() || "No awards listed"}
                             </p>
 
                         </Col>
