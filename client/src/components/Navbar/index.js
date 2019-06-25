@@ -84,6 +84,9 @@ class Navbar extends Component {
             <MDBNavItem className="d-none d-md-inline cause">
               <MDBNavLink to="/cause">Coasters for a Cause</MDBNavLink>
             </MDBNavItem>
+            {/* <MDBNavItem>
+              <div> WELCOME {this.props.username} !</div>
+            </MDBNavItem> */}
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem className="sign-in">

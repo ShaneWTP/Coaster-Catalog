@@ -105,7 +105,7 @@ class LoginForm extends Component {
           <div className="row w-100 no-gutters">
             <div className="col-sm-3 align-self-center">
               {/* <img style={coasterImg} src="images/roller-coaster-2538846_1280_1.jpg" /> */}
-              <img className="img-fluid" src="images/roller-coaster-2538846_1280_1.jpg" alt="Roller Coaster at Hershey Park" />
+              <img className="card-img-top" src="images/roller-coaster-2538846_1280_1.jpg" height="372" width="400" alt="Roller Coaster at Hershey Park" />
             </div>
 
             <div className="col-sm-9">
@@ -157,9 +157,9 @@ class LoginForm extends Component {
                   <div className="card-body bg-primary text-center text-white">
                     <br></br>
                     <br></br>
-                    <h4> Not already a member?</h4>
+                    <h3> Not a member yet?</h3>
                     <br></br>
-                    <a href="/signup" className=" btn btn-secondary text-white">Sign up</a>
+                    <a href="/signup" className=" btn btn-secondary text-white">Sign up!</a>
                     <br></br>
                     <br></br>
                     <br></br>
