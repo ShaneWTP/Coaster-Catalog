@@ -1,12 +1,27 @@
 import React from "react";
+import Red from "./red-dot.png"
+import Blue from "./blue-square.png"
 
 function MapPA() {
   return (
     <div className="map-div">
+      <br/>
       <div className="row">
         <div className="col l12 s12" id="map-title">
-          <h3>All the Amusement Parks &amp; Roller Coasters in Pennsylvania</h3>
-          <p>explanation about stuff on the map</p>
+          <h3>Amusement Parks &amp; Roller Coasters in Pennsylvania</h3>
+          <br/>
+          <p>The dots on the map indicate where all the amusement parks in Pennsylvania are located. Hover over each of the dots <br/>to learn where all the roller coasters in Pennsylvania are located.</p>
+          <br/>
+          <div className="row">
+            <div className="col-4"></div>
+            <div className="col-2">
+            <p><img src={Red} width="40" className="d-inline-block align-top" alt="red dot" />Indicates an Amusment Park</p>
+            </div>
+            <div className="col-2">
+            <p><img src={Blue} width="40" className="d-inline-block align-top" alt="blue square" />Indicates a Major City</p>
+            </div>
+            <div className="col-4"></div>
+          </div>
         </div>  
       </div>
       <span id="map-tip"></span>

@@ -7,6 +7,16 @@ import "./style.css";
 const CoasterCard = props => {
   return (
     <div className="container cc-section">
+      <br/>
+      <div className="row">
+        <div className="col l12 s12" id="map-title">
+          <h3>Roller Coaster Index</h3>
+          <br/>
+          <p>Page through the list for information about all the roller coasters in Pennsylvania are located. <br/>Click on a Coaster's image to go to the Coaster's Profile page for even more infromation about the coaster's origin and stats.</p>
+          <br/>
+        </div> 
+      </div>  
+      <br/>
       {props.coasters.map(coaster => {
         return (
             <li className="card my-1 coastercard" key={coaster._id}>
