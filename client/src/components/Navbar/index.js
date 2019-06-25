@@ -68,26 +68,73 @@ class Navbar extends Component {
           <MDBNavbarNav left>
             <MDBNavItem className="parks">
               <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <div className="d-none d-md-inline">Parks</div>
+                <MDBDropdownToggle nav caret class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div className="d-none d-md-inline">Parks &amp; Coasters</div>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Camelback Mountain Adventures</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Conneaut Lake Park</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">DelGrosso's Amusement Park</MDBDropdownItem>
-                  <MDBDropdownItem href="/dorney">Dorney Park and Wildwater Kingdom</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Dutch Wonderland</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Fun Fore All Family Entertainment Center</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Hersheypark</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Idlewild and SoakZone</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Kennywood</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Knoebels Amusement Park and Resort</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Lakemont Park</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Sesame Place</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Waldameer</MDBDropdownItem>
+                <MDBDropdownMenu className="dropdown-default" aria-labelledby="dropdownMenuButton">
+                  <div class="row p-3 drop-down-card">
+                    <div class="col-4">
+                      <span>Camelback Mountain Adventures</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Conneaut Lake Park</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>DelGrosso's Amusement Park</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Dorney Park and Wildwater Kingdom</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Dutch Wonderland</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                    </div>            
+                    <div class="col-4">
+                      <span>Fun Fore All Family Entertainment Center</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Hersheypark</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Idlewild and SoakZone</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Kennywood</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Knoebels Amusement Park and Resort</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                    </div>
+                    <div class="col-4">
+                      <span>Lakemont Park</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Sesame Place</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <span>Waldameer</span>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
+                    </div>
+                  </div>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavItem>
+            </MDBNavItem> 
             <MDBNavItem className="profile">
               <MDBNavLink to="/userprofile">Profile</MDBNavLink>
             </MDBNavItem>
