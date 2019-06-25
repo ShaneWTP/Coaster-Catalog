@@ -6,8 +6,6 @@ import {Row, Col} from "../components/Grid"
     const containerStyle = {
       'background-color' : '#ffffff',
       'box-shadow':' 5px 5px 5px grey',
-      // 'margin-left' : '50px',
-      'margin-right' : '50px',
       'margin-top' : '20px',
       'text-align': 'center'
     }
@@ -30,22 +28,32 @@ import {Row, Col} from "../components/Grid"
     }
     
     const h1Style = {
-      'color': 'white',
-      'text-shadow': '2px 2px 4px #000000',
-      // 'color' : '#0A1E5F'
+      // 'color': 'white',
+      // 'text-shadow': '2px 2px 4px #000000',
+      'color' : '#000'
     }
 
     return (
-    <div>
-      <div className="container-fluid" style={containerStyle}>
-        <h1 style={h1Style} >Ride Coasters And Fundraise</h1>
-        <img src="images/cause-logo.jpg" alt="Coaster for a Cause logo"/>
-        <h1>Total Money Raised for Charity</h1>
-        <div style={borderStyle} class="d-inline-flex p-2">
-          <h1>$3000.00</h1>
+    <div className="container">
+      <div className="card mt-4 mb-4 text-center">
+        <div className="card-body">
+          <div className="p-3">
+            <img src="images/cfac-logo.png" width="800" height="auto" alt="Coaster for a Cause logo"/>
+          </div>
+          <h1 style={h1Style} >Ride Coasters And Fundraise</h1>
+          <div>
+            <div>
+              <h4>Pennsylvania Amusement parks provide an excellent opportunity<br/> to raise money for your favorite charity!</h4> 
+              <div className="m-5">
+                <p>Use the Coaster Catalogue to keep track of all your coaster rides. Your favorite amusement park will donate $1 <br/>for each crazy loop or death-defying drop. Can you think of a better way to FUNRAISE?</p>
+              </div>  
+            </div>  
+          </div>
+          <h2>Total Money Raised for Charity</h2>
+          <div style={borderStyle} class="d-inline-flex p-2">
+            <h1>$3000.00</h1>
+          </div>
         </div>
-        {/* <p style={pStyle}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> */}
-        <p style={pStyle}>Amusement parks provide the best opportunity to raise money for your favorite charity. Use the Coaster Catalogue to keep track of all your coaster rides. Your favorite amusement park will donate $1 for each crazy loop or death-defying drop. Can you think of a better way to FUNRAISE?</p>
       </div>
 
       <div className="card">
