@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "../Grid";
-import RodeIt from "../RodeItButton"
+import RodeIt from "../RodeItButton";
+import Stars from "../Stars";
 import "./style.css";
 
 const CoasterCard = props => {
@@ -30,6 +31,7 @@ const CoasterCard = props => {
                       <p className="coasterPark text-left">{coaster.park} | {coaster.location}</p>
                     </Row>
                     <Row>
+                      <Stars />
                       <p className="coasterRating">{coaster.rating}</p>
                     </Row>
                     <Row>
