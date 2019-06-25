@@ -8,6 +8,8 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "react-easy-swipe/lib/react-swipe.js";
+import "react-star-rating-component";
+
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
