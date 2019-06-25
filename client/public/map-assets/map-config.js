@@ -79,7 +79,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>CAMELBACK MOUNTAIN <br>ADVENTURES &nbsp;<span class="remove">X</span></b></u><br>Tannersville, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/camelback-logo.png" width="270px"><br><a href="/coasters/5d0aae19c64c9f1682257e1a" class="coaster-link-del-1">Appalachian Express<br><br> Mountain Coaster</a><br>',
+    'hover':'<u><b>CAMELBACK MOUNTAIN &nbsp;<span class="remove">X</span><br>ADVENTURES </b></u><br>Tannersville, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/camelback-logo.png" width="270px"><br><a href="/coasters/5d0aae19c64c9f1682257e1a" class="coaster-link-del-1">Appalachian Express<br><br> Mountain Coaster</a><br>',
 		'pos_X':590,
 		'pos_Y':170,
 		'diameter':8,

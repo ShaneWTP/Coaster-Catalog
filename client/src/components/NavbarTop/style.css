@@ -1,0 +1,15 @@
+
+/*  Nav Items STYLE
+********************************/ 
+
+.welcome {
+  /* border: 2px solid #0A1E5F; */
+  font-size: 30px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom: none;
+  background: #0A1E5F;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
