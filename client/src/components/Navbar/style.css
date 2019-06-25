@@ -10,6 +10,35 @@ body { background: #333; }
 /*  Nav Items STYLE
 ********************************/ 
 
+.logo-container {
+  position: relative;
+  width: 100%;
+  background: #22e72c;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  
+}
+
+.logo-container:hover .overlay {
+  opacity: 1;
+  
+}
+
 .parks {
   border: 2px solid #0A1E5F;
   font-size: 25px;
