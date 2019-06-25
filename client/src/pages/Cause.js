@@ -3,21 +3,21 @@ import {Row, Col} from "../components/Grid"
 
   const Cause = props => {
   
-    const containerStyle = {
-      'background-color' : '#ffffff',
-      'box-shadow':' 5px 5px 5px grey',
-      'margin-top' : '20px',
-      'text-align': 'center'
-    }
+    // const containerStyle = {
+    //   'background-color' : '#ffffff',
+    //   'box-shadow':' 5px 5px 5px grey',
+    //   'margin-top' : '20px',
+    //   'text-align': 'center'
+    // }
 
     const imageStyle = {
       'height' : '150px',
       'width' : 'auto'
     }
 
-    const pStyle = {
-      'padding' : '15px',
-    }
+    // const pStyle = {
+    //   'padding' : '15px',
+    // }
     
     const borderStyle = {
       'border' : 'solid 2px black',
@@ -87,7 +87,7 @@ import {Row, Col} from "../components/Grid"
                 </div>
                 <div className="col-md-4 align-self-center">
                 <h4>Number of dollars raised:</h4>
-                  <div style={borderStyle}>
+                  <div className="text-center" style={borderStyle}>
                     <h2>$800.00</h2>
                   </div>
                 </div>
