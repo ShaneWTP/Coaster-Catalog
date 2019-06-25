@@ -76,88 +76,100 @@ class SignupForm extends Component {
 			return <Redirect to={{ pathname: this.state.redirectTo }} />
 		}
 		return (
-			<div className="SignupForm">
-					<h1>Welcome</h1>
+			<div className="SignupForm container">
+        {/* <h1>Welcome</h1> */}
 
-          <div className="row">
-            <div className="col-sm-3">
+        <div className="row no-gutters mt-4">
+          <div className="col-sm-3">
+            <img className="card-img-top" src="images/sign-up-pic.png" height="630" width="400" alt="Roller Coaster at Hershey Park"/>  
           </div>
 
-					<div className="col-sm-6">
-						<div className="card">
-						{/* <img className="card-img-top" src="images/roller-coaster-2538846_1280.jpg" alt="Card image cap"/>   */}
-							<article className="card-body">
-								<a href="/signin" className="float-right btn btn-outline-primary">Sign in</a>
-								<h4 className="card-title mb-4 mt-1"> Create Profile </h4>
-								<form>
-								<div className="form-group">
-										<label className="float-left">First Name</label>
-											<input  className="form-control" 
-												type="text"
-												name="firstName" 
-												// value={this.state.username}
-												// onChange={this.handleChange}
-												style={inputStyle}
-											/>
-									</div>
-									<div className="form-group">
-										<label className="float-left">Last Name</label>
-											<input  className="form-control" 
-												type="text"
-												name="lastName" 
-												// value={this.state.username}
-												// onChange={this.handleChange}
-												style={inputStyle}
-											/>
-									</div>
-									<div className="form-group">
-										<label className="float-left">Email</label>
-											<input  className="form-control" 
-												type="email"
-												name="email" 
-												// value={this.state.username}
-												// onChange={this.handleChange}
-												style={inputStyle}
-											/>
-									</div>
-									<div className="form-group">
-										<label className="float-left"><i className="fas fa-asterisk"></i> Username</label>
-											<input  className="form-control" 
-												type="text"
-												name="username" 
-												value={this.state.username}
-												onChange={this.handleChange}
-												style={inputStyle}
-											/>
-									</div>
-									<div className="form-group">
-										<label  className="float-left"><i className="fas fa-asterisk"></i> Password</label>
-										<input className="form-control"  
-											type="password"
-											name="password"
-											value={this.state.password}
-											onChange={this.handleChange}
-											style={inputStyle}
-										/>
+        <div className="col-sm-9">
+          <div className="card">
+            <article className="card-body">
+              
+              <h4 className="card-title mb-4 mt-1"> Create Profile </h4>
+              <form>
+              <div className="form-group">
+                  <label className="float-left">First Name</label>
+                    <input  className="form-control" 
+                      type="text"
+                      name="firstName" 
+                      // value={this.state.username}
+                      // onChange={this.handleChange}
+                      style={inputStyle}
+                    />
+                </div>
+                <div className="form-group">
+                  <label className="float-left">Last Name</label>
+                    <input  className="form-control" 
+                      type="text"
+                      name="lastName" 
+                      // value={this.state.username}
+                      // onChange={this.handleChange}
+                      style={inputStyle}
+                    />
+                </div>
+                <div className="form-group">
+                  <label className="float-left">Email</label>
+                    <input  className="form-control" 
+                      type="email"
+                      name="email" 
+                      // value={this.state.username}
+                      // onChange={this.handleChange}
+                      style={inputStyle}
+                    />
+                </div>
+                <div className="form-group">
+                  <label className="float-left"><i className="fas fa-asterisk"></i> Username</label>
+                    <input  className="form-control" 
+                      type="text"
+                      name="username" 
+                      value={this.state.username}
+                      onChange={this.handleChange}
+                      style={inputStyle}
+                    />
+                </div>
+                <div className="form-group">
+                  <label  className="float-left"><i className="fas fa-asterisk"></i> Password</label>
+                  <input className="form-control"  
+                    type="password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                    style={inputStyle}
+                  />
 
-									</div> 
-									{this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>}
-									<div className="form-group">
-											<button onClick={this.handleSubmit} 
-											disabled={!(this.state.username && this.state.password)}
-											type="submit"
-											className="btn  "
-												style={buttonStyle}> Sign Up  </button>
-									</div>                                                         
-								</form>
-							</article>
-						</div> 
-					</div>
-            
-					<div className="col-sm-3">
-					</div>
-				</div>
-
+                </div> 
+                {this.state.error ? <h2>{this.state.errorInfo}</h2> : <br/>}
+                <div className="form-group">
+                    <button onClick={this.handleSubmit} 
+                    disabled={!(this.state.username && this.state.password)}
+                    type="submit"
+                    className="btn  "
+                      style={buttonStyle}> Sign Up  </button>
+                </div>                                                         
+              </form>
+            </article>
+          </div> 
+        </div>
+      </div>
+      <div className="row no-gutters">
+          <div className="col-sm-12">
+            <div className="card">
+              <div className="card-body bg-primary text-center text-white">
+                <br></br>
+                <br></br>
+                <h3> Already a member?</h3>
+                <br></br>
+                <a href="/signin" className="text-white btn btn-secondary">Sign in</a>
+                <br></br>
+                <br></br>
+                <br></br>
+              </div>
+            </div>
+          </div>
+        </div>
 			</div>
 		)
 	}
