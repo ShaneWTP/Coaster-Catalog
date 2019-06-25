@@ -12,9 +12,9 @@ body { background: #333; }
 
 .parks {
   border: 2px solid #0A1E5F;
-  font-size: 30px;
-  padding: 10px;
-  margin-right: 100px;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
+  margin-right: 80px;
   margin-left: 90px;
 }
 
@@ -22,24 +22,52 @@ body { background: #333; }
   background: #0A1E5F;
 }
 
+.parks::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 665px;
+  top: 23px;
+}
+
 .profile {
   border: 2px solid #0A1E5F;
-  font-size: 30px;
-  padding: 10px;
-  margin-right: 100px;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
+  margin-right: 80px;
 }
 .profile:hover {
   background: #0A1E5F;
 }
+.profile::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 905px;
+  top: 23px;
+}
 
 .cause {
   border: 2px solid #0A1E5F;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
   margin-right: 100px;
 }
 .cause:hover {
   background: #0A1E5F;
+}
+.cause::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 1148px;
+  top: 23px;
 }
 
 .sign-in {
@@ -51,6 +79,15 @@ body { background: #333; }
 }
 .sign-in:hover {
   background: #0A1E5F;
+}
+.sign-in::before {
+  content: none;
+  background: #0A1E5F;
+  /* height: 71px; */
+  /* width: 40px; */
+  position: absolute;
+  right: 700px;
+  top: 28px;
 }
 
 
@@ -135,6 +172,12 @@ body { background: #333; }
         }
         .navbar-toggler {
           margin: 0 auto;
+        }
+        .navbar-toggler-icon {
+          border: 2px solid #0A1E5F;
+          border-radius: 10px;
+          font-size: 30px;
+          padding: 25px;
         }
 
 

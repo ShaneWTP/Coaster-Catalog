@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./cc-logo-revised-1.png"
+import logo from "./cc-logo-2.png"
 import API from "../../utils/API";
 import "./style.css";
 import {
@@ -81,7 +81,7 @@ class Navbar extends Component {
             <MDBNavItem className="profile">
               <MDBNavLink to="/userprofile">Profile</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem className="cause">
+            <MDBNavItem className="d-none d-md-inline cause">
               <MDBNavLink to="/cause">Coasters for a Cause</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
