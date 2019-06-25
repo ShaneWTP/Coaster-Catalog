@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LogoHover from "./logo-hover.png"
 import logo from "./cc-logo-2.png"
 import API from "../../utils/API";
 import "./style.css";
@@ -51,7 +52,21 @@ class Navbar extends Component {
     return (
       <MDBNavbar color="green darken-3" dark expand="md">
         <MDBNavbarBrand>
-          <MDBNavLink to="/"><img src={logo} width="550" height="85" className="d-inline-block align-top" alt="logo" /></MDBNavLink>
+          <MDBNavLink to="/">
+              {/* <div className="logo">
+                <img src={logo} width="550" height="85" className="d-inline-block align-top" alt="logo" />
+              </div> */}
+
+              <div className="logo-container">
+                <img src={logo} width="550" height="85" className="d-inline-block align-top" alt="logo" />
+                <div className="overlay">
+                  <a href="/" className="image">
+                    <img src={LogoHover} width="550" height="85" className="d-inline-block align-top" alt="logo-hover" />
+                  </a>
+                </div>
+              </div>
+
+          </MDBNavLink>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
