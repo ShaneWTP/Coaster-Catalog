@@ -31,6 +31,5 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 # Richard Test
 
 Created with ♥ by The Four Loops
-
 # Heather Test
 
