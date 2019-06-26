@@ -24,13 +24,16 @@ class BarChart extends Component {
   }
   render (){
     return(
-      <div className="chart">
+      <div className="bar-chart">
         <Bar
           data={this.state.chartData}
           width={100}
           height={400}
           options={{ 
-            maintainAspectRatio: false 
+            maintainAspectRatio: false,
+            animation: {
+              duration: 4000
+            }
           }}
         />
       </div>  

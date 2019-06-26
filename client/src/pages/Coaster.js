@@ -132,12 +132,12 @@ class Coaster extends Component {
                   <br/>
                 <Row>  
                   <Col size="4">
-                    <h3 className="text-center">Height</h3>
+                    <h3 className="text-center">Tallest Height</h3>
                     <BarChart />
                   </Col> 
                   <Col size="1"></Col> 
                   <Col size="7">
-                    <h3 className="text-center">Speed</h3>
+                    <h3 className="text-center">Fastest Speed</h3>
                     <DoughnutChart />
                   </Col> 
                 </Row>

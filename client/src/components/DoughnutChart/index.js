@@ -9,23 +9,22 @@ class DoughnutChart extends Component {
         labels: ['Speed in mph'],
         datasets: [
           {
-            // label: ['Speed in mph'],
-            data: [40, 20],
+            // label: ['text'],
+            data: [45, 10],
             // data: [{this.state.coaster.height}, 1],
             backgroundColor: [
               'rgba(47,124,50)', 
               'rgb(255, 36, 25, 0.5)',
             ]
-            
-
           }
         ]
       }
     }
   }
+
   render (){
     return(
-      <div className="chart">
+      <div className="doughnut-chart">
         <Doughnut
           data={this.state.chartData}
           width={100}
@@ -33,7 +32,10 @@ class DoughnutChart extends Component {
           options={{ 
             maintainAspectRatio: false,
             circumference: Math.PI,
-            rotation: Math.PI / 1 
+            rotation: Math.PI / 1,
+            animation: {
+              duration: 4000
+            }
           }}
         />
       </div>  
