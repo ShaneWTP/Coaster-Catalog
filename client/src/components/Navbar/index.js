@@ -68,12 +68,12 @@ class Navbar extends Component {
           <MDBNavbarNav left>
             <MDBNavItem className="parks">
               <MDBDropdown>
-                <MDBDropdownToggle nav caret class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <MDBDropdownToggle nav caret className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div className="d-none d-md-inline">Parks &amp; Coasters</div>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default" aria-labelledby="dropdownMenuButton">
-                  <div class="row p-3 drop-down-card">
-                    <div class="col-4">
+                  <div className="row p-3 drop-down-card">
+                    <div className="col-4">
                       <span>Camelback Mountain Adventures</span>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e1a">Appalachian Express Mountian Coaster</MDBDropdownItem>
                       <span>Conneaut Lake Park</span>
@@ -127,7 +127,7 @@ class Navbar extends Component {
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e02">Steel Curtain</MDBDropdownItem>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e24">Thunderbolt</MDBDropdownItem>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <span>Knoebels Amusement Park and Resort</span>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e03">Black Diamond</MDBDropdownItem>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e0d">Flying Turns</MDBDropdownItem>
