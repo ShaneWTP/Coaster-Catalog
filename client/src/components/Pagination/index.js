@@ -1,36 +1,25 @@
-import React from "react";
-import { MDBPagination, MDBPageItem, MDBPageNav, MDBCol, MDBRow } from "mdbreact";
+import React from 'react'
+import "./style.css";
 
-const PaginationPage = () => {
+const Pagination = ({ coastersPerPage, totalCoasters, paginate }) => {
+  const pageNumbers = []
+  for (let i = 1; i <= Math.ceil(totalCoasters / coastersPerPage); i++) {
+    pageNumbers.push(i)
+  }
   return (
-    <MDBRow>
-      <MDBCol>
-        <MDBPagination className="mb-5">
-          <MDBPageItem>
-            <MDBPageNav aria-label="Previous">
-              <span aria-hidden="true">Previous</span>
-            </MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav>
-              1
-            </MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav>2</MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav>3</MDBPageNav>
-          </MDBPageItem>
-          <MDBPageItem>
-            <MDBPageNav aria-label="Previous">
-              <span aria-hidden="true">Next</span>
-            </MDBPageNav>
-          </MDBPageItem>
-        </MDBPagination>
-      </MDBCol>
-    </MDBRow>
-  )
+    <nav>
+      <ul className="pagination">
+        {pageNumbers.map(number => (
+          <li key={number} className="page-item">
+            <a onClick={() => paginate(number)} className="page-link">
+              {number}
+            </a>
+          </li>
+        ))}
+
+      </ul>
+    </nav>
+  )   
 }
 
-export default PaginationPage;
+export default Pagination

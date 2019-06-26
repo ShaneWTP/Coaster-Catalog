@@ -2,12 +2,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.cc-section {
-  background: #fff;
-  width: 100%;
-  height: 400px;
-  overflow: scroll;
-}
+/* .cc-section {
+    background: #fff;
+    width: 100%;
+    height: 400px;
+}  */
+
 .coastercard {
     border-radius: 0 !important;
 }
