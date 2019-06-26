@@ -27,7 +27,6 @@ class AddStars extends Component {
         if (!response.data.error) {
           console.log("you're good");
           // getUser will update display
-          // HLS this wont work cause not being passed in
           this.props.getUser();
           // reset the state
           this.setState({rating: 0});
