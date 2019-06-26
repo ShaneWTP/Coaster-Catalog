@@ -43,9 +43,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Jumbotron />
-        <Wrapper>
           <MapPA />
-        </Wrapper>
         <br/>
       <div className="row">
         <div className="col l12 s12" id="map-title">
@@ -55,6 +53,7 @@ class Home extends Component {
           <br/>
         </div> 
       </div>  
+
         <CoasterCard coasters={currentCoasters} />
         <Pagination
           coastersPerPage={this.state.coastersPerPage}

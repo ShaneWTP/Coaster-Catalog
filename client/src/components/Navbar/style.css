@@ -60,30 +60,23 @@ body {
 
 .parks {
   border: 2px solid #0A1E5F;
-  font-size: 25px;
-  padding: 12px 30px 12px 30px;
-  margin-right: 60px;
-  margin-left: 70px;
+  border-left: 50px solid #0A1E5F;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  margin-right: 75px;
+  margin-left: 45px;
 }
 
 .parks:hover {
   background: #0A1E5F;
 }
 
-.parks::before {
-  content: 'l';
-  background: #0A1E5F;
-  height: 81px;
-  width: 50px;
-  position: absolute;
-  left: 665px;
-  top: 23px;
-}
 
 .profile {
-  border: 2px solid #0A1E5F;
-  font-size: 25px;
-  padding: 12px 30px 12px 30px;
+  border: 1.5px solid #0A1E5F;
+  border-left: 50px solid #0A1E5F;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
   margin-right: 80px;
 }
 
@@ -91,20 +84,13 @@ body {
   background: #0A1E5F;
 }
 
-.profile::before {
-  content: 'l';
-  background: #0A1E5F;
-  height: 81px;
-  width: 50px;
-  position: absolute;
-  left: 1015px;
-  top: 23px;
-}
+
 
 .cause {
-  border: 2px solid #0A1E5F;
-  font-size: 25px;
-  padding: 12px 30px 12px 30px;
+  border: 1.5px  solid #0A1E5F;
+  border-left: 50px solid #0A1E5F;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
   margin-right: 100px;
 }
 
@@ -112,20 +98,10 @@ body {
   background: #0A1E5F;
 }
 
-.cause::before {
-  content: 'l';
-  background: #0A1E5F;
-  height: 81px;
-  width: 50px;
-  position: absolute;
-  left: 1248px;
-  top: 23px;
-}
-
 .sign-in {
-  border: 2px solid #0A1E5F;
+  border: 1.5px  solid #0A1E5F;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   margin-right: 100px;
 }
@@ -134,13 +110,43 @@ body {
   background: #0A1E5F;
 }
 
+/* SIDE MENU ITEMS STYLE
+********************************/ 
+
+.right-menu-item {
+  font-size: 30px !important;
+  line-height: 2em !important;
+
+}
+
+/* MEGA MENU ITEMS STYLE
+********************************/ 
+
+.park-name {
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.dropdown-item {
+  font-size: 12px !important;
+  line-height: .25em;
+}
+
+.dropdown-item:hover {
+  background: #0A1E5F !important;
+  color: #fff !important;
+}
+
 
 
 /* MEGA MENU STYLE
 ********************************/ 
 
 .drop-down-card {
-  width: 1200px;
+  width: 1100px;
+  margin-right: 0 auto;
 }
 
 .mega-menu {
@@ -153,7 +159,7 @@ body {
 .mega-menu li {
   display: inline-block;
   /* float: left; */
-  font-size: 0.94rem;
+  /* font-size: 12px; */
   padding: 3px 0px;
 }
 
