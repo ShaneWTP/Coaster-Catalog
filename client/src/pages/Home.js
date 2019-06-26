@@ -20,12 +20,12 @@ class Home extends Component {
       .then(res => this.setState({ coasters: res.data }))
       .catch(err => console.log(err))
 
-    // const script = document.createElement("script");
+    const script = document.createElement("script");
 
-    // script.src = "/map-assets/map-interact.js";
-    // script.async = true;
+    script.src = "/map-assets/map-interact.js";
+    script.async = true;
 
-    // document.body.appendChild(script);
+    document.body.appendChild(script);
   }
 
   render() {
