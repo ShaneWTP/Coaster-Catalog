@@ -149,6 +149,8 @@ module.exports = function (passport) {
       ["name", 
       "park",
       "location",
+      "height",
+      "speed",
       "img1"])
       .then(function(user) {
 
