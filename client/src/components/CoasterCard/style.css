@@ -1,0 +1,74 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cc-section {
+  background: #fff;
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+}
+.coastercard {
+    border-radius: 0 !important;
+}
+.coasterImage img {  
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.coasterImage:hover {
+    opacity: 0.5;
+}
+.color-div{
+    /* background-color: red; */
+    height: 100%;
+    /* padding: 0 !important; */
+}
+.nameLink{
+    color:navy;
+}
+
+#Hersheypark{
+    background-color:#f80c2b;
+}
+#Dorney{
+    background-color:#D10960;
+}
+#Kennywood{
+    background-color:#EC7C20;
+}
+#Knoebels{
+    background-color:#FBB053;
+}
+#Conneaut{
+    background-color:#FFD900;
+}
+#Waldameer{
+    background-color:#c1d82e;
+}
+#DelGrosso\'s{
+    background-color:#82bc44;
+}
+#Fun{
+    background-color:#02a68e;
+}
+#Dutch{
+    background-color:#00bde2;
+}
+#Lakemont{
+    /* background-color:#0c97db; */
+    background-color:#0697F8;
+}
+#Camelback{
+    background-color:#78429c;
+}
+#Sesame{
+    background-color:#572172;
+}
+/* #Idlewild{
+    background-color:#8a7967;
+} */
+#Idlewild{
+    background-color:#6b727c;
+}

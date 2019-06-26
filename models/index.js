@@ -1,4 +1,5 @@
 module.exports = {
-    Coaster: require("./coaster")
+    Coaster: require("./coaster"),
+    User: require("./user")
   };
   

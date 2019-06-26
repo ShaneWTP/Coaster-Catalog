@@ -1,4 +1,4 @@
-# Create React Express App
+# Coaster Catalog
 
 ## About This BOILERPLATE
 

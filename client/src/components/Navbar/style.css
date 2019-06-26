@@ -1,0 +1,246 @@
+a, a:focus, a:active, a:hover, object, embed { 
+  outline: none; 
+  text-decoration: none; 
+}
+
+:-moz-any-link:focus { 
+  outline: none; 
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+:focus { 
+  outline: 0; 
+}
+
+body { 
+  background: #333; 
+}	
+
+.brand { 
+  padding: 10px 40px !important; 
+}
+
+/* .navbar { 
+  border-bottom: 4px solid #888; 
+} */
+
+
+/*  Nav Items STYLE
+********************************/ 
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  background: #14da1e;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.logo-container:hover .overlay {
+  opacity: 1;
+}
+
+.parks {
+  border: 2px solid #0A1E5F;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
+  margin-right: 60px;
+  margin-left: 70px;
+}
+
+.parks:hover {
+  background: #0A1E5F;
+}
+
+.parks::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 665px;
+  top: 23px;
+}
+
+.profile {
+  border: 2px solid #0A1E5F;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
+  margin-right: 80px;
+}
+
+.profile:hover {
+  background: #0A1E5F;
+}
+
+.profile::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 1015px;
+  top: 23px;
+}
+
+.cause {
+  border: 2px solid #0A1E5F;
+  font-size: 25px;
+  padding: 12px 30px 12px 30px;
+  margin-right: 100px;
+}
+
+.cause:hover {
+  background: #0A1E5F;
+}
+
+.cause::before {
+  content: 'l';
+  background: #0A1E5F;
+  height: 81px;
+  width: 50px;
+  position: absolute;
+  left: 1248px;
+  top: 23px;
+}
+
+.sign-in {
+  border: 2px solid #0A1E5F;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+.sign-in:hover {
+  background: #0A1E5F;
+}
+
+
+
+/* MEGA MENU STYLE
+********************************/ 
+
+.drop-down-card {
+  width: 1200px;
+}
+
+.mega-menu {
+	padding: 10px 0px ! important;
+	width: 540px;
+  border-radius: 0;
+  margin-top: 0px;
+}
+
+.mega-menu li {
+  display: inline-block;
+  /* float: left; */
+  font-size: 0.94rem;
+  padding: 3px 0px;
+}
+
+.mega-menu li.mega-menu-column {
+  margin-right: 20px;
+  width: 150px;
+}
+
+.mega-menu .nav-header {
+padding: 0 !important;
+margin-bottom: 10px;
+display: inline-block;
+width: 100%;
+border-bottom: 1px solid #ddd;
+}
+
+.mega-menu img { 
+  padding-bottom: 10px;
+}
+
+
+/* Disable Toggle style
+********************************/  
+
+/* Dropdown Toggle on style */
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+  color: inherit;
+}   
+
+/* Toggle off style */
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .nav > li.dropdown > a:focus { 
+background: inherit;
+color: inherit;
+}
+
+/* Toggle hover */
+.navbar .nav li.dropdown > .dropdown-toggle:hover,
+.navbar .nav li.dropdown.open > .dropdown-toggle:hover {
+background-color: #DDDDDD;
+}          
+            
+/* Toggle caret*/
+/* .navbar .nav li.dropdown > .dropdown-toggle .caret { */
+/* border-bottom-color:; */
+/* border-top-color:; */
+/* } */
+
+/* Toggle caret hover */
+.navbar .nav li.dropdown > a:hover .caret, 
+.navbar .nav li.dropdown > a:focus .caret {
+border-bottom-color: #333;
+border-top-color: #333;
+}
+
+/* Toggle caret active */
+/* .navbar .nav li.dropdown.open > .dropdown-toggle .caret,  */
+/* .navbar .nav li.dropdown.active > .dropdown-toggle .caret,  */
+/* .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret { */
+/* border-bottom-color:#333; */
+/* border-top-color: #333; */
+/* } */
+
+.navbar-toggler {
+  margin: 0 auto;
+}
+
+.navbar-toggler-icon {
+  border: 2px solid #0A1E5F;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 25px;
+}
+
+
+/* Hover style
+********************************/ 
+.navbar .nav > li > a, .mega-menu a { 
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+    transition: all 200ms ease; 
+/* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/ 
+  -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+  -webkit-transform: translateZ(0);
+}

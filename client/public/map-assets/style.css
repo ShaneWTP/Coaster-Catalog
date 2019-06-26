@@ -1,0 +1,218 @@
+﻿#map-title {
+  text-align: center;
+}
+
+.circle-hover #map-tip {
+  display: block !important;
+}
+
+b {
+  text-align: center !important;
+  color: #FFF !important;
+  font-size: 20px;
+  /* text-decoration: underline solid #4c4c4c; */
+}
+
+.coaster-link-1 {
+  width: 95%;
+  display: block !important;
+  margin-top: 100px !important;
+  margin-left: 5px !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
+}
+
+.coaster-link-1:hover {
+  color: #fff !important;
+  background: #777;
+}
+
+.coaster-link-del-1 {
+  width: 95%;
+  display: block !important;
+  margin-top: 150px !important;
+  margin-left: 5px !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
+}
+.coaster-link-del-1:hover {
+  color: #fff !important;
+  background: #777;
+}
+
+.coaster-link {
+  width: 95%;
+  display: block !important;
+  margin-left: 5px !important;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #777 !important;
+  background: #FFF;
+  padding: 10px;
+}
+
+.coaster-link:hover {
+  color: #fff !important;
+  background: #777;
+
+}
+
+#mapwrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 0;
+	background-color: transparent;
+	min-width: 220px;
+}
+
+#map_base svg {
+	max-height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#map-tip {
+  font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+  display: none;
+  padding: 3px;
+  border: 1px solid #EBECED;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  color: #edeef0;
+  z-index: 1000;
+  float: left;
+  position: absolute;
+  /*gradient color*/
+  background: rgb(73, 73, 73);
+  background: -moz-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(73, 73, 73, 1)), color-stop(100%, rgba(101, 101, 101, 1)));
+  background: -webkit-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+  background: -o-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+  background: linear-gradient(to bottom, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+  word-break: keep-all;
+  white-space: nowrap
+}
+
+#map-tip p {
+	margin: 0 !important;
+}
+
+#map-tip img {
+	float: left;
+	padding: 3px;
+}
+
+.remove {
+  color: #ff1744;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.remove:hover {
+  color: #d50000;
+}
+
+/* For Responsiveness */
+
+
+@media screen and (max-width: 320px){
+	#map_base svg {
+		height:320px;
+  }
+
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 400px) and (min-width: 321px) {
+	#map_base svg {
+		height:400px;
+  }
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 401px) {
+	#map_base svg {
+		height:500px;
+  }
+
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 568px) and (min-width: 481px) {
+	#map_base svg {
+		height:600px;
+  }
+
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 685px) and (min-width: 569px) {
+	#map_base svg {
+		height:720px;
+  }
+
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+  
+}
+
+@media screen and (max-width: 767px) and (min-width: 686px) {
+	#map_base svg {
+		height:740px;
+  }
+
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+  
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+	#map_base svg {
+		height:760px;
+  }
+  
+  .circle-hover #map-tip {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+	#map_base svg {
+		height:780px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+	#map_base svg {
+		height:800px;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	#map_base svg {
+		height:820px;
+	}
+}
