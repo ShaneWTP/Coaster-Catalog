@@ -5,7 +5,7 @@ import RideCounter from "../components/RideCounter";
 import AddStars from "../components/AddStars";
 
 const UserProfile = props => {
-  console.log("Inside UserProfile " + JSON.stringify(props,null,2));
+  // console.log("Inside UserProfile " + JSON.stringify(props,null,2));
 
 //   const rowStyle = {
 //     backgroundColor: "#fffff"

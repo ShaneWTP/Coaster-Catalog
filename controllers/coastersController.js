@@ -65,14 +65,14 @@ module.exports = {
           }
           numberRatings++;
 
-          console.log("the new rating is " + calcRating);
-          console.log("the number rating is " + numberRatings);
+          // console.log("the new rating is " + calcRating);
+          // console.log("the number rating is " + numberRatings);
 
           // update database with new number of ratings and the new rating
           db.Coaster
           .findOneAndUpdate({ _id: coasterId }, {rating:calcRating, numRating: numberRatings})
           .then(dbModel => {
-            console.log(JSON.stringify(dbModel), null, 2);
+            // console.log(JSON.stringify(dbModel), null, 2);
             res.json(dbModel)})
           .catch(err => {
             console.log("Error in FindOneAndUpdate " + err);
