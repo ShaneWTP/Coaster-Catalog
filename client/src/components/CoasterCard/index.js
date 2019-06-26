@@ -45,7 +45,8 @@ const CoasterCard = props => {
                       <p className="coasterRating">{coaster.rating}</p>
                     </Row>
                     <Row>
-                    <RodeIt handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>                    </Row>
+                       <RodeIt handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
+                    </Row>
                   </div>
                 </Col>
               </Row>

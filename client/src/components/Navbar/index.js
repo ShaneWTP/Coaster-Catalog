@@ -68,12 +68,12 @@ class Navbar extends Component {
           <MDBNavbarNav left>
             <MDBNavItem className="parks">
               <MDBDropdown>
-                <MDBDropdownToggle nav caret class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <MDBDropdownToggle nav caret className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div className="d-none d-md-inline">Parks &amp; Coasters</div>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default" aria-labelledby="dropdownMenuButton">
-                  <div class="row p-3 drop-down-card">
-                    <div class="col-4">
+                  <div className="row p-3 drop-down-card">
+                    <div className="col-4">
                       <span>Camelback Mountain Adventures</span>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
@@ -95,7 +95,7 @@ class Navbar extends Component {
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                     </div>            
-                    <div class="col-4">
+                    <div className="col-4">
                       <span>Fun Fore All Family Entertainment Center</span>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
@@ -117,7 +117,7 @@ class Navbar extends Component {
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <span>Lakemont Park</span>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>

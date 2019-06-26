@@ -184,7 +184,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>IDLEWILD & SOAK ZONE &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br>Ligonier, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/idlewild-park.png" width="265px"><br><br><a href="/coasters/5d0aae19c64c9f1682257e20" class="coaster-link-del-1">Rollo Coaster</a><br><a href="/5d0aae19c64c9f1682257e2b" class="coaster-link">Wild Mouse</a><br>',
+    'hover':'<u><b>IDLEWILD & SOAK ZONE &nbsp;&nbsp;&nbsp;<span class="remove">X</span></b></u><br>Ligonier, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/idlewild-park.png" width="265px"><br><br><a href="/coasters/5d0aae19c64c9f1682257e20" class="coaster-link-del-1">Rollo Coaster</a><br><a href="/coasters/5d0aae19c64c9f1682257e2b" class="coaster-link">Wild Mouse</a><br>',
 		'pos_X':149,
 		'pos_Y':260,
 		'diameter':8,
@@ -199,7 +199,7 @@
   },
   {
 		'shape':'circle',
-    'hover':'<u><b>KENNYWOOD &nbsp;<span class="remove">X</span></b></u><br>West Mifflin, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/kennywood.png" width="220px"><br><br><a href="/coasters/5d0aae19c64c9f1682257e0a" class="coaster-link-1">Exterminator</a><br><a href="/coasters/5d0aae19c64c9f1682257dff" class="coaster-link">Jack Rabbit</a><br><a href="/coasters/5d0aae19c64c9f1682257e16" class="coaster-link">Lil&#39; Phantom</a><br><a href="/coasters/5d0aae19c64c9f1682257e1c" class="coaster-link">Phantom&#39;s Revenge</a><br><a href="#" class="coaster-link">Racer</a><br><a href="/coasters/5d0aae19c64c9f1682257e01" class="coaster-link">Sky Rocket</a><br><a href="/coasters/5d0aae19c64c9f1682257e02" class="coaster-link">Steel Curtain</a><br><a href="/coasters/5d0aae19c64c9f1682257e24" class="coaster-link">Thunderbolt</a><br>',
+    'hover':'<u><b>KENNYWOOD &nbsp;<span class="remove">X</span></b></u><br>West Mifflin, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/kennywood.png" width="220px"><br><br><a href="/coasters/5d0aae19c64c9f1682257e0a" class="coaster-link-1">Exterminator</a><br><a href="/coasters/5d0aae19c64c9f1682257dff" class="coaster-link">Jack Rabbit</a><br><a href="/coasters/5d0aae19c64c9f1682257e16" class="coaster-link">Lil&#39; Phantom</a><br><a href="/coasters/5d0aae19c64c9f1682257e1c" class="coaster-link">Phantom&#39;s Revenge</a><br><a href="/coasters/5d0aae19c64c9f1682257e00" class="coaster-link">Racer</a><br><a href="/coasters/5d0aae19c64c9f1682257e01" class="coaster-link">Sky Rocket</a><br><a href="/coasters/5d0aae19c64c9f1682257e02" class="coaster-link">Steel Curtain</a><br><a href="/coasters/5d0aae19c64c9f1682257e24" class="coaster-link">Thunderbolt</a><br>',
 		'pos_X':99,
 		'pos_Y':250,
 		'diameter':8,
@@ -274,7 +274,7 @@
   },
   {
 		'shape':'circle',
-    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br>Erie, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/waldameer.png" width="210px"><br><a href="/5d0aae19c64c9f1682257e07" class="coaster-link-1" >Comet</a><br><a href="/coasters/5d0aae19c64c9f1682257e1f" class="coaster-link">Ravine Flyer II</a><br><a href="/coasters/5d0aae19c64c9f1682257e1e" class="coaster-link">Ravine Flyer III</a><br><a href="/coasters/5d0aae19c64c9f1682257e22" class="coaster-link">Steel Dragon</a><br>',
+    'hover': '<u><b>WALDAMEER PARK &nbsp;<span class="remove">X</span></b></u><br>Erie, PA<br><br><img src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/map-assets/Images/waldameer.png" width="210px"><br><a href="/coasters/5d0aae19c64c9f1682257e07" class="coaster-link-1" >Comet</a><br><a href="/coasters/5d0aae19c64c9f1682257e1f" class="coaster-link">Ravine Flyer II</a><br><a href="/coasters/5d0aae19c64c9f1682257e1e" class="coaster-link">Ravine Flyer III</a><br><a href="/coasters/5d0aae19c64c9f1682257e22" class="coaster-link">Steel Dragon</a><br>',
 		'pos_X':55,
 		'pos_Y':40,
 		'diameter':8,
