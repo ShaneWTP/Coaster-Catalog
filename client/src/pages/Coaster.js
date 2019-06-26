@@ -5,6 +5,7 @@ import API from "../utils/API";
 import RodeIt from "../components/RodeItButton";
 import Stars from "../components/Stars";
 import BarChart from "../components/BarChart";
+import DoughnutChart from "../components/DoughnutChart";
 
 var Carousel = require('react-responsive-carousel').Carousel;
 
@@ -132,13 +133,12 @@ class Coaster extends Component {
                 <Row>  
                   <Col size="4">
                     <h3 className="text-center">Height</h3>
-                    <BarChart props={this.state.coaster.rating} />
+                    <BarChart />
                   </Col> 
-                  <Col size="4">
+                  <Col size="1"></Col> 
+                  <Col size="7">
                     <h3 className="text-center">Speed</h3>
-                  </Col> 
-                  <Col size="4">
-                    <h3 className="text-center">Duration</h3>
+                    <DoughnutChart />
                   </Col> 
                 </Row>
               </Container>

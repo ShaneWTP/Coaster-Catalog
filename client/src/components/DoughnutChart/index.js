@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
-class BarChart extends Component {
+class DoughnutChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
       chartData: {
-        // labels: ['Coaster,'],
+        labels: ['Speed in mph'],
         datasets: [
           {
-            label: ['Height in feet'],
-            data: [45, 1],
+            // label: ['Speed in mph'],
+            data: [40, 20],
             // data: [{this.state.coaster.height}, 1],
             backgroundColor: [
-              'rgba(47,124,50)',
+              'rgba(47,124,50)', 
+              'rgb(255, 36, 25, 0.5)',
             ]
             
 
@@ -25,12 +26,14 @@ class BarChart extends Component {
   render (){
     return(
       <div className="chart">
-        <Bar
+        <Doughnut
           data={this.state.chartData}
           width={100}
-          height={400}
+          height={375}
           options={{ 
-            maintainAspectRatio: false 
+            maintainAspectRatio: false,
+            circumference: Math.PI,
+            rotation: Math.PI / 1 
           }}
         />
       </div>  
@@ -38,4 +41,4 @@ class BarChart extends Component {
   }
 }
 
-export default BarChart;
+export default DoughnutChart;
