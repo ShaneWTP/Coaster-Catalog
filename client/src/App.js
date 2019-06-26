@@ -113,9 +113,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" >
         <Router>
-          <NavbarTop />
+          <NavbarTop username={this.state.user ? this.state.user.username : ""}/>
           <Navbar username={this.state.user ? this.state.user.username : ""} updateUser={this.updateUser}/>
           <Switch>
             <Route exact path="/" render={() =>

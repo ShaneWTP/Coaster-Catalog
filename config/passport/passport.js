@@ -151,6 +151,8 @@ module.exports = function (passport) {
       "location",
       "height",
       "speed",
+      "duration",
+      "rating",
       "img1"])
       .then(function(user) {
 
