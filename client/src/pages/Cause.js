@@ -60,6 +60,109 @@ import {Row, Col} from "../components/Grid"
         <div class="card-body">
           <h1 class="card-title">Leader Board</h1>
           <ul class="list-group list-group-flush">
+
+          <li class="list-group-item">
+
+            <Row>
+              <Col size="2">
+                <div className="my-2">
+                    <img src={"https://avatars1.githubusercontent.com/u/37906477?s=400&v=4" || "https://via.placeholder.com/150C/O"} className="img-circle" alt="The Fundraising Winner" style={imageStyle}/>
+                </div>
+              </Col>
+              <div className="col-md-3 align-self-center">
+                <Row>
+                  <h4 >ShaneWTP</h4>
+                </Row>
+                <Row>
+                  <p> Philadelphia, PA </p>
+                </Row>
+                </div>
+                <div className="col-md-3 align-self-center">
+                <Row>
+                  <h4>Charity:</h4>
+                </Row>
+                <Row>
+                  <h4>Nature Conservancy</h4>
+                </Row>
+
+              </div>
+              <div className="col-md-4 align-self-center">
+              <h4>Number of dollars raised:</h4>
+                <div className="text-center" style={borderStyle}>
+                  <h2>$1100.00</h2>
+                </div>
+              </div>
+            </Row>
+            </li>
+
+          <li class="list-group-item">
+
+            <Row>
+              <Col size="2">
+                <div className="my-2">
+                    <img src={"https://avatars1.githubusercontent.com/u/45902919?s=400&v=4" || "https://via.placeholder.com/150C/O"} className="img-circle" alt="The Fundraising Winner" style={imageStyle}/>
+                </div>
+              </Col>
+              <div className="col-md-3 align-self-center">
+              <Row>
+                <h4 >GForce Jenny</h4>
+              </Row>
+              <Row>
+                  <p> Harrisburg, PA </p>
+              </Row>
+              </div>
+              <div className="col-md-3 align-self-center">
+              <Row>
+                <h4>Charity:</h4>
+              </Row>
+              <Row>
+                <h4>American Cancer Society</h4>
+              </Row>
+
+              </div>
+              <div className="col-md-4 align-self-center">
+              <h4>Number of dollars raised:</h4>
+                <div className="text-center" style={borderStyle}>
+                  <h2>$900.00</h2>
+                </div>
+              </div>
+            </Row>
+          </li>
+
+          <li class="list-group-item">
+
+          <Row>
+            <Col size="2">
+              <div className="my-2">
+                  <img src={"https://avatars0.githubusercontent.com/u/38076620?s=400&v=4" || "https://via.placeholder.com/150C/O"} className="img-circle" alt="The Fundraising Winner" style={imageStyle}/>
+              </div>
+            </Col>
+            <div className="col-md-3 align-self-center">
+              <Row>
+                <h4 >Swissfink</h4>
+              </Row>
+              <Row>
+                  <p>Coal Port, PA </p>
+              </Row>
+              </div>
+              <div className="col-md-3 align-self-center">
+              <Row>
+                <h4>Charity:</h4>
+              </Row>
+              <Row>
+                <h4>Red Cross</h4>
+              </Row>
+
+              </div>
+              <div className="col-md-4 align-self-center">
+              <h4>Number of dollars raised:</h4>
+                <div className="text-center" style={borderStyle}>
+                  <h2>$600.00</h2>
+                </div>
+              </div>
+            </Row>
+          </li>
+
             <li class="list-group-item">
 
               <Row>
@@ -88,7 +191,7 @@ import {Row, Col} from "../components/Grid"
                 <div className="col-md-4 align-self-center">
                 <h4>Number of dollars raised:</h4>
                   <div className="text-center" style={borderStyle}>
-                    <h2>$800.00</h2>
+                    <h2>$400.00</h2>
                   </div>
                 </div>
               </Row>
