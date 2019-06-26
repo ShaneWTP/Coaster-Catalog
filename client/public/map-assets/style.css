@@ -1,4 +1,8 @@
-﻿#map-title {
+﻿.map-div {
+  background: #fff;
+}
+
+#map-title {
   text-align: center;
 }
 
