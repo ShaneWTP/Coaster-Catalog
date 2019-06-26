@@ -13,4 +13,8 @@ router
   .put(coastersController.update)
   .delete(coastersController.remove);
 
+// Matches with "/api/coasters/rating"
+router.route("/rating")
+  .post(coastersController.addRating);
+
 module.exports = router;

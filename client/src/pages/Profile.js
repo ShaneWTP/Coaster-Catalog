@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from "../components/Grid";
 import CoasterCard from "../components/CoasterCard";
 import RideCounter from "../components/RideCounter";
+import AddStars from "../components/AddStars";
 
 const UserProfile = props => {
   console.log("Inside UserProfile " + JSON.stringify(props,null,2));
@@ -51,9 +52,13 @@ const UserProfile = props => {
                       <div className="col-sm-8 align-self-center">
                         <CoasterCard coasters= {[coaster.coaster]} />
                       </div>
-                      <div className="col-sm-3 align-self-center">
+                      <div className="col-sm-2 align-self-center">
                         <RideCounter userCoaster={coaster} 
                                       handleAddRideSubmit={props.handleAddRideSubmit}/>
+                      </div>
+                      <div className="col-sm-2 align-self-center">
+                        <AddStars userCoaster={coaster}
+                                  getUser={props.getUser}/>
                       </div>
                     </Row> 
                   </div>

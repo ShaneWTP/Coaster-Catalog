@@ -18,6 +18,10 @@ export default {
   saveCoaster: function(coasters) {
     return axios.post("/api/coasters", coasters);
   },
+  // Saves a coaster to the database
+  addRating: function(data) {
+    return axios.post("/api/coasters/rating", data);
+  },
   // handle logout, gets rid of session on server
   signout: function() {
     return axios.get('/api/logout');

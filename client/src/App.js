@@ -111,6 +111,8 @@ class App extends Component {
       })
   }
 
+
+
   render() {
     return (
       <div className="App" >
@@ -128,7 +130,9 @@ class App extends Component {
               <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
             } />
             <Route exact path="/userprofile" render={() =>
-              <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
+              <UserProfile user={this.state.user} 
+              handleAddRideSubmit={this.handleAddRideSubmit}
+              getUser={this.getUser}/>
             } />
 
           <Route path="/coasters/:id" render={(routerProps) =>
