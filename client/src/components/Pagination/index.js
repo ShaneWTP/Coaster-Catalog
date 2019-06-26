@@ -7,8 +7,9 @@ const Pagination = ({ coastersPerPage, totalCoasters, paginate }) => {
     pageNumbers.push(i)
   }
   return (
-    <nav>
-      <ul className="pagination">
+    
+    <div className="d-flex justify-content-center"><nav  >
+     <br></br> <ul className="pagination">
         {pageNumbers.map(number => (
           <li key={number} className="page-item">
             <button onClick={() => paginate(number)} className="page-link">
@@ -18,7 +19,7 @@ const Pagination = ({ coastersPerPage, totalCoasters, paginate }) => {
         ))}
 
       </ul>
-    </nav>
+    </nav></div>
   )   
 }
 

@@ -54,7 +54,7 @@ class Home extends Component {
         </div >
 
         <CoasterCard coasters={currentCoasters} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit}/>
-        <div className="align-center">
+        <div className="mx-auto">
           <Pagination
             coastersPerPage={this.state.coastersPerPage}
             totalCoasters={this.state.coasters.length}
