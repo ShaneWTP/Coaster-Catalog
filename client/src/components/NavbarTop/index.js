@@ -25,9 +25,7 @@ const NavbarTop = props => {
     <div className="welcome">
       <div className="row">
           <div className="col l12">
-            <div> Welcome {props.user ? props.user.username 
-                
-                : " "}! </div>
+            <div> Welcome {props.username}! </div>
           </div>
       </div>
     </div>
