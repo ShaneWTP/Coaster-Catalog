@@ -43,9 +43,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Jumbotron />
-        <Wrapper>
-          <MapPA />
-        </Wrapper>
+        <MapPA />
         <CoasterCard coasters={currentCoasters} />
         <Pagination
           coastersPerPage={this.state.coastersPerPage}

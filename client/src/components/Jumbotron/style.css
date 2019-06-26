@@ -34,8 +34,8 @@ iframe{
 .jumbocontainer {
   position: relative;
   z-index: 2;
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
 }
 .overlay {
   position: absolute;
