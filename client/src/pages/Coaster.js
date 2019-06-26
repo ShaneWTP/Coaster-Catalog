@@ -75,15 +75,12 @@ class Coaster extends Component {
                                 </p>
                             <p className="text-center">
                             <Stars />
-
                             <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
                             </p><br></br>
                         </Col>
                     </Row>
                 </Container>
-
                 <Carousel showThumbs={false}>
-
                     <div style={imgStyle} className="carousel-img m-auto">
                         <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
                     </div>
@@ -97,78 +94,68 @@ class Coaster extends Component {
                         <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
                     </div>
                 </Carousel>
-
                 <Container>
-
-                    <br></br>
-
-                    <Row>
-                      <h1 className="text-center">Statistics</h1></Row>
-                    <Row>
-
-                        <Col size="4">
-                          <br></br>
-
-                          <p className="text-left">
-                              Operating Since: {this.state.coaster.operating || "N/A"}
-                          </p>
-                          {/* <p className="text-left">
-                              Rating: {this.state.coaster.rating || "No rating yet"}
-                          </p> */}
-                          <p className="text-left">
-                              Type: {this.state.coaster.type || "No type listed"}
-                          </p>
-                          <p className="text-left">
-                              Designer: {this.state.coaster.designer || "No designer listed"}
-                          </p>
-                          <p className="text-left">
-                              Manufacturer: {this.state.coaster.manufacturer || "No manufacturer listed"}
-                          </p> <p className="text-left">
-                              Model: {this.state.coaster.model || "Model not listed"}
-                          </p>
-                        </Col>
-
-                        <Col size="4">
-                          <br></br>
-                          <p className="text-left">
-                              Duration: {this.state.coaster.duration || "Duration not listed"}
-                          </p>
-                          <p className="text-left">
-                              G-force: {this.state.coaster.gforce || "G-force not listed"}
-                          </p>
-                          <p className="text-left">
-                              Vertical Angle: {this.state.coaster.vertangle || "Vertical angle not listed"}
-                          </p>
-                          <p className="text-left">
-                              Scale: {this.state.coaster.scale || "Scale not listed"}
-                          </p>
-                          <p className="text-left">
-                              Awards: {[this.state.coaster.awards].join() || "No awards listed"}
-                          </p>
-                        </Col>
-
-                        <Col size="4">
-                          <br></br>
-
-                          <p className="text-left">
-                              Height: {this.state.coaster.height || "Height not available"}
-                          </p>
-                          <p className="text-left">
-                              Drop: {this.state.coaster.drop || "Drop not listed"}
-                          </p>
-                          <p className="text-left">
-                              Speed: {this.state.coaster.speed || "Speed not listed"}
-                          </p>
-                          <p className="text-left">
-                              Length: {this.state.coaster.length || "Length not listed"}
-                          </p>
-                          <p className="text-left">
-                              Inversions: {this.state.coaster.inversions || "Inversions not listed"}
-                          </p>
-                        </Col>
-
+                  <br></br>
+                  <Row>
+                    <h1 className="text-center">Statistics</h1></Row>
+                  <Row>
+                      <Col size="4">
+                        <br></br>
+                        <p className="text-left">
+                            Operating Since: {this.state.coaster.operating || "N/A"}
+                        </p>
+                        {/* <p className="text-left">
+                            Rating: {this.state.coaster.rating || "No rating yet"}
+                        </p> */}
+                        <p className="text-left">
+                            Type: {this.state.coaster.type || "No type listed"}
+                        </p>
+                        <p className="text-left">
+                            Designer: {this.state.coaster.designer || "No designer listed"}
+                        </p>
+                        <p className="text-left">
+                            Manufacturer: {this.state.coaster.manufacturer || "No manufacturer listed"}
+                        </p> <p className="text-left">
+                            Model: {this.state.coaster.model || "Model not listed"}
+                        </p>
+                      </Col>
+                      <Col size="4">
+                        <br></br>
+                        <p className="text-left">
+                            Duration: {this.state.coaster.duration || "Duration not listed"}
+                        </p>
+                        <p className="text-left">
+                            G-force: {this.state.coaster.gforce || "G-force not listed"}
+                        </p>
+                        <p className="text-left">
+                            Vertical Angle: {this.state.coaster.vertangle || "Vertical angle not listed"}
+                        </p>
+                        <p className="text-left">
+                            Scale: {this.state.coaster.scale || "Scale not listed"}
+                        </p>
+                        <p className="text-left">
+                            Awards: {[this.state.coaster.awards].join() || "No awards listed"}
+                        </p>
+                      </Col>
+                      <Col size="4">
+                        <br></br>
+                        <p className="text-left">
+                            Height: {this.state.coaster.height || "Height not available"}
+                        </p>
+                        <p className="text-left">
+                            Drop: {this.state.coaster.drop || "Drop not listed"}
+                        </p>
+                        <p className="text-left">
+                            Speed: {this.state.coaster.speed || "Speed not listed"}
+                        </p>
+                        <p className="text-left">
+                            Length: {this.state.coaster.length || "Length not listed"}
+                        </p>
+                        <p className="text-left">
+                            Inversions: {this.state.coaster.inversions || "Inversions not listed"}
+                        </p>
+                      </Col>
                     </Row>
-
                     <Row >
                       <h1 className="text-center">Fast Facts</h1>
                       <Col size="4">
@@ -181,20 +168,7 @@ class Coaster extends Component {
                         <h3 className="text-center">Duration</h3>
                        </Col> 
                     </Row>
-
-                    <Row>
-                      <Col>
-                        <h1>Height</h1>
-                        <div class="row">
-                          <div class="col-4">
-                            <canvas id="myChart" width="50" height="100"></canvas>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-
-                </Container>
-
+                  </Container>
                 <Row>
                   <Col size="md-2">
                     <Link to="/">← Back to Home</Link>
