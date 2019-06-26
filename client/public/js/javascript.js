@@ -45,7 +45,7 @@ var chart = new Chart(ctx, {
       labels: ['speed'],
       datasets: [{
           label: 'speed',
-          backgroundColor: ['rgb(255, 99, 132)', 'rgb(255, 36, 25)'],
+          backgroundColor: [],
           data: [40, 20]
       }]
   },
