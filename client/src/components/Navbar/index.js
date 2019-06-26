@@ -83,7 +83,6 @@ class Navbar extends Component {
                       <span>DelGrosso's Amusement Park</span>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e08">Crazy Mouse</MDBDropdownItem>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257e29">Wacky Worm</MDBDropdownItem>
-                      <MDBDropdownItem href="#!">Coaster 1</MDBDropdownItem>
                       <span>Dorney Park and Wildwater Kingdom</span>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257dfc">Hydra The Revenge</MDBDropdownItem>
                       <MDBDropdownItem href="/coasters/5d0aae19c64c9f1682257dfd">Possessed</MDBDropdownItem>
