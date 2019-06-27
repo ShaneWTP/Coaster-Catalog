@@ -11,7 +11,6 @@ function MapPA() {
           <h3>Amusement Parks &amp; Roller Coasters in Pennsylvania</h3>
           <br/>
           <p>The dots on the map indicate where all the amusement parks in Pennsylvania are located. Hover over each of the dots <br/>to learn where all the roller coasters in Pennsylvania are located.</p>
-          <br/>
           <div className="row">
             <div className="col-4"></div>
             <div className="col-2">
