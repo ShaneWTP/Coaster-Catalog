@@ -63,7 +63,7 @@ class Coaster extends Component {
                                         {this.state.coaster.location}
                                     </h4>
                                     <div className="text-center">
-                                        <Stars />
+                                        <Stars rating={this.state.coaster.rating}/>
                                         <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
                                     </div>
                                 </div>
