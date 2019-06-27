@@ -41,19 +41,22 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <Jumbotron user={this.props.user}/>
-        <MapPA />
+        <Jumbotron user={this.props.user} />
+        <div className="container">
+          <MapPA />
+        </div>
         <br />
         <div className="row">
           <div className="col l12 s12" id="map-title">
             <h3>Roller Coaster Index</h3>
             <br />
-            <p>Page through the list for information about all the roller coasters in Pennsylvania are located. <br />Click on a Coaster's image to go to the Coaster's Profile page for even more information about the coaster's origin and stats.</p>
+            <p>Page through the list for information about all of the roller coasters in Pennsylvania. <br />Click on a Coaster's image to go to the Coaster's Profile page for even more information about the coaster's origin and stats.</p>
             <br />
           </div>
         </div >
-
-        <CoasterCard coasters={currentCoasters} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit}/>
+        <div className="container">
+          <CoasterCard coasters={currentCoasters} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} />
+        </div>
         <div className="mx-auto">
           <Pagination
             coastersPerPage={this.state.coastersPerPage}
