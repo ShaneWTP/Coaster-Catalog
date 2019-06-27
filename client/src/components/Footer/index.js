@@ -25,6 +25,7 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <br/>
       </div>
       <div className="footer-copyright">
         <div className="container">© 2019 Copyright The Four Loops. All rights revserved.</div>
