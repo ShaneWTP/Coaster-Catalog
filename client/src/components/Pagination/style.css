@@ -1,3 +1,7 @@
 .page-item {
   background: #4caf50;
 }
+
+.page-item:hover {
+  background: #0A1E5F;
+}

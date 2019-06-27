@@ -7,12 +7,15 @@
   overflow: hidden;
   border-radius: 0 !important;
 }
+
 h1 {
   font-family: 'Montserrat', sans-serif;
 }
+
 h2{
   font-family: 'Raleway', sans-serif;
 }
+
 iframe{
   width: 100vw;
   height: calc(100vw/1.77);
@@ -31,12 +34,14 @@ iframe{
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
 .jumbocontainer {
   position: relative;
   z-index: 2;
   /* margin-top: auto; */
   /* margin-bottom: auto; */
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -47,9 +52,19 @@ iframe{
   opacity: 0.5;
   z-index: 1;
 }
+
 .btn-success {
-  background-color: #478147;
-  border: #478147;
+  background-color: #2f7c32 !important;
+  border: #0A1E5F !important;
   font-size: 24px;
+}
+
+.btn-success:hover {
+  background-color: #0A1E5F !important;
+  border: #2f7c32 !important;
+}
+
+.jumbo-text {
+  text-shadow: 3px 3px 8px #000;
 }
 /* add media query to make this the background on phones:  https://cdn.pixabay.com/photo/2016/07/29/14/25/roller-coaster-1553336_1280.jpg */
