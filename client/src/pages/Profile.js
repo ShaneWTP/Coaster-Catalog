@@ -5,11 +5,6 @@ import RideCounter from "../components/RideCounter";
 import AddStars from "../components/AddStars";
 
 const UserProfile = props => {
-  // console.log("Inside UserProfile " + JSON.stringify(props,null,2));
-
-//   const rowStyle = {
-//     backgroundColor: "#fffff"
-// };
 
   return (
 				
@@ -47,7 +42,6 @@ const UserProfile = props => {
               return (
                 <div className="card">
                   <div className="card-body" >
-                      {/* <Row style={rowStyle}> */}
                     <Row >
                       <div className="col-sm-8 align-self-center">
                         <CoasterCard coasters= {[coaster.coaster]} />

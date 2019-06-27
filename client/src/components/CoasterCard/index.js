@@ -8,6 +8,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import "./style.css";
 
 const CoasterCard = props => {
+  console.log("Here you go: " + JSON.stringify(props.user), null, 2)
   return (
     <div className="container cc-section">
       {props.coasters.map(coaster => {
@@ -43,10 +44,18 @@ const CoasterCard = props => {
                         />
                       {/* <p className="coasterRating">{coaster.rating}</p> */}
                     </Row>
+
+                  {/* HLS don't know what to do */}
+                  { props.user ?
                     <Row>
                        <RodeIt className="text-left" handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
                        <a href={"/coasters/" + coaster._id} className="btn">More Info</a>
                     </Row>
+                     : 
+                      <Row></Row>
+                  }
+
+
                   </div>
                 </Col>
               </Row>
