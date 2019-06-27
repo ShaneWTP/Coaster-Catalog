@@ -43,10 +43,10 @@ class Coaster extends Component {
                         <p className="text-center">
                             {this.state.coaster.location}
                             </p>
-                        <p className="text-center">
+                        <div className="text-center">
                         <Stars />
                         <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
-                        </p><br></br>
+                        </div><br></br>
                     </Col>
                 </Row>
             </Container>
@@ -54,15 +54,15 @@ class Coaster extends Component {
                 <div style={imgStyle} className="carousel-img m-auto">
                     <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
                 </div>
-                <div style={imgStyle} className="carousel-img m-auto">
+                {this.state.coaster.img2 ?  <div style={imgStyle} className="carousel-img m-auto">
                     <img src={this.state.coaster.img2} alt={this.state.coaster.name} />
-                </div>
-                <div style={imgStyle} className="carousel-img m-auto">
+                </div> : null}
+                {this.state.coaster.img3 ?  <div style={imgStyle} className="carousel-img m-auto">
                     <img src={this.state.coaster.img3} alt={this.state.coaster.name} />
-                </div>
-                <div style={imgStyle} className="carousel-img m-auto">
+                </div> : null}
+                {this.state.coaster.img4 ? <div style={imgStyle} className="carousel-img m-auto">
                     <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
-                </div>
+                </div> : null}
             </Carousel>
             <Container>
               <br></br>
@@ -133,7 +133,7 @@ class Coaster extends Component {
                 <Row>  
                   <Col size="4">
                     <h3 className="text-center">Tallest Height</h3>
-                    <BarChart />
+                    <BarChart height={this.state.coaster.height} />
                   </Col> 
                   <Col size="1"></Col> 
                   <Col size="7">
