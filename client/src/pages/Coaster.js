@@ -63,7 +63,7 @@ class Coaster extends Component {
                                         {this.state.coaster.location}
                                     </h4>
                                     <div className="text-center">
-                                        <Stars />
+                                        <Stars rating={this.state.coaster.rating}/>
                                         <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
                                     </div>
                                 </div>
@@ -92,8 +92,10 @@ class Coaster extends Component {
                                 </Col>
                             </Row>
 
-
+</div></div>
                             <br></br>
+                            <div className="card">
+                        <div className="card-body">
 
                             <div className="text-center"> <h1 className="font-weight-bold">Statistics</h1></div>
 
@@ -120,41 +122,42 @@ class Coaster extends Component {
                                     <br></br>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold">Duration:</span> {this.state.coaster.duration || "Duration not listed"}
-                                        </h5>
+                                    </h5>
 
                                     <h5 className="text-left">
                                         <span className="font-weight-bold"> G-force:</span> {this.state.coaster.gforce || "G-force not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold"> Vertical Angle:</span> {this.state.coaster.vertangle || "Vertical angle not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold">Scale: </span>{this.state.coaster.scale || "Scale not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold">Awards:</span> {[this.state.coaster.awards].join() || "No awards listed"}
-                                        </h5>
+                                    </h5>
                                 </Col>
                                 <Col size="4">
                                     <br></br>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold">Height: </span>{this.state.coaster.height || "Height not available"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold"> Drop: </span>{this.state.coaster.drop || "Drop not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold"> Speed: </span>{this.state.coaster.speed || "Speed not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold"> Length:</span> {this.state.coaster.length || "Length not listed"}
-                                        </h5>
+                                    </h5>
                                     <h5 className="text-left">
                                         <span className="font-weight-bold">Inversions: </span>{this.state.coaster.inversions || "Inversions not listed"}
-                                        </h5>
+                                    </h5>
                                 </Col>
                             </Row>
-                        </div></div>
+                            </div></div>
+                
                 </Container>
                 <Row>
                     <Col size="md-2 offset-1">
