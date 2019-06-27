@@ -86,7 +86,10 @@ class LoginForm extends Component {
       'background-color': '#0A1E5F',
       'font-size': '18px'
     }
-
+    const shadowStyle = {
+      'box-shadow': '0px -2px 0px #eee',
+    }
+    
     if (this.state.redirectTo) {
       return <Redirect to={{ pathname: this.state.redirectTo }} />
     } else {
@@ -146,7 +149,7 @@ class LoginForm extends Component {
             </div>
             <div className="row" >
               <div className="col-sm-12">
-                <div className="card">
+                <div className="card" style={shadowStyle}>
                   <div className="card-body text-center">
                     <h3>Want to become a member?</h3>
                     <a href="/signup" className="text-white btn">Sign up</a>
