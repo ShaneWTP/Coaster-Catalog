@@ -7,8 +7,6 @@ module.exports = {
   // this depends on user stored inside a session
   addNewCoaster: function (req, res) {
     let coasterId = req.body.coaster;
-    console.log("INSIDE Controller coasterid " + coasterId);
-    console.log("INSIDE Controller userid " + req.user._id);
     // let's find the user and push the rollercoaster
     // db.User
     // only do the push if coasters.coaster doesn't already have
@@ -32,9 +30,6 @@ module.exports = {
     // get a rollercoaster you want to increase the ride on
     // get the coaster id from the req.body
     let coasterId = req.body.coaster;
-
-    console.log("here is what we are giving as coasterId " + coasterId);
-    console.log("here is want we use for userId " + req.user._id);
 
     // let's find the database user and the rollercoaster and modify the numRides field
 
@@ -75,8 +70,7 @@ module.exports = {
 
   // get the user stored inside session
   getUser: function (req, res) {
-    console.log('===== user!!======');
-    console.log(req.user);
+    console.log('===== getuser!!======');
     if (req.user) {
       res.status(200).json({ user: req.user });
     } else {

@@ -1,22 +1,16 @@
 import React from "react";
 import { Row, Col } from "../Grid";
 import RodeIt from "../RodeItButton";
-import Stars from "../Stars";
+// import Stars from "../Stars";
+import StarRatingComponent from 'react-star-rating-component';
+
+
 import "./style.css";
 
 const CoasterCard = props => {
+  // props.coasters.map(res=> console.log(res.buttonToggle));
   return (
-    <div className="container cc-section">
-      <br/>
-      <div className="row">
-        <div className="col l12 s12" id="map-title">
-          <h3>Roller Coaster Index</h3>
-          <br/>
-          <p>Page through the list for information about all the roller coasters in Pennsylvania are located. <br/>Click on a Coaster's image to go to the Coaster's Profile page for even more information about the coaster's origin and stats.</p>
-          <br/>
-        </div> 
-      </div>  
-      <br/>
+      <div className="container cc-section">
       {props.coasters.map(coaster => {
         return (
             <li className="card my-1 coastercard" key={coaster._id}>
@@ -26,11 +20,11 @@ const CoasterCard = props => {
                 </Col>
                 <Col size="3">
                   <a href={"/coasters/" + coaster._id}>
-                    <div className="coasterImage my-3">
+                    <div className="coasterImage my-3 text-center">
                       <img src={coaster.img1 || "https://via.placeholder.com/150C/O"} className="img-circle" alt={coaster.name} />
                     </div></a>
                 </Col>
-                <Col size="md-8" className="coasterInfo px-3">
+                <Col size="8" className="coasterInfo px-3">
                   <div className="card-block px-3">
                     <Row>
                       <a href={"/coasters/" + coaster._id} className="nameLink">
@@ -41,12 +35,28 @@ const CoasterCard = props => {
                       <p className="coasterPark text-left">{coaster.park} | {coaster.location}</p>
                     </Row>
                     <Row>
-                      <Stars />
-                      <p className="coasterRating">{coaster.rating}</p>
+                      {/* <Stars /> */}
+                      <StarRatingComponent 
+                          name="rate1" 
+                          starCount={5}
+                          value={coaster.rating}
+                          editing={false}
+                        />
+                      {/* <p className="coasterRating">{coaster.rating}</p> */}
                     </Row>
+
+                  {/* check the toggle */}
+                  { 
+                    coaster.buttonToggle ?
                     <Row>
-                       <RodeIt handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
+                       <RodeIt className="text-left" handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
+                       <a href={"/coasters/" + coaster._id} className="btn">More Info</a>
                     </Row>
+                     : 
+                      <Row>
+                        <a href={"/coasters/" + coaster._id} className="btn">More Info</a>
+                      </Row>
+                  }
                   </div>
                 </Col>
               </Row>

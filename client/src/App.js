@@ -50,11 +50,10 @@ class App extends Component {
   getUser() {
     API.getUser().then(response => {
       console.log('Get user response: ');
-      console.log(response.data);
       if (response.data.user) {
-        console.log('Get User: There is a user saved in the server session: ' + response.data.user.username);
+        // console.log('Get User: There is a user saved in the server session: ' + response.data.user.username);
 
-        console.log('Get User: There are coasters saved for this user: ' + JSON.stringify(response.data.user.coasters));
+        // console.log('Get User: There are coasters saved for this user: ' + JSON.stringify(response.data.user.coasters));
 
         this.setState({
           loggedIn: true,
@@ -78,7 +77,7 @@ class App extends Component {
     let newCoaster = event.target.id;
 
     API.addCoasterToUser(newCoaster).then(response => {
-      console.log(response);
+      // console.log(response);
       if (!response.data.error) {
         console.log("you're good");
         // getUser will update display
@@ -98,7 +97,7 @@ class App extends Component {
 
     API.addRide(event.target.id)
       .then(response => {
-        console.log(response);
+        // console.log(response);
         if (!response.data.error) {
           console.log("you're good");
           // getUser will update display
@@ -110,6 +109,8 @@ class App extends Component {
         console.log('addcoaster error: ' + error)
       })
   }
+
+
 
   render() {
     return (
@@ -128,7 +129,9 @@ class App extends Component {
               <SignupForm updateUser={this.updateUser} getUser={this.getUser}/>
             } />
             <Route exact path="/userprofile" render={() =>
-              <UserProfile user={this.state.user} handleAddRideSubmit={this.handleAddRideSubmit}/>
+              <UserProfile user={this.state.user} 
+              handleAddRideSubmit={this.handleAddRideSubmit}
+              getUser={this.getUser}/>
             } />
 
           <Route path="/coasters/:id" render={(routerProps) =>

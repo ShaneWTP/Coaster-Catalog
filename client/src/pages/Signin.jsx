@@ -75,11 +75,6 @@ class LoginForm extends Component {
 
   render() {
 
-    // const coasterImg = {
-    //   'width' : 'auto',
-    //   'height' : '371px',
-    //   'object-fit': 'cover',
-    // }
 
     const inputStyle = {
       // 'background-color':'#468609'
@@ -91,28 +86,28 @@ class LoginForm extends Component {
       'background-color': '#0A1E5F',
       'font-size': '18px'
     }
-
+    const shadowStyle = {
+      'box-shadow': '0px -2px 0px #eee',
+    }
+    
     if (this.state.redirectTo) {
       return <Redirect to={{ pathname: this.state.redirectTo }} />
     } else {
       return (
 
         <div className="LoginForm container" >
-
           <br></br>
-          {/* <h1>Welcome Back</h1> */}
+          <br></br>
+          <div className="card">
+            <div className="row ">
+              <div className="col-md-4">
+                <img src="images/roller-coaster-2538846_1280_1.jpg" height="372" width="auto" className="card-img rounded-0" alt="Fahrenheit" />
+              </div>
+              <div className="col-md-8 px-3">
+                <div className="card-block px-3">
+                  <br></br>
+                  <h3 className="card-title">Sign In</h3>
 
-          <div className="row w-100 no-gutters">
-            <div className="col-sm-3 align-self-center">
-              {/* <img style={coasterImg} src="images/roller-coaster-2538846_1280_1.jpg" /> */}
-              <img className="card-img-top" src="images/roller-coaster-2538846_1280_1.jpg" height="372" width="400" alt="Roller Coaster at Hershey Park" />
-            </div>
-
-            <div className="col-sm-9">
-              <div className="card">
-                {/* <img className="card-img-top" src="images/roller-coaster-2538846_1280.jpg" alt="Card image cap"/>   */}
-                <article className="card-body">
-                  <h4 className="card-title mb-4 mt-1"> Sign In </h4>
                   <form>
                     <div className="form-group">
                       <label className="float-left">Username</label>
@@ -126,7 +121,7 @@ class LoginForm extends Component {
                     </div>
 
                     <div className="form-group">
-                      <a className="float-right" href="/signup">Forgot?</a>
+                      <a className="float-right" href="/signup">Forgot password?</a>
                       <label className="float-left">Password</label>
                       <input className="form-control"
                         type="password"
@@ -147,33 +142,31 @@ class LoginForm extends Component {
                         style={buttonStyle}> Sign In  </button>
                     </div>
                   </form>
-                </article>
-              </div>
-            </div>
 
-            <div className="row w-100 no-gutters">
+                </div>
+              </div>
+
+            </div>
+            <div className="row" >
               <div className="col-sm-12">
-                <div className="card">
-                  <div className="card-body bg-primary text-center text-white">
-                    <br></br>
-                    <br></br>
-                    <h3> Not a member yet?</h3>
-                    <br></br>
-                    <a href="/signup" className=" btn btn-secondary text-white">Sign up!</a>
-                    <br></br>
-                    <br></br>
+                <div className="card" style={shadowStyle}>
+                  <div className="card-body text-center">
+                    <h3>Want to become a member?</h3>
+                    <a href="/signup" className="text-white btn">Sign up</a>
                     <br></br>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <br></br>
+          <br></br>
         </div>
 
-        
-    
-      
-   
+
+
+
+
       )
     }
   }

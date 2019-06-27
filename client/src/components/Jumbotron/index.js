@@ -17,8 +17,9 @@ class Jumbotron extends Component {
         <div className="container h-100 jumbocontainer">
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 col-sm-12 text-white">
-              <h1 className="display-3 font-weight-bold my-auto">Welcome to the Thing</h1>
-              <h2>Stuff About the Thing</h2>
+              <h1 className="display-3 font-weight-bold my-auto jumbo-text">COASTER CATALOG (PA)</h1>
+              <h2>Pennsylvania's premier roller coaster index</h2>
+              <br/>
               {this.props.user ?  "" : <div><a href="/signup">
                 <button className="signup btn btn-success m-2">
                   Create a Profile</button></a>
