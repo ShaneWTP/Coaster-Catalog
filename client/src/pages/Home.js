@@ -39,6 +39,11 @@ class Home extends Component {
         <Wrapper>
           <MapPA />
         </Wrapper>
+        <Pagination
+          coastersPerPage={this.state.coastersPerPage}
+          totalCoasters={this.state.coasters.length}
+          paginate={paginate}
+        />
         <CoasterCard coasters={currentCoasters} />
         <Pagination
           coastersPerPage={this.state.coastersPerPage}
