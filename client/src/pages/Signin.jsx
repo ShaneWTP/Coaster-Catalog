@@ -139,7 +139,7 @@ class LoginForm extends Component {
                         disabled={!(this.state.username && this.state.password)}
                         type="submit"
                         className="btn  "
-                        style={buttonStyle}> Sign In  </button>
+                        style={buttonStyle}> Sign In</button>
                     </div>
                   </form>
 

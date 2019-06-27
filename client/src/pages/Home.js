@@ -33,9 +33,9 @@ class Home extends Component {
 
   render() {
     // PAGINATION
-    const indexOfLastCoaster = this.state.currentPage * this.state.coastersPerPage
-    const indexOfFirstCoaster = indexOfLastCoaster - this.state.coastersPerPage
-    const currentCoasters = this.state.coasters.slice(indexOfFirstCoaster, indexOfLastCoaster)
+    const indexOfLastCoaster = this.state.currentPage * this.state.coastersPerPage;
+    const indexOfFirstCoaster = indexOfLastCoaster - this.state.coastersPerPage;
+    const currentCoasters = this.state.coasters.slice(indexOfFirstCoaster, indexOfLastCoaster);
 
     const paginate = (pageNumber) => this.setState({ currentPage: pageNumber })
 
@@ -54,6 +54,14 @@ class Home extends Component {
             <br />
           </div>
         </div >
+
+        <div className="mx-auto">
+          <Pagination
+            coastersPerPage={this.state.coastersPerPage}
+            totalCoasters={this.state.coasters.length}
+            paginate={paginate}
+          />
+        </div>
 
         <CoasterCard coasters={currentCoasters} handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} user={this.props.user}/>
 
