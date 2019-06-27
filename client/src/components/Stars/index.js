@@ -11,13 +11,13 @@ class Stars extends Component {
       }
     render() {
         return (
-            <StarRatingComponent 
+          <StarRatingComponent 
           name="rate1" 
           starCount={5}
-          value={this.state.rating}
-          onStarClick={this.onStarClick.bind(this)} 
+          value={coaster.rating}
+          editing={false}
         />
-    );
+);
 }
 };
 
