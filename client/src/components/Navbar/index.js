@@ -54,10 +54,10 @@ class Navbar extends Component {
         <MDBNavbarBrand>
           <MDBNavLink to="/">
             <div className="logo-container">
-              <img src={logo} width="400" height="60" className="d-inline-block align-top" alt="logo" />
+              <img src={logo} width="375" height="55" alt="logo" />
               <div className="overlay">
                 <a href="/" className="image">
-                  <img src={LogoHover} width="400" height="60" className="d-inline-block align-top" alt="logo-hover" />
+                  <img src={LogoHover} width="375" height="55" alt="logo-hover" />
                 </a>
               </div>
             </div>
