@@ -8,13 +8,13 @@
   font-size: 15px !important;
 } */
 
-.btn .btn-success {
+.btn  {
   background-color: #2f7c32 !important;
   border: #0A1E5F !important;
   font-size: 24px;
 }
 
-.btn:hover .btn-success:hover {
+.btn:hover  {
   background-color: #0A1E5F !important;
   border: #2f7c32 !important;
 }
