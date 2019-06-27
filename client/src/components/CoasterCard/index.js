@@ -8,9 +8,9 @@ import StarRatingComponent from 'react-star-rating-component';
 import "./style.css";
 
 const CoasterCard = props => {
-  console.log("Here you go: " + JSON.stringify(props.user), null, 2)
+  // props.coasters.map(res=> console.log(res.buttonToggle));
   return (
-    <div className="container cc-section">
+      <div className="container cc-section">
       {props.coasters.map(coaster => {
         return (
             <li className="card my-1 coastercard" key={coaster._id}>
@@ -45,8 +45,9 @@ const CoasterCard = props => {
                       {/* <p className="coasterRating">{coaster.rating}</p> */}
                     </Row>
 
-                  {/* HLS don't know what to do */}
-                  { props.user ?
+                  {/* check the toggle */}
+                  { 
+                    coaster.buttonToggle ?
                     <Row>
                        <RodeIt className="text-left" handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
                        <a href={"/coasters/" + coaster._id} className="btn">More Info &nbsp;<i className="fas fa-angle-double-right"></i></a>

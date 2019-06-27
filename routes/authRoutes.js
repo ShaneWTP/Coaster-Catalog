@@ -22,7 +22,8 @@ module.exports = function (app, passport) {
                 return res;
             });
 
-            console.log('logged in', user);
+            // console.log('logged in', user);
+            console.log('logged in');
             var userInfo = {
                 username: user.username
             }
@@ -52,8 +53,8 @@ module.exports = function (app, passport) {
                 if (err) { return next(err); }
                 return res;
             });
-
-            console.log('logged in', user);
+            // console.log('logged in', user);
+            console.log('logged in');
             var userInfo = {
                 username: user.username
             }

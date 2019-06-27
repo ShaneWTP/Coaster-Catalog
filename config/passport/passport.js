@@ -87,15 +87,12 @@ module.exports = function (passport) {
 
       // this method checks if the password entered matches the database
       var isValidPassword = function (userpass, password) {
-        console.log("inside isValidPassword we found the user " + userpass + ", " + password);
-
         return bCrypt.compareSync(password, userpass);
       }
 
       // Check if the user exists in the database
       User.findOne({ username: username }, function (error, user) {
 
-        console.log(JSON.stringify(user));
         if (error) {
           console.log("We had an error");
           console.log(error);
@@ -107,15 +104,12 @@ module.exports = function (passport) {
             message: 'User does not exist'
           });
         }
-        console.log("inside passport.js we found the user " + user.username);
-        console.log("inside passport.js we found the user " + user.password + ", " + password);
         if (!isValidPassword(user.password, password)) {
         // here we check if the password entered matches the database
           return done(null, false, {
             message: 'Incorrect password.'
           });
         }
-        console.log("inside passport.js we validated password + " + JSON.stringify(user));
         // var userinfo = user.get();
         // let userinfo = {
         //   username: user.username
@@ -132,9 +126,10 @@ module.exports = function (passport) {
   //serialize
   // serializeUser determines which data of the user object should be stored in the session. The result of the serializeUser method is attached to the session as req.session.passport.user = {}. Here for instance, it would be (as we provide the user id as the key) req.session.passport.user = {id: 'xyz'}
   passport.serializeUser(function (user, done) {
-    console.log('*** serializeUser called, user: ')
-    console.log(user) // the whole raw user object!
-    console.log('---------')
+    console.log('*** serializeUser called ')
+    // console.log('*** serializeUser called, user: ')
+    // console.log(user) // the whole raw user object!
+    // console.log('---------')
       done(null, { _id: user._id});
   });
 
@@ -156,7 +151,6 @@ module.exports = function (passport) {
       "img1"])
       .then(function(user) {
 
-        console.log("HEATHER here is your user " + JSON.stringify(user, null, 2));
         // now set the totalNumberOfRides
         let numRides = 0;
         let coasters = user.coasters;
@@ -169,9 +163,9 @@ module.exports = function (passport) {
         user = user.toObject();
         user.numTotalRides = numRides;
 
-        console.log('*** Deserialize user, user:');
-        console.log(JSON.stringify(user, null, 2));
-        console.log('--------------');
+        // console.log('*** Deserialize user, user:');
+        // console.log(JSON.stringify(user, null, 2));
+        // console.log('--------------');
         done(null, user);
       })
       .catch(function(err) {
