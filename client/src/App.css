@@ -11,12 +11,13 @@
 .btn  {
   background-color: #2f7c32 !important;
   border: #0A1E5F !important;
-  font-size: 24px;
+  font-size: 15px !important;
 }
 
 .btn:hover  {
   background-color: #0A1E5F !important;
   border: #2f7c32 !important;
+  color: #fff !important;
 }
 
 .card {
