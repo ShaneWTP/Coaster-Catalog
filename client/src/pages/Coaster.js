@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import API from "../utils/API";
 import RodeIt from "../components/RodeItButton";
-import Stars from "../components/Stars";
+import StarRatingComponent from 'react-star-rating-component';
 import BarChart from "../components/BarChart";
 import DoughnutChart from "../components/DoughnutChart";
 
@@ -63,7 +63,12 @@ class Coaster extends Component {
                                         {this.state.coaster.location}
                                     </h4>
                                     <div className="text-center">
-                                        <Stars rating={this.state.coaster.rating}/>
+                                        <StarRatingComponent
+                                            name="rate1"
+                                            starCount={5}
+                                            value={this.state.coaster.rating}
+                                            editing={false}
+                                        />
                                         <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
                                     </div>
                                 </div>
@@ -92,9 +97,9 @@ class Coaster extends Component {
                                 </Col>
                             </Row>
 
-</div></div>
-                            <br></br>
-                            <div className="card">
+                        </div></div>
+                    <br></br>
+                    <div className="card">
                         <div className="card-body">
 
                             <div className="text-center"> <h1 className="font-weight-bold">Statistics</h1></div>
@@ -156,8 +161,8 @@ class Coaster extends Component {
                                     </h5>
                                 </Col>
                             </Row>
-                            </div></div>
-                
+                        </div></div>
+
                 </Container>
                 <Row>
                     <Col size="md-2 offset-1">
