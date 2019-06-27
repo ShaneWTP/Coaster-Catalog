@@ -50,8 +50,6 @@ module.exports = {
       .findById({ _id: coasterId })
       .then(function(coaster) {
 
-        console.log("after find by id");
-        console.log(JSON.stringify(coaster), null, 2);
         if (coaster){
           // if a rating already exists in database
           if (coaster.rating && coaster.numRating)
