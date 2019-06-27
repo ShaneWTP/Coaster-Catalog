@@ -52,10 +52,10 @@ const CoasterCard = props => {
                        <a href={"/coasters/" + coaster._id} className="btn">More Info</a>
                     </Row>
                      : 
-                      <Row></Row>
+                      <Row>
+                        <a href={"/coasters/" + coaster._id} className="btn">More Info</a>
+                      </Row>
                   }
-
-
                   </div>
                 </Col>
               </Row>
