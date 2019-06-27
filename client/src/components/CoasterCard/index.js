@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "../Grid";
 import RodeIt from "../RodeItButton";
-import Stars from "../Stars";
-// import StarRatingComponent from 'react-star-rating-component';
+// import Stars from "../Stars";
+import StarRatingComponent from 'react-star-rating-component';
 
 
 import "./style.css";
@@ -34,13 +34,13 @@ const CoasterCard = props => {
                       <p className="coasterPark text-left">{coaster.park} | {coaster.location}</p>
                     </Row>
                     <Row>
-                      <Stars />
-                      {/* <StarRatingComponent 
+                      {/* <Stars /> */}
+                      <StarRatingComponent 
                           name="rate1" 
                           starCount={5}
                           value={coaster.rating}
                           editing={false}
-                        /> */}
+                        />
                       {/* <p className="coasterRating">{coaster.rating}</p> */}
                     </Row>
                     <Row>
