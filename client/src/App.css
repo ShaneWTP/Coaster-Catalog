@@ -1,11 +1,24 @@
 .App {
   background-color: white;
 }
-.btn {
+
+/* .btn {
   background-color: #0A1E5F !important;
   color: white !important;
   font-size: 15px !important;
+} */
+
+.btn .btn-success {
+  background-color: #2f7c32 !important;
+  border: #0A1E5F !important;
+  font-size: 24px;
 }
+
+.btn:hover .btn-success:hover {
+  background-color: #0A1E5F !important;
+  border: #2f7c32 !important;
+}
+
 .card {
   border-radius: 0 !important;
 }
