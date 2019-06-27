@@ -111,6 +111,20 @@ class Home extends Component {
         <Jumbotron user={this.props.user} />
         <div className="container">
           <MapPA />
+<<<<<<< HEAD
+        </Wrapper>
+        <Pagination
+          coastersPerPage={this.state.coastersPerPage}
+          totalCoasters={this.state.coasters.length}
+          paginate={paginate}
+        />
+        <CoasterCard coasters={currentCoasters} />
+        <Pagination
+          coastersPerPage={this.state.coastersPerPage}
+          totalCoasters={this.state.coasters.length}
+          paginate={paginate}
+        />
+=======
         </div>
         <br />
         <div className="row">
@@ -131,6 +145,7 @@ class Home extends Component {
             paginate={paginate}
           />
         </div>
+>>>>>>> master
       </div>
     );
   }
