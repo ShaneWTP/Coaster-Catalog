@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Bar } from 'react-chartjs-2';
 
 class BarChart extends Component {
   constructor(props) {
     super(props);
-    console.log("coaster height " + this.props.height)
-    // const height = this.props.height
     this.state = {
+      hasLoaded: false,
       chartData: {
         // labels: ['Coaster,'],
         datasets: [
@@ -23,24 +22,41 @@ class BarChart extends Component {
     }
   }
   // componentDidMount() {
-  //   this.setState({height: this.props.height});
+  //   this.setState({ hasLoaded: true })
   // }
+  // componentDidUpdate() {
+  //   console.log(this.props.coasterHeight)
+  //   var coastHeight = this.props.coasterHeight
+  //   if (this.state.hasLoaded && !coastHeight) {
 
-  render (){
-    return(
+  //     const updatedChartData = {
+  //       ...this.state.chartData
+  //     }
+  //     updatedChartData.datasets.data = [coastHeight, 1]
+  //     // updatedChartData.hasLoaded = false
+  //     console.log(updatedChartData.datasets.data)
+  //     this.setState({ chartData: updatedChartData, hasLoaded: false }, () => { console.log(this.state) })
+
+  //   }
+  // }
+  // const height = this.props.coasterHeight
+
+  render() {
+    // console.log(this.state)
+    return (
       <div className="bar-chart">
         <Bar
           data={this.state.chartData}
           width={100}
           height={400}
-          options={{ 
+          options={{
             maintainAspectRatio: false,
             animation: {
               duration: 4000
             }
           }}
         />
-      </div>  
+      </div>
     )
   }
 }

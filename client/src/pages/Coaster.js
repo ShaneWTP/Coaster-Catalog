@@ -10,12 +10,12 @@ import DoughnutChart from "../components/DoughnutChart";
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const imgStyle = {
-    width: "auto",
+    width: "100%",
     height: "auto",
     objectFit: "cover"
 }
 const headerFont = {
-    'font-family': 'Carter One, cursive'
+    'fontFamily': 'Carter One, cursive'
 }
 class Coaster extends Component {
     constructor() {
@@ -47,43 +47,28 @@ class Coaster extends Component {
     render() {
         return (
             <div className="coaster">
-                <Row>
-                    <Col size="5">
-                        <Carousel showThumbs={false} infiniteLoop={true}>
-                            <div style={imgStyle} className="carousel-img m-auto">
-                                <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
-                            </div>
-                            {this.state.coaster.img2 ? <div style={imgStyle} className="carousel-img m-auto">
-                                <img src={this.state.coaster.img2 || ""} alt={this.state.coaster.name} />
-                            </div> : null}
-                            {this.state.coaster.img3 ? <div style={imgStyle} className="carousel-img m-auto">
-                                <img src={this.state.coaster.img3} alt={this.state.coaster.name} />
-                            </div> : null}
-                            {this.state.coaster.img4 ? <div style={imgStyle} className="carousel-img m-auto">
-                                <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
-                            </div> : null}
-                        </Carousel>
-                    </Col>
-                    <Col size="7">
-                        <div className="container h-100">
-                            <div className="d-flex h-100 align-items-center">
-                                <div className="col-12">
-                                    <h1 className="display-4 font-weight-bold text-center" style={headerFont}>
-                                        {this.state.coaster.name}
-                                    </h1>
-                                    <h2 className="text-center">
-                                        {this.state.coaster.park}
-                                    </h2>
-                                    <h4 className="text-center">
-                                        {this.state.coaster.location}
-                                    </h4>
-                                    <div className="text-center">
-                                        <StarRatingComponent
-                                            name="rate1"
-                                            starCount={5}
-                                            value={this.state.coaster.rating}
-                                            editing={false}
-                                        />
+                <div class="jumbotron" style={{ backgroundImage: 'url(' + this.state.coaster.img1 + ')', backgroundSize: 'cover', width: '100vw', backgroundPosition: 'center' }}>
+                    <div className="overlay"></div>
+                    <div className="container h-100 jumbocontainer">
+                        <div className="d-flex h-100 align-items-center">
+                            <div className="col-12 text-white jumbo-text">
+                                <h1 className="display-4 font-weight-bold text-center" style={headerFont}>
+                                    {this.state.coaster.name}
+                                </h1>
+                                <h2 className="text-center">
+                                    {this.state.coaster.park}
+                                </h2>
+                                <h4 className="text-center">
+                                    {this.state.coaster.location}
+                                </h4>
+                                <div className="text-center">
+                                    <StarRatingComponent
+                                        name="rate1"
+                                        starCount={5}
+                                        value={this.state.coaster.rating}
+                                        editing={false}
+                                        emptyStarColor="white"
+                                    />
                                         {this.props.user ? 
                                         <RodeIt handleNewCoasterSubmit={this.onButtonClick} 
                                         id={this.state.coaster._id}
@@ -93,25 +78,20 @@ class Coaster extends Component {
                                         }
                                         {this.state.buttonDisabled ? 
                                         <p>Coaster has been added to your profile</p> : ""}
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </Col>
-                </Row>
-                <br></br>
-                <br></br>
-
+                    </div>
+                </div>
                 <Container>
                     <div className="card">
                         <div className="card-body">
                             <h1 className="text-center font-weight-bold">Fast Facts</h1>
-
                             <br />
                             <Row>
                                 <Col size="4">
                                     <h3 className="text-center">Tallest Height: {this.state.coaster.height} ft</h3>
-                                    <BarChart height={this.state.coaster.height} />
+                                    <BarChart coasterHeight={this.state.coaster.height} />
                                 </Col>
                                 <Col size="1"></Col>
                                 <Col size="7">
@@ -119,14 +99,11 @@ class Coaster extends Component {
                                     <DoughnutChart />
                                 </Col>
                             </Row>
-
                         </div></div>
                     <br></br>
                     <div className="card">
                         <div className="card-body">
-
                             <div className="text-center"> <h1 className="font-weight-bold">Statistics</h1></div>
-
                             <Row>
                                 <Col size="4">
                                     <br></br>
@@ -184,14 +161,39 @@ class Coaster extends Component {
                                     </h5>
                                 </Col>
                             </Row>
-                        </div></div>
-
+                        </div>
+                    </div>
+                    <br></br>
+                    <Row>
+                        <Col size="12">
+                            <Carousel showThumbs={false} infiniteLoop={true}>
+                                <div style={imgStyle} className="carousel-img m-auto">
+                                    <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
+                                </div>
+                                {this.state.coaster.img2 ? <div style={imgStyle} className="carousel-img m-auto">
+                                    <img src={this.state.coaster.img2 || ""} alt={this.state.coaster.name} />
+                                </div> : null}
+                                {this.state.coaster.img3 ? <div style={imgStyle} className="carousel-img m-auto">
+                                    <img src={this.state.coaster.img3} alt={this.state.coaster.name} />
+                                </div> : null}
+                                {this.state.coaster.img4 ? <div style={imgStyle} className="carousel-img m-auto">
+                                    <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
+                                </div> : null}
+                            </Carousel>
+                        </Col>
+                    </Row>
                 </Container>
-                <Row>
-                    <Col size="md-2 offset-1">
-                        <Link to="/">← Back to Home</Link>
-                    </Col>
-                </Row>
+                <Container>
+                    <Row>
+                        <div className="col-sm-12">
+                            <div className="card">
+                                <div className="card-body text-center">
+                                    <Link to="/"><h4 className="nameLink">← Back to Home</h4></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </Row>
+                </Container>
             </div>
         );
     }
