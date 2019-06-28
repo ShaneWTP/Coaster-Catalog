@@ -97,7 +97,3 @@ Crafted with :heart: by The Four Loops [Jenny Sterlein](https://github.com/jener
 
 
 ![GIF of Coaster Catalog Landing Page](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif)
-
-<p text-align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif">
-</p>
