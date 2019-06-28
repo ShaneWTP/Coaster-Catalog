@@ -100,9 +100,9 @@ class Home extends Component {
 
   render() {
     // PAGINATION
-    const indexOfLastCoaster = this.state.currentPage * this.state.coastersPerPage
-    const indexOfFirstCoaster = indexOfLastCoaster - this.state.coastersPerPage
-    const currentCoasters = this.state.coasters.slice(indexOfFirstCoaster, indexOfLastCoaster)
+    const indexOfLastCoaster = this.state.currentPage * this.state.coastersPerPage;
+    const indexOfFirstCoaster = indexOfLastCoaster - this.state.coastersPerPage;
+    const currentCoasters = this.state.coasters.slice(indexOfFirstCoaster, indexOfLastCoaster);
 
     const paginate = (pageNumber) => this.setState({ currentPage: pageNumber })
 
