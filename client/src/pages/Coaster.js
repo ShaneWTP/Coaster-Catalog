@@ -11,8 +11,8 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 const imgStyle = {
     width: "100%",
-    height: "auto",
-    objectFit: "cover"
+    height: "100%",
+    objectFit: "contain",
 }
 const headerFont = {
     'fontFamily': 'Carter One, cursive'
@@ -166,7 +166,7 @@ class Coaster extends Component {
                     <br></br>
                     <Row>
                         <Col size="12">
-                            <Carousel showThumbs={false} infiniteLoop={true}>
+                            <Carousel showThumbs={false} infiniteLoop={true} >
                                 <div style={imgStyle} className="carousel-img m-auto">
                                     <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
                                 </div>

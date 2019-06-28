@@ -12,7 +12,7 @@ class BarChart extends Component {
           {
             label: ['Height in feet'],
             // data: [height, 1],
-            data: [100, 1],
+            data: [300, 1],
             backgroundColor: [
               'rgba(47,124,50)',
             ]
@@ -21,28 +21,27 @@ class BarChart extends Component {
       }
     }
   }
-  // componentDidMount() {
-  //   this.setState({ hasLoaded: true })
-  // }
-  // componentDidUpdate() {
-  //   console.log(this.props.coasterHeight)
-  //   var coastHeight = this.props.coasterHeight
-  //   if (this.state.hasLoaded && !coastHeight) {
+  componentDidMount() {
+    this.setState({ hasLoaded: true })
+  }
+  componentDidUpdate() {
+    console.log(this.props.coasterHeight)
+    var coastHeight = this.props.coasterHeight
+    if (this.state.hasLoaded && coastHeight !== undefined) {
 
-  //     const updatedChartData = {
-  //       ...this.state.chartData
-  //     }
-  //     updatedChartData.datasets.data = [coastHeight, 1]
-  //     // updatedChartData.hasLoaded = false
-  //     console.log(updatedChartData.datasets.data)
-  //     this.setState({ chartData: updatedChartData, hasLoaded: false }, () => { console.log(this.state) })
+      const updatedChartData = {
+        ...this.state.chartData
+      }
+      updatedChartData.datasets.data = [coastHeight, 1]
+      // updatedChartData.hasLoaded = false
+      console.log(updatedChartData.datasets.data)
+      this.setState({ chartData: updatedChartData, hasLoaded: false }, () => { console.log(this.state) })
 
-  //   }
-  // }
-  // const height = this.props.coasterHeight
-
+    }
+  }
+  
   render() {
-    // console.log(this.state)
+    console.log(this.state.chartData)
     return (
       <div className="bar-chart">
         <Bar
