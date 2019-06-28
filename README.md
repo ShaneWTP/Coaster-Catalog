@@ -15,10 +15,11 @@ The idea for this app came about from this team's mutual love of theme parks and
 
 **Coaster Index 1**
 
-Any user can logs on to site URL and get a full list of the parks and roller coasters in the state of Pennsylvania.
+Any user can log on to site URL and get a full list of the parks and roller coasters in the state of Pennsylvania by using the "Parks & Coasters" menu item in the navigation bar.
 
 ![Image of Coaster Catalog Mega Menu](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/mega-menu.png)
 
+---
 
 **Coaster Index 2**
 
@@ -26,6 +27,7 @@ General users can also interact with the map of PA by hovering over the dots and
 
 ![Image of Coaster Catalog PA Map](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/pa-map.png)
 
+---
 
 **Coaster Index 3**
 
@@ -33,10 +35,15 @@ Additionally, users have the option to page through the alphabetical list of all
 
 ![Image of Coaster Catalog Coaster List](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-list-pre-sign-in.png)
 
+---
 
 ### Features available after Sign In
 
+---
+
 ![Image of Coaster Catalog Sign In Page](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/sign-in-page.png)
+
+---
 
 **"I RODE IT" buttons unlocked on Home page**
 
@@ -44,6 +51,7 @@ After users create a profile and are logged in, they can return to the home page
 
 ![Image of Coaster Catalog Coaster List after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-list-post-sign-in.png)
 
+---
 
 **"I RODE IT" buttons unlocked on Coaster Profile pages**
 
@@ -51,6 +59,7 @@ After users have created a profile and are logged in, they can also navigate to 
 
 ![Image of Coaster Catalog Coaster Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-profil-post-sign-in.png)
 
+---
 
 **Counters for Total Number of Coasters Ridden and Total Number of Rides**
 
@@ -58,6 +67,7 @@ Additionally, after users create a profile and are logged in, they can go to the
 
 ![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/sign-in-page.png)
 
+---
 
 ## Misc
 
@@ -85,3 +95,5 @@ Additionally, after users create a profile and are logged in, they can go to the
 
 Crafted with :heart: by The Four Loops [Jenny Sterlein](https://github.com/jenerationx), [Shane Maziekien](https://github.com/ShaneWTP), [Heather Samsel](https://github.com/savycodr), and [Richard Fink](https://github.com/swissfink), 
 
+
+![GIF of Coaster Catalog Landing Page](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif)
