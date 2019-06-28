@@ -11,7 +11,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 const imgStyle = {
     width: "100%",
-    height: "600px",
+    maxHeight: "600px",
     objectFit: "cover",
 }
 const headerFont = {

@@ -84,10 +84,10 @@ class LoginForm extends Component {
     const buttonStyle = {
       'color': 'white',
       'background-color': '#0A1E5F',
-      'font-size': '18px'
+      'fontSize': '18px'
     }
     const shadowStyle = {
-      'box-shadow': '0px -2px 0px #eee',
+      'boxShadow': '0px -2px 0px #eee',
     }
     
     if (this.state.redirectTo) {

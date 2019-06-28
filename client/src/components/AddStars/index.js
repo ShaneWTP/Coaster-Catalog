@@ -7,12 +7,12 @@ import API from "../../utils/API";
 
 
 class AddStars extends Component {
-    state= {
-        rating: 0
-    }
-    onStarClick(nextValue, prevValue, name) {
-        this.setState({rating: nextValue});
-      }
+  state = {
+    rating: 0
+  }
+  onStarClick(nextValue, prevValue, name) {
+    this.setState({ rating: nextValue });
+  }
 
   // this method needs to be here because it's the only place where the star state is
   // adds a rate to the rollercoaster
@@ -21,7 +21,7 @@ class AddStars extends Component {
     console.log('handleRateSubmit ' + event.target.id);
 
 
-    API.addRating({coaster: event.target.id, rating: this.state.rating})
+    API.addRating({ coaster: event.target.id, rating: this.state.rating })
       .then(response => {
         console.log(response);
         if (!response.data.error) {
@@ -29,7 +29,7 @@ class AddStars extends Component {
           // getUser will update display
           this.props.getUser();
           // reset the state
-          this.setState({rating: 0});
+          this.setState({ rating: 0 });
         } else {
           console.log('Error: ' + response.data.error);
         }
@@ -39,27 +39,33 @@ class AddStars extends Component {
   }
 
   render() {
-        return (
+    return (
 
-          <div className="card">
+      <div className="text-center">
+        <div className="card">
           <div className="card-body" >
-              <h4>Rate This Coaster</h4>
-              <Row>
-              <Col size="sm-12">
-                <StarRatingComponent 
-                  name="rate1" 
+            <h4>Rate This Coaster</h4>
+            <Row>
+              <Col size="12">
+                <div className="mt-1">
+                <StarRatingComponent
+                  name="rate1"
                   starCount={5}
                   value={this.state.rating}
-                  onStarClick={this.onStarClick.bind(this)} 
+                  onStarClick={this.onStarClick.bind(this)}
                 />
+                </div>
               </Col>
-              </Row>
-              <Row>
-                  <div className="col-sm-12 align-self-center">
-                      <button id={this.props.userCoaster.coaster._id} onClick={this.handleRateSubmit.bind(this)} >Submit</button>
-                  </div>
-              </Row>
+            </Row>
+            <Row>
+              <Col size="12">
+                <div className="row justify-content-center">
+                  <button className="btn" id={this.props.userCoaster.coaster._id} onClick={this.handleRateSubmit.bind(this)} >Submit</button>
+                </div>
+              </Col>
+            </Row>
           </div>
+        </div>
       </div>
     );
   }
