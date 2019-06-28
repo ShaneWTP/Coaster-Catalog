@@ -18,15 +18,30 @@ const headerFont = {
     'font-family': 'Carter One, cursive'
 }
 class Coaster extends Component {
-    state = {
-        coaster: {}
-    };
+    constructor() {
+        super()
+
+        this.state = {
+        coaster: {},
+        buttonDisabled: false
+        };
+
+        // Bind your click handler
+        this.onButtonClick = this.onButtonClick.bind(this);
+    }   
+
     // When this component mounts, grab the coaster with the _id of this.props.match.params.id
     // e.g. localhost:3000/coasters/599dcb67f0f16317844583fc
     componentDidMount() {
         API.getCoaster(this.props.match.params.id)
             .then(res => this.setState({ coaster: res.data }))
             .catch(err => console.log(err));
+    }
+
+    onButtonClick(event) {
+        this.setState({buttonDisabled: true});
+        event.preventDefault();
+        this.props.handleNewCoasterSubmit(event);
     }
 
     render() {
@@ -69,7 +84,15 @@ class Coaster extends Component {
                                             value={this.state.coaster.rating}
                                             editing={false}
                                         />
-                                        <RodeIt handleNewCoasterSubmit={this.props.handleNewCoasterSubmit} id={this.state.coaster._id} />
+                                        {this.props.user ? 
+                                        <RodeIt handleNewCoasterSubmit={this.onButtonClick} 
+                                        id={this.state.coaster._id}
+                                        disabled={this.state.buttonDisabled}
+                                         />
+                                        : ""
+                                        }
+                                        {this.state.buttonDisabled ? 
+                                        <p>Coaster has been added to your profile</p> : ""}
                                     </div>
                                 </div>
                             </div>
