@@ -16,6 +16,10 @@ footer {
   color: #fff;
   text-decoration: underline; 
 }
+.footer-text:hover {
+  color: #2f7c32 !important;
+  text-decoration: underline; 
+}
 
 
 .footer-link,

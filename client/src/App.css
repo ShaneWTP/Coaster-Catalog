@@ -9,15 +9,15 @@
 } */
 
 .btn  {
-  background-color: #2f7c32 !important;
-  border: #0A1E5F !important;
+  background-color: #0A1E5F !important;
+  border: #2f7c32 !important;
   font-size: 15px !important;
   color: #fff !important;
 }
 
 .btn:hover  {
-  background-color: #0A1E5F !important;
-  border: #2f7c32 !important;
+  background-color: #2f7c32 !important;
+  border: #0A1E5F !important;
   color: #fff !important;
 }
 

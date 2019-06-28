@@ -140,7 +140,7 @@ class SignupForm extends Component {
               <div className="card" style={shadowStyle}>
                 <div className="card-body text-center">
                   <h3> Already a member?</h3>
-                  <a href="/signin" className="text-white btn">Sign in</a>
+                  <a href="/signin" className="btn text-white">Sign in</a>
                   <br></br>
                 </div>
               </div>
