@@ -33,7 +33,8 @@ class Coaster extends Component {
         return (
             <div className="coaster">
                 <div class="jumbotron" style={{ backgroundImage: 'url(' + this.state.coaster.img1 + ')', backgroundSize: 'cover', width: '100vw', backgroundPosition: 'center' }}>
-                    <div className="container h-100">
+                    <div className="overlay"></div>
+                    <div className="container h-100 jumbocontainer">
                         <div className="d-flex h-100 align-items-center">
                             <div className="col-12 text-white jumbo-text">
                                 <h1 className="display-4 font-weight-bold text-center" style={headerFont}>
@@ -59,9 +60,6 @@ class Coaster extends Component {
                         </div>
                     </div>
                 </div>
-                <br></br>
-                <br></br>
-
                 <Container>
                     <div className="card">
                         <div className="card-body">
@@ -167,7 +165,7 @@ class Coaster extends Component {
                         <div className="col-sm-12">
                             <div className="card">
                                 <div className="card-body text-center">
-                                    <Link to="/"><h4>← Back to Home</h4></Link>
+                                    <Link to="/"><h4 className="nameLink">← Back to Home</h4></Link>
                                 </div>
                             </div>
                         </div>
