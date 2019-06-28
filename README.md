@@ -65,7 +65,7 @@ After users have created a profile and are logged in, they can also navigate to 
 
 Additionally, after users create a profile and are logged in, they can go to the "Profile" page and see a complete list of how many roller coasters they have ridden, and how many times they have ridden each roller coaster. This is also where users can submit their rating of each roller coaster they rode.
 
-![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/sign-in-page.png)
+![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/profile-page-post-sign-in.png)
 
 ---
 
@@ -97,3 +97,7 @@ Crafted with :heart: by The Four Loops [Jenny Sterlein](https://github.com/jener
 
 
 ![GIF of Coaster Catalog Landing Page](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif)
+
+<p text-align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif">
+</p>
