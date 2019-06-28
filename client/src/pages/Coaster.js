@@ -11,8 +11,8 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 const imgStyle = {
     width: "100%",
-    height: "100%",
-    objectFit: "contain",
+    height: "600px",
+    objectFit: "cover",
 }
 const headerFont = {
     'fontFamily': 'Carter One, cursive'
@@ -171,13 +171,13 @@ class Coaster extends Component {
                                     <img src={this.state.coaster.img1} alt={this.state.coaster.name} />
                                 </div>
                                 {this.state.coaster.img2 ? <div style={imgStyle} className="carousel-img m-auto">
-                                    <img src={this.state.coaster.img2 || ""} alt={this.state.coaster.name} />
+                                    <img style={imgStyle} src={this.state.coaster.img2 || ""} alt={this.state.coaster.name} />
                                 </div> : null}
                                 {this.state.coaster.img3 ? <div style={imgStyle} className="carousel-img m-auto">
-                                    <img src={this.state.coaster.img3} alt={this.state.coaster.name} />
+                                    <img style={imgStyle} src={this.state.coaster.img3} alt={this.state.coaster.name} />
                                 </div> : null}
                                 {this.state.coaster.img4 ? <div style={imgStyle} className="carousel-img m-auto">
-                                    <img src={this.state.coaster.img4} alt={this.state.coaster.name} />
+                                    <img style={imgStyle} src={this.state.coaster.img4} alt={this.state.coaster.name} />
                                 </div> : null}
                             </Carousel>
                         </Col>
