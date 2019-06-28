@@ -142,7 +142,7 @@ import {Row, Col} from "../components/Grid"
                 <h4 >Swissfink</h4>
               </Row>
               <Row>
-                  <p>Coal Port, PA </p>
+                  <p>Hollidaysburg, PA </p>
               </Row>
               </div>
               <div className="col-md-3 align-self-center">
