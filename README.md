@@ -15,7 +15,7 @@ The idea for this app came about from this team's mutual love of theme parks and
 
 **Coaster Index 1**
 
-Any user can log on to site URL and get a full list of the parks and roller coasters in the state of Pennsylvania by using the "Parks & Coasters" menu item in the navigation bar.
+All users can log on to site URL and get a full list of the parks and roller coasters in the state of Pennsylvania by using the "Parks & Coasters" menu item in the main navigation bar.
 
 ![Image of Coaster Catalog Mega Menu](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/mega-menu.png)
 
@@ -23,7 +23,7 @@ Any user can log on to site URL and get a full list of the parks and roller coas
 
 **Coaster Index 2**
 
-General users can also interact with the map of PA by hovering over the dots and squares, to see where the amusement parks are located geographically and see which roller coasters are located at that park. 
+Users can also interact with the map of Pennsylvania to learn about the parks and roller in the state. By hovering over the dots and squares, users can see where the amusement parks are located geographically and see which roller coasters are located in that park. 
 
 ![Image of Coaster Catalog PA Map](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/pa-map.png)
 
@@ -31,7 +31,7 @@ General users can also interact with the map of PA by hovering over the dots and
 
 **Coaster Index 3**
 
-Additionally, users have the option to page through the alphabetical list of all the roller coasters in PA. The location of the roller coaster is listed on each "Coaster Card" as well as the coasters current user rating average, and a color tab that corresponds with the color of the dot on the PA map where the coaster is located.
+Additionally, users have the option to page through an alphabetical list of all the roller coasters in PA. The location of each roller coaster is listed on the "Coaster Card" as well as the coaster's average user rating. The color tab on the left side of the Coaster Card corresponds with the color of the dot on the PA map where the coaster is located.
 
 ![Image of Coaster Catalog Coaster List](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-list-pre-sign-in.png)
 
@@ -47,7 +47,7 @@ Additionally, users have the option to page through the alphabetical list of all
 
 **"I RODE IT" buttons unlocked on Home page**
 
-After users create a profile and are logged in, they can return to the home page and page through the alphabetical list of all the roller coasters in PA. However, since they are logged in, they now see an "I RODE IT" button that they can quickly click on and add to their profile. After a user clicks on an "I RODE IT" button in a Coaster Card, that coaster card will now appear in that users profile, and the button will disappear indicating that the button has been clicked.
+After users create a profile and are logged in, they can return to the home page and page through the alphabetical list of roller coasters. However, since they are logged in, they can now see an "I RODE IT" button that they can click on and add to their profile. After a user clicks on an "I RODE IT" button in a Coaster Card, that coaster card will now appear in the user's profile, and the button will disappear indicating that the button has been clicked.
 
 ![Image of Coaster Catalog Coaster List after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-list-post-sign-in.png)
 
@@ -55,7 +55,7 @@ After users create a profile and are logged in, they can return to the home page
 
 **"I RODE IT" buttons unlocked on Coaster Profile pages**
 
-After users have created a profile and are logged in, they can also navigate to any of the Coaster Profile pages and see the "I RODE IT" button. If the "I RODE IT" button is green and active, then a user has not added that coaster to their profile. If the "I RODE IT" button is blue, disabled, and the message, "Coaster has been added to your profile" is visible, then a user has successfully added that coaster to their profile.
+After users have created a profile and are logged in, they can also navigate to any of the Coaster Profile pages and see the "I RODE IT" button. If the "I RODE IT" button is green, that means a user has not added that coaster to their profile. If the "I RODE IT" button is blue and the message, "Coaster has been added to your profile" is visible, then a user has already successfully added that coaster to their profile.
 
 ![Image of Coaster Catalog Coaster Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-profil-post-sign-in.png)
 
@@ -63,7 +63,7 @@ After users have created a profile and are logged in, they can also navigate to 
 
 **Counters for Total Number of Coasters Ridden and Total Number of Rides**
 
-Additionally, after users create a profile and are logged in, they can go to the "Profile" page and see a complete list of how many roller coasters they have ridden, and how many times they have ridden each roller coaster. This is also where users can submit their rating of each roller coaster they rode.
+Additionally, after users create a profile and are logged in, they can go to the "Profile" page and see a complete list of how many roller coasters they have ridden and how many times they have ridden each roller coaster. This is also where users can increase the number of total rides for an individual coaster and submit their rating for each roller coaster they rode.
 
 ![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/profile-page-post-sign-in.png)
 
@@ -71,7 +71,7 @@ Additionally, after users create a profile and are logged in, they can go to the
 
 ## Misc
 
-**Technologies Used**
+**Technologies Used to Develop this App**
 
 * MongoDB/Mongoose 
 * Express
@@ -97,5 +97,3 @@ Crafted with :heart: by The Four Loops [Jenny Sterlein](https://github.com/jener
 
 
 ![GIF of Coaster Catalog Landing Page](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/footer-logo.gif)
-
----
