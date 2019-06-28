@@ -138,13 +138,8 @@ class LoginForm extends Component {
                       <button onClick={this.handleSubmit}
                         disabled={!(this.state.username && this.state.password)}
                         type="submit"
-<<<<<<< HEAD
-                        className="btn  "
-                        style={buttonStyle}> Sign In</button>
-=======
                         className="btn"
                         style={buttonStyle}> Sign In  </button>
->>>>>>> f5fe383261dca5d93c2604d4579fb4fcc18f474a
                     </div>
                   </form>
 
