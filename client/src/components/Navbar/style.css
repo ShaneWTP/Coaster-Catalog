@@ -31,10 +31,24 @@ body {
 /*  Nav Items STYLE
 ********************************/ 
 
+.home-icon {
+  color: #fff;
+  border: 1.5px  solid #0A1E5F;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 8px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+.home-icon:hover {
+  background: #0A1E5F;
+}
+
 .logo-container {
   position: relative;
   width: 100%;
-  background: #14da1e;
+  background: #2aaa2e;
 }
 
 .image {
@@ -100,12 +114,14 @@ body {
   border-radius: 50px;
   font-size: 20px;
   padding: 8px;
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
 .sign-in:hover {
   background: #0A1E5F;
 }
+
+
 
 /* SIDE MENU ITEMS STYLE
 ********************************/ 
