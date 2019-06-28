@@ -12,10 +12,6 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h2{
-  font-family: 'Raleway', sans-serif;
-}
-
 iframe{
   width: 100vw;
   height: calc(100vw/1.77);
@@ -60,4 +56,12 @@ iframe{
 .jumbo-text {
   text-shadow: 3px 3px 8px #000;
 }
-/* add media query to make this the background on phones:  https://cdn.pixabay.com/photo/2016/07/29/14/25/roller-coaster-1553336_1280.jpg */
+@media (max-width: 575.98px) { 
+  iframe{
+    display: none
+  }
+  .jumbotron{
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/29/14/25/roller-coaster-1553336_1280.jpg);
+    background-position: center
+  }
+ }
