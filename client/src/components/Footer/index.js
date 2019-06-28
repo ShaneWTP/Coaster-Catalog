@@ -28,7 +28,7 @@ function Footer() {
         <br/>
       </div>
       <div className="footer-copyright">
-        <div className="container">© 2019 Copyright The Four Loops. All rights revserved.</div>
+        <div className="container text-center">© 2019 Copyright The Four Loops. All rights revserved.</div>
       </div>
     </footer>
   );
