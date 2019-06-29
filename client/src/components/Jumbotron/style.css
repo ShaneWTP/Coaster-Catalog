@@ -64,4 +64,10 @@ iframe{
     background-image: url(https://cdn.pixabay.com/photo/2016/07/29/14/25/roller-coaster-1553336_1280.jpg);
     background-position: center
   }
+  .jumbo-text{
+    font-size: 20px;
+  }
+  .stats{
+    font-size: 15px;
+  }
  }

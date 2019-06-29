@@ -52,13 +52,13 @@ class Coaster extends Component {
                     <div className="container h-100 jumbocontainer">
                         <div className="d-flex h-100 align-items-center">
                             <div className="col-12 text-white jumbo-text">
-                                <h1 className="display-4 font-weight-bold text-center" style={headerFont}>
+                                <h1 className="display-4 font-weight-bold text-center jumbo-text" style={headerFont}>
                                     {this.state.coaster.name}
                                 </h1>
-                                <h2 className="text-center">
+                                <h2 className="text-center jumbo-text">
                                     {this.state.coaster.park}
                                 </h2>
-                                <h4 className="text-center">
+                                <h4 className="text-center jumbo-text">
                                     {this.state.coaster.location}
                                 </h4>
                                 <div className="text-center">
@@ -107,57 +107,57 @@ class Coaster extends Component {
                             <Row>
                                 <Col size="4">
                                     <br></br>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Operating Since:</span> {this.state.coaster.operating || "N/A"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Operating Since:</span> {this.state.coaster.operating || "N/A"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Type: </span>{this.state.coaster.type || "No type listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Type: </span>{this.state.coaster.type || "No type listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Designer: </span>{this.state.coaster.designer || "No designer listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Designer: </span>{this.state.coaster.designer || "No designer listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Manufacturer: </span>{this.state.coaster.manufacturer || "No manufacturer listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Manufacturer: </span>{this.state.coaster.manufacturer || "No manufacturer listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Model:</span> {this.state.coaster.model || "Model not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Model:</span> {this.state.coaster.model || "Model not listed"}
                                     </h5>
                                 </Col>
                                 <Col size="4">
                                     <br></br>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Duration:</span> {this.state.coaster.duration || "Duration not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Duration:</span> {this.state.coaster.duration || "Duration not listed"}
                                     </h5>
 
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> G-force:</span> {this.state.coaster.gforce || "G-force not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> G-force:</span> {this.state.coaster.gforce || "G-force not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Vertical Angle:</span> {this.state.coaster.vertangle || "Vertical angle not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Vertical Angle:</span> {this.state.coaster.vertangle || "Vertical angle not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Scale: </span>{this.state.coaster.scale || "Scale not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Scale: </span>{this.state.coaster.scale || "Scale not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Awards:</span> {[this.state.coaster.awards].join() || "No awards listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Awards:</span> {[this.state.coaster.awards].join() || "No awards listed"}
                                     </h5>
                                 </Col>
                                 <Col size="4">
                                     <br></br>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Height: </span>{this.state.coaster.height || "Height not available"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Height: </span>{this.state.coaster.height || "Height not available"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Drop: </span>{this.state.coaster.drop || "Drop not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Drop: </span>{this.state.coaster.drop || "Drop not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Speed: </span>{this.state.coaster.speed || "Speed not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Speed: </span>{this.state.coaster.speed || "Speed not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold"> Length:</span> {this.state.coaster.length || "Length not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats"> Length:</span> {this.state.coaster.length || "Length not listed"}
                                     </h5>
-                                    <h5 className="text-left">
-                                        <span className="font-weight-bold">Inversions: </span>{this.state.coaster.inversions || "Inversions not listed"}
+                                    <h5 className="text-left stats">
+                                        <span className="font-weight-bold stats">Inversions: </span>{this.state.coaster.inversions || "Inversions not listed"}
                                     </h5>
                                 </Col>
                             </Row>
