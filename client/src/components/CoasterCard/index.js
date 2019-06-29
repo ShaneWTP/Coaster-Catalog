@@ -51,11 +51,11 @@ const CoasterCard = props => {
                     <Row>
                        <RodeIt className="text-left" handleNewCoasterSubmit={props.handleNewCoasterSubmit} id={coaster._id}/>
 
-                       <a href={"/coasters/" + coaster._id} className="btn">More Info &nbsp;<i className="fas fa-angle-double-right"></i></a>
+                       <a href={"/coasters/" + coaster._id} className="btn mb-3">More Info &nbsp;<i className="fas fa-angle-double-right"></i></a>
                     </Row>
                      : 
                       <Row>
-                        <a href={"/coasters/" + coaster._id} className="btn">More Info &nbsp;<i className="fas fa-angle-double-right"></i></a>
+                        <a href={"/coasters/" + coaster._id} className="btn mb-3">More Info &nbsp;<i className="fas fa-angle-double-right"></i></a>
 
                       </Row>
                   }
