@@ -65,7 +65,7 @@ After users have created a profile and are logged in, they can also navigate to 
 
 Additionally, after users create a profile and are logged in, they can go to the "Profile" page and see a complete list of how many roller coasters they have ridden and how many times they have ridden each roller coaster. This is also where users can increase the number of total rides for an individual coaster and submit their rating for each roller coaster they rode.
 
-![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/profile-page-post-sign-in.png)
+![Image of Coaster Catalog User Profile page after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/profil-page-post-sign-in.png)
 
 ---
 
