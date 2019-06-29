@@ -6,7 +6,7 @@
 
 The idea for this app came about from this team's mutual love of theme parks and especially roller coasters. Our inspiration was to create a Yelp-type app specifically for roller coasters and the people who love them. Our app currently lists all the roller coasters in PA and their specifications, and it allows users to rate the coaster and save it to their profile along with how many times they've ridden it. 
 
-**End result:** Coaster Catalog is fun, interactive roller coaster index for thrill-seekers of all ages. It provides organized, accessible information about roller coasters so people can quicky find their next great ride.
+**End result:** Coaster Catalog is a fun, interactive roller coaster index for thrill-seekers of all ages. It provides organized, accessible information about roller coasters so people can quicky find their next great ride.
 
 
 ## How it works
@@ -15,7 +15,7 @@ The idea for this app came about from this team's mutual love of theme parks and
 
 **Coaster Index 1**
 
-All users can log on to site URL and get a full list of the parks and roller coasters in the state of Pennsylvania by using the "Parks & Coasters" menu item in the main navigation bar.
+All users can log on to the site URL and get a full list of the parks and roller coasters in the state of Pennsylvania by using the "Parks & Coasters" menu item in the main navigation bar.
 
 ![Image of Coaster Catalog Mega Menu](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/mega-menu.png)
 
@@ -23,7 +23,7 @@ All users can log on to site URL and get a full list of the parks and roller coa
 
 **Coaster Index 2**
 
-Users can also interact with the map of Pennsylvania to learn about the parks and roller in the state. By hovering over the dots and squares, users can see where the amusement parks are located geographically and see which roller coasters are located in that park. 
+Users can also interact with the map of Pennsylvania to learn about the parks and roller coasters in the state. By hovering over the dots and squares, users can see where the amusement parks are located geographically and see which roller coasters are located in that park. 
 
 ![Image of Coaster Catalog PA Map](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/pa-map.png)
 
@@ -47,7 +47,7 @@ Additionally, users have the option to page through an alphabetical list of all 
 
 **"I RODE IT" buttons unlocked on Home page**
 
-After users create a profile and are logged in, they can return to the home page and page through the alphabetical list of roller coasters. However, since they are logged in, they can now see an "I RODE IT" button that they can click on and add to their profile. After a user clicks on an "I RODE IT" button in a Coaster Card, that coaster card will now appear in the user's profile, and the button will disappear indicating that the button has been clicked.
+After users create a profile and are logged in, they can return to the home page and page through the alphabetical list of roller coasters. However, since they are logged in, they can now see an "I RODE IT" button that they can click on to add that coaster to their profile. After a user clicks on an "I RODE IT" button in a Coaster Card, that coaster card will now appear in the user's profile, and the button will disappear indicating that the button has been clicked.
 
 ![Image of Coaster Catalog Coaster List after log in](https://raw.githubusercontent.com/ShaneWTP/Coaster-Catalog/master/client/public/images/readme-images/coaster-list-post-sign-in.png)
 
@@ -82,6 +82,7 @@ Additionally, after users create a profile and are logged in, they can go to the
 * Star Ratings
 * Chart.js Animated Charts
 * Material Design Mega Menu
+* React Image Carousel
 
 
 ---
