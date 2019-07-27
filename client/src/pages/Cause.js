@@ -173,7 +173,7 @@ import {Row, Col} from "../components/Grid"
                 </Col>
                 <div className="col-md-3 align-self-center">
                   <Row>
-                    <h4 >KoasterKelly</h4>
+                    <h4 >SavyCoastr</h4>
                   </Row>
                   <Row>
                       <p> Lancaster, PA </p>
