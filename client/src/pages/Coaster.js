@@ -23,7 +23,9 @@ class Coaster extends Component {
 
         this.state = {
         coaster: {},
+        // shall the button be disabled?
         buttonDisabled: false,
+        // shall we display the button?
         buttonToggle: true
         };
 
@@ -57,7 +59,10 @@ class Coaster extends Component {
                 // do not add the Irodeit button
                 if (userCoasterId === this.state.coaster._id){
                     // console.log("we found this coaster in the user's coasters");
-                    this.setState({buttonToggle: false});
+                    // this will hide the button
+                    // this.setState({buttonToggle: false});
+                    // this will show the button in diabled state
+                    this.setState({buttonDisabled: true});
                 }
             }
         } else // if there is no user do not add the Irodeit button
