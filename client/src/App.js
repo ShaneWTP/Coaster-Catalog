@@ -20,7 +20,7 @@ class App extends Component {
     this.state = {
       loggedIn: false,
       user: null,
-      coasters: []
+      // coasters: []
     }
 
     this.getUser = this.getUser.bind(this)
@@ -33,15 +33,17 @@ class App extends Component {
 
   // On mount, check that there is a user in the session
   componentDidMount() {
-    this.getUser()
-    API.getCoasters()
-      .then(res => this.setState({ coasters: res.data }))
-      .catch(err => console.log(err))
+    this.getUser();
+  //   API.getCoasters()
+  //     .then(res => this.setState({ coasters: res.data }))
+  //     .catch(err => console.log(err));
   }
 
   // set the user to state
   updateUser(userObject) {
-    this.setState(userObject)
+    this.setState(userObject);
+    console.log("state changed for user but not propgated " + this.state.loggedIn);
+    
   }
 
   // Call a get user to see if there is a user in the session 
@@ -51,10 +53,7 @@ class App extends Component {
     API.getUser().then(response => {
       console.log('Get user response: ');
       if (response.data.user) {
-        // console.log('Get User: There is a user saved in the server session: ' + response.data.user.username);
-
-        // console.log('Get User: There are coasters saved for this user: ' + JSON.stringify(response.data.user.coasters));
-
+        console.log('Get user: ' + response.data.user.username);
         this.setState({
           loggedIn: true,
           user: response.data.user
@@ -135,7 +134,11 @@ class App extends Component {
             } />
 
           <Route path="/coasters/:id" render={(routerProps) =>
+          {
+              // console.log("calling coaster page "+ JSON.stringify(this.state.user ),null, 2);
+              return(
                 <Coaster user={this.state.user} handleNewCoasterSubmit={this.handleNewCoasterSubmit} {...routerProps} />
+                )}
               } />
             <Route path="/cause" render={() =>
               <Cause/>

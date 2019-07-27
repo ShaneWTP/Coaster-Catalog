@@ -23,7 +23,8 @@ class Coaster extends Component {
 
         this.state = {
         coaster: {},
-        buttonDisabled: false
+        buttonDisabled: false,
+        buttonToggle: true
         };
 
         // Bind your click handler
@@ -34,9 +35,37 @@ class Coaster extends Component {
     // e.g. localhost:3000/coasters/599dcb67f0f16317844583fc
     componentDidMount() {
         API.getCoaster(this.props.match.params.id)
-            .then(res => this.setState({ coaster: res.data }))
+            .then(res => {
+                this.setState({ coaster: res.data });
+            })
             .catch(err => console.log(err));
     }
+
+    /* This function contains the logic for determining whether there is a user and whether the user has already added this roller coaster to their profile. This code did not work inside the componentDidMount function because the user object was not populated in time (asynchronous issue). The props.user was always null. This function is called whenever a render() is called whether or not props has changed.
+    */
+    componentWillReceiveProps(nextProps) {
+        this.props = nextProps;
+        // console.log("COMPONENTWILLRECEIVEPROPS HAS BEEN CALLED");
+        this.setState({buttonToggle: true});
+        // check and see if the coaster is in the user's coaster list?
+        // if there is a user
+        if (this.props.user) {
+            // console.log("there is a user");
+            for (let i = 0; i < this.props.user.coasters.length; i++) {
+                let userCoasterId = this.props.user.coasters[i].coaster._id;
+                // If user already has this coaster in their profile
+                // do not add the Irodeit button
+                if (userCoasterId === this.state.coaster._id){
+                    // console.log("we found this coaster in the user's coasters");
+                    this.setState({buttonToggle: false});
+                }
+            }
+        } else // if there is no user do not add the Irodeit button
+        {
+            // console.log("no user was found");
+            this.setState({buttonToggle: false});
+        }
+      }
 
     onButtonClick(event) {
         this.setState({buttonDisabled: true});
@@ -46,7 +75,7 @@ class Coaster extends Component {
 
     render() {
         return (
-            <div className="coaster">
+            <div className="coaster" key={this.props.user}>
                 <div class="jumbotron" style={{ backgroundImage: 'url(' + this.state.coaster.img1 + ')', backgroundSize: 'cover', width: '100vw', backgroundPosition: 'center' }}>
                     <div className="overlay"></div>
                     <div className="container h-100 jumbocontainer">
@@ -70,11 +99,13 @@ class Coaster extends Component {
                                         emptyStarColor="white"
                                     />
                                         {this.props.user ? 
-                                        <RodeIt handleNewCoasterSubmit={this.onButtonClick} 
-                                        id={this.state.coaster._id}
-                                        disabled={this.state.buttonDisabled}
-                                         />
-                                        : ""
+                                            this.state.buttonToggle ? 
+                                            <RodeIt handleNewCoasterSubmit={this.onButtonClick} 
+                                             id={this.state.coaster._id}
+                                             disabled={this.state.buttonDisabled}
+                                            />
+                                        : "" 
+                                         : ""    
                                         }
                                         {this.state.buttonDisabled ? 
                                         <p>Coaster has been added to your profile</p> : ""}

@@ -29,15 +29,12 @@ class Navbar extends Component {
       console.log(response);
       if (!response.data.error) {
 
-        console.log('youre good');
         // update App.js state to show user as signedout
         this.props.updateUser({
           loggedIn: false,
-          username: null
+          user: null
         });
         console.log('updated user for signout');
-        // Maybe we can reset user to null?
-        this.props.updateUser({ user: null });
 
       } else {
         console.log('Error: ' + response.data.error);
