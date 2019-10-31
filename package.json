@@ -30,7 +30,7 @@
     "express-session": "^1.16.2",
     "if-env": "^1.0.4",
     "mdbreact": "^4.16.0",
-    "mongoose": "^5.5.15",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "react": "^16.8.6",
